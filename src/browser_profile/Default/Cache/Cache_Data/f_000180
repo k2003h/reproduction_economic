@@ -1,0 +1,2267 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:wb="https://open.weibo.com/wb">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>好大夫在线-看病真方便！</title>
+<meta name="keywords" content="好大夫在线,找专家,专家义诊,在线问诊,线上开药,预约挂号"/>
+<meta name="description" content="好大夫在线收录全国1万多家医院，94万医生，医生出停诊信息随时在线查询。29万公立医院医生注册、认证，开通自已的“网上门诊”、医生本人在线接诊，患者在家也能看专家，线上处方，线上药房，药品配送到家。家庭医生长期照护，体检报告专家解读，给你专业的分析和建议。大三甲医院的专家号，一号难求，挂号难，好大夫网站（APP）免费加号，让患者轻松看上大专家，是普通人温暖的就医绿色通道。好大夫在线，看病真方便！" />
+<meta http-equiv="Cache-Control" content="no-transform " />
+<meta name="apple-itunes-app" content="app-id=417263605">
+<meta name="mobile-agent" content="format=html5;url=https://m.haodf.com">
+<!--添加新浪微博的网站验权meta-->
+<meta property="wb:webmaster" content="b875583dfe4bee63" />
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.haodf.com">
+<script src="//i2.hdfimg.com/js/seagullbegin.js"></script>
+<script>var BigPipe={jsMap:new Array(),onPageletArrive:function(pagelet){for(var cssUrl in pagelet.cssList){this.downloadCSS(cssUrl)}if(pagelet.id!==null)document.getElementById(pagelet.id).innerHTML=pagelet.content;for(var jsUrl in pagelet.jsList){this.setResourceMap(jsUrl)}},downloadCSS:function(url){var elem=document.createElement("link");elem.rel="stylesheet";elem.type="text/css";elem.href=url;document.body.appendChild(elem)},downloadJS:function(url){var elem=document.createElement("script");if(url.indexOf('javascript:')===0){elem.innerHTML=url;}else{elem.src = url;}document.body.appendChild(elem)},downloadJSList:function(){for(var jsUrl in this.jsMap){this.downloadJS(jsUrl)}},setResourceMap:function(jsUrl){this.jsMap[jsUrl]=0}};</script>
+<link href="//i2.hdfimg.com/css/base.css?2012052401" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="//i2.hdfimg.com/space/present/present.css?1358357448" />
+<link href="//i2.hdfimg.com/bigpipe/www/css/index.1f7f3a7f.css" rel="stylesheet" type="text/css" />
+<link href="//i2.hdfimg.com/apptransform/css/erweima.css" rel="stylesheet" type="text/css" />
+<link href="//i2.hdfimg.com/bigpipe/www/css/tel.css?2012" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="//i2.hdfimg.com/passport/css/usercenter.css?20141210" />
+<link href="//i2.hdfimg.com/bigpipe/www/css/thanks.css?2012" rel="stylesheet" type="text/css" />
+<link href="//i2.hdfimg.com/js/thickbox/thickbox.css?20101126" rel="stylesheet" type="text/css" />
+<link href="//i2.hdfimg.com/nav/nav.css?1303460346" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="//i2.hdfimg.com/passport/css/top_change.803aeaa1.css" /> 
+<link rel="stylesheet" type="text/css" href="//i2.hdfimg.com/js/jquery-ui-1.8/css/smoothness/jquery-ui-1.8.custom.css" />
+<link href="//i2.hdfimg.com/www/css/index_nav_noshadow_style.css?20171117" rel="stylesheet" />
+<link href="//i2.hdfimg.com/favicon.ico" rel="Icon" type="image/x-icon" />
+<link href="//i2.hdfimg.com/favicon.ico" rel="Shortcut Icon" type="image/x-icon" />
+<link href="//i2.hdfimg.com/favicon.ico" rel="Bookmark" type="image/x-icon" />
+<link href="//i2.hdfimg.com/css/kbjy.a8579da3.css" rel="stylesheet" type="text/css" />
+<link href="//i2.hdfimg.com/ssi/www/css/bottom_ask_seo.58a738fe.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="//i2.hdfimg.com/www/css/slider_indicators.css?0"/>
+<link type="text/css" rel="stylesheet" href="//i2.hdfimg.com/passport/css/top_change.803aeaa1.css">
+<base target="_blank" />
+<meta name="baidu-site-verification" content="SRlPF0S4tBJcx3BR" />
+<style type="text/css">
+    .top_ad {width: 960px;line-height: 1px;margin: 0 auto;overflow: hidden; position: relative;}
+    .top_ad .close{ position: absolute; line-height: 1; padding: 2px 3px; color: #fff; background: #999; cursor: pointer; right: 0; top: 0;}
+    .top_ad .close:hover{ background: #666;}
+    /*change for 10.1*/
+    /*
+    .navigation{z-index: 5;background:url("//i2.hdfimg.com/ssi/www/image/guoqing_index1.jpg") no-repeat !important;}
+    .o_z_line{background:url("//i2.hdfimg.com/ssi/www/image/line.png") no-repeat !important;}
+    .navigation a:hover{color:#E21B20 !important;background-color:#F5C7B3 !important;}
+    .navigation .o_z_arrow{background:url("//i2.hdfimg.com/ssi/www/image/down_arrow.png") no-repeat !important;}
+    .navigation .o_z_arrow.on{background:url("//i2.hdfimg.com/ssi/www/image/up_arrow.png") no-repeat !important;}
+    .navigation .o_z_index,.navigation .o_z_left,.navigation .o_z_right{background:url("//i2.hdfimg.com/ssi/www/image/long_line.png") no-repeat !important;}
+    .navigation li.on{color:#E21B20 !important;background-color:#fff !important;}
+    .navigation .o_z_center dl dd ul li.on a{color:#E21B20 !important;}
+    */
+</style>
+    <!-- 首页咨询入口css样式 -->
+    <style>
+        .consult-wrap{
+            z-index: 1000;
+        }
+        .consult-wrap:hover{
+            text-decoration: none;
+        }
+        .consult-wrap:hover .c-commit{
+            background-color: #2771d4;
+        }
+        .consult {
+            display: block;
+            width: 300px;
+            height: 60px;
+            cursor: pointer;
+            box-sizing: border-box;
+            background: #FFFFFF;
+            border: 1px solid #46A0F0;
+            font-family: "PingFang SC","Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+        }
+
+        #c-words {
+            width: 163px;
+            height: 40px;
+            box-sizing: border-box;
+            border-style: none;
+            overflow: hidden;
+            cursor: pointer;
+            resize: none;
+            outline: none;
+            border: 0;
+            margin-left: 10px;
+            margin-top: 8px;
+            padding: 0;
+            line-height: 20px;
+            color: #000;
+            font-family: "Helvetica","Arial","PingFang SC","SimHei","SimSun","sans-serif";
+        }
+
+        .focusOn {
+            font-size: 14px !important;
+            color: #646464 !important;
+        }
+
+        .c-commit {
+            display: block;
+            float: right;
+            width: 100px;
+            height: 58px;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 58px;
+            background: #46A0F0;
+            color: #fff;
+            font-size: 14px;
+            font-family: "Helvetica","Arial","PingFang SC","SimHei","SimSun","sans-serif";
+        }
+    </style>
+    <!-- 首页咨询入口css样式 -->
+<style>
+   /*20171124修改统一找好大夫 咨询专家 免费转诊 分享经验 title样式*/
+	*{
+        font-family: "Helvetica","Arial","PingFang SC","SimSun","SimHei","sans-serif";
+        }
+        .um-tit {
+            background: url(//i2.hdfimg.com/homepage/images/index_cen_53.gif) repeat-x;
+            height: 36px;
+            position: relative;
+            z-index: 999;
+        }
+        .um-tit-clearfix {
+            display: block;
+        }
+        .um-tit-clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .um-tit .um-tit-left {
+            position: relative;
+            padding-left: 8px;
+            float: left;
+        }
+        .um-tit .um-tit-left .um-tit-left-img {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+.um-tit .um-tit-left .um-tit-left-txt {
+            display: inline-block;
+            height: 36px;
+            padding: 0 20px 0 10px;
+            line-height: 36px;
+            background: url(//i2.hdfimg.com/pcdynamic/img/dynamic-tit-bg.png) repeat-x;
+            font-size: 18px;
+            color: #fff;
+        }
+        .um-tit .um-tit-left .um-tit-left-arrow {
+            position: absolute;
+            top: 35px;
+            left: 48px;
+        }
+        .um-tit .um-tit-right{
+            text-align: right;
+            padding-right: 10px;
+        }
+        .um-tit .um-tit-right a{
+            color: #09c;
+            height: 36px;
+            line-height: 36px;
+        }
+ .um-tit .um-rcol-tit-mid{
+            float: left;
+            font-size: 14px;
+            padding-left: 15px;
+            height: 36px;
+            line-height: 36px;
+        }
+
+        .um-rcol-tit {
+            background: url(//i2.hdfimg.com/ssi/image/FPRjianbianbg.png)  repeat-y;
+            line-height: 32px;
+            height: 32px;
+            padding-right: 10px;
+            border-bottom: 2px solid #e4e4e4;
+        }
+        .um-rcol-tit-more {
+            float: right;
+            color: #09c;
+        }
+        .um-rcol-tit-lt{
+            font-size: 17px;
+            font-weight: bold;
+            color: #09c;
+            margin-left: 18px;
+        }
+	.um-title-bold{
+	    font-family: "Helvetica","Arial","PingFang SC","SimHei","SimSun","sans-serif";
+	    font-weight:bold;
+	}
+</style>
+<script type="text/javascript">var _czc = _czc || [];_czc.push(["_setAccount",  "1256706712"]);</script>
+</head>
+<body>
+
+    <style>
+        .live-button {
+            display: block;
+            background-size: 100% 100%;
+            position: fixed;
+            right: 140px;
+            bottom: 110px;
+            z-index: 1000;
+        }
+
+        .l-b-img {
+            width: 95px;
+            height: 92px;
+        }
+        .nvip-button {
+            display: block;
+            background-size: 100% 100%;
+            position: fixed;
+            right: 140px;
+            bottom: 230px;
+            z-index: 1000;
+        }
+        .n-b-img {
+            width: 90px;
+            height: 90px;
+        }
+    </style>
+
+    <a class="nvip-button" href="https://m.haodf.com/nhealthpal/m/nvip/activenvip" target="_self">
+        <img src="//fe1.hdfimg.com/nhealthpal/nvip/images/nvip_guide_pc.png" alt="" class="n-b-img">
+    </a>
+ <a class="live-button" href="https://www.haodf.com/info/webcastQrCode.php">
+        <img src="//fe1.hdfimg.com/nindex/index/images/live.png" alt="" class="l-b-img">
+ </a>
+
+    <div id="topbar_box" class="topbar_box">
+        <div class="topbar clearfix">
+            <div class="topbar_left">
+            </div>
+            <div class="topbar_right">
+                <span class="grey">|</span>
+                <a class="grey" href="//www.haodf.com/info/mobile/hdf_mobile.php">手机版</a>
+            </div>
+        </div>
+    </div>
+        <div class="top_ad" id="top_ad">
+            <span class="close" onclick='document.getElementById("top_ad").style.display="none"'>关闭</span>
+        </div>
+  <div id="login"></div>
+  <div id="index_page">
+    <div id="top"><div class="topsearch_box">
+    <div class="topsearch clearfix">
+	<a href="//www.haodf.com" rel="nofollow">	
+		<img src="//i2.hdfimg.com/ssi/image/pc-biglogo.png?20210616" style="width:200px;float:left;margin-right:27px;margin-top:6px;"/>
+        </a>
+	<div class="center_search">
+            <div class="top_check" style="margin-top: 10px;">
+            <!-- 
+                requirement of gzq
+                <ul class="clearfix">
+                    <li onclick="SetSearchType('')" class="on">综合</li>
+                    <li onclick="SetSearchType('hospital')">医院</li>
+                    <li onclick="SetSearchType('hospitalfaculty')">科室</li>
+                    <li onclick="SetSearchType('doctor')">专家</li>
+                    <li onclick="SetSearchType('allarticle')">知识库</li>
+                    <li onclick="SetSearchType('disease')">疾病</li>
+                    <li onclick="SetSearchType('flow')">咨询</li>
+                </ul>
+              -->                
+            </div>
+
+            <div class="bot_form clearfix">
+                <form onsubmit="return submitCheck()" accept-charset="utf-8" method="get" id="login_bar_search_form_big" 
+                    action="//so.haodf.com/index/search">
+                    <div class="leftinput">
+                        <input type="hidden" name="type" id="top_checkhidden" value=""/>
+                        <input aria-autocomplete="list" aria-haspopup="true" role="textbox" id="searchcontent" name="kw" autocomplete="off" type="text" value="" class='search_input' style="height:24px;outline:none">
+                    </div>
+                    <div class="right_sub" style="width: 74px;">
+                        <input type="submit" value="搜 索" style="line-height:2;">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="right_service clearfix" style="position:relative;z-index:1000;">
+            <ul>
+                <li class="item">
+                    <div class="show_box">
+                                                <a href="//my.haodf.com" class="mycenter_login" rel="nofollow">
+                            <i class="ico_myspace"></i><span>我的中心</span>
+                        </a>
+                    </div>
+                </li>
+                <!--<li class="line1 item"></li>-->
+                <li class="item">
+                <div class="show_box">
+                    <a href="//my.haodf.com/myhealthcare/myorderlist" class="myservice_login" rel="nofollow">
+                        <i class="ico_service"></i><span>我的订单</span>
+                    </a>
+                </div>
+                <div class="hide_box" id="servicelistheadpop">
+                </div>
+                </li>
+                <!--<li class="line2 item"></li>-->
+                <li class="item">
+                    <div class="show_box">
+                        <a href="//my.haodf.com/userdoctor/showmydoctor" class="mydoctor_login" rel="nofollow">
+                            <i class="ico_mydoc"></i>
+                            <span>我的医生<i class="ico_num" id="flowmarkcnt" style="display:none;margin-left:60px !important;"></i></span>
+                        </a>
+                    </div>
+                </li>
+                <!--<li class="line3 item"></li>-->
+                 <li class="item" style="width:61px !important;position:relative;left:5px;">
+                      <div class="show_box js-phone-box"  id="index_codeimg"style="position:relative;margin-top:3px;">
+                        <a href="//www.haodf.com/info/mobile/hdf_mobile.php" style="font-size:0;display:block;padding-bottom:5px;" target="_blank" rel="nofollow">
+                           <img style="width:27px;height:27px;" src="//i1.hdfimg.com/ssi/image/loginbarqr4pc/miniphone.png">
+                           <div style="font-size:12px;color:#3F89EC;">手机好大夫</div>
+                        </a>
+                        <div style="position: relative; display: none;" class="js-qrcode-box" id="exposure_pcshoujiban">
+                           <img style="z-index:9999;position:absolute;top:-10px;left:22px;" src="//i1.hdfimg.com/ssi/image/loginbarqr4pc/triangle.png">
+                <ul style="width:184px;position:absolute;z-index:1000;left:-67px;background:#FFF;border: 1px solid #B6D3FF;box-shadow: 0 2px 8px 0 rgba(0,0,0,0.17);border-radius: 4px;padding: 0 11px;">
+                             <a href="//m.haodf.com/p?fromurl=mt" target="_blank">
+                             <li style="width:100%;height:60px;padding:20px 0;border-bottom:1px solid #DCDCDC;">
+                               <img src="https://fe1.hdfimg.com/ndoctor/ssi/appdownload/patientapp.png?20230919" style="float:left;width:60px;height:60px;">
+                               <div style="float:right;width:112px;">
+                                 <p style="color:#3F89EC;font-size:16px;line-height:20px;">患者端手机APP</p>
+ <p style="color:#9B9B9B;font-size:12px;text-align:left;margin-top:4px;line-height:18px;">享受好大夫提供的完整优质医疗服务。</p>
+                               </div>
+                             </li>
+                             </a>
+                             <a href="//www.haodf.com/info/mobile/hdfdoc_mobile.php" target="_blank">
+                             <li style="width:100%;height:60px;padding:16px 0;border-bottom:1px solid #DCDCDC;">
+                                <img src="https://fe1.hdfimg.com/ndoctor/ssi/appdownload/doctorapp.png?20230919" style="float:left;height:60px;width:60px;">
+                                <div style="float:right;width:112px;">
+                                  <p style="color:#3F89EC;font-size:16px;line-height:20px;">医生端手机APP</p>
+   <p style="color:#9B9B9B;font-size:12px;text-align:left;margin-top:4px;line-height:18px;">方便快捷的为患者提供优质医疗服务。</p>
+                                </div>
+                             </li>
+                             </a>
+                             <li style=" width:100%; height:75px;padding:16px 0;">
+                               <img src="//i1.hdfimg.com/ssi/image/loginbarqr4pc/wxqr.png?20201203" style="width:60px;height:60px;float:left;">
+                                 <div style="float:right;width:112px;">
+                                   <p style="color:#3F89EC;font-size:16px;line-height:20px;">关注好大夫微信</p>
+                                   <p style="color:#9B9B9B;font-size:12px;text-align:left;margin-top:4px;line-height:18px;">快速享受医疗服务；三甲专家为你科普健康知识。</p>
+                                </div>
+                             </li>
+                          </ul>
+                    </div>
+                 </div>
+                </li>
+                <li class="item" style="padding-left: 10px;margin-top:3px;">
+                    <a href="//my.haodf.com/complaincenter/contactAssist?source=firstpage" target="_blank" style="display: inline-block;text-align: center;position: relative;text-decoration: none;" rel="nofollow">
+			<div class="js-contact-assistant-dot" style="display: none;position: absolute; top:0; right:3px; width: 6px; height: 6px; border-radius: 50%;background-color: #FF0000"></div>
+			<img src="//i2.hdfimg.com/ssi/advice4pc/prd/image/advice_entry.png?2020020901" style="width: 27px">
+			<div style="font-size: 12px;color: #3F89EC;">联系客服</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<style>
+    .tips_index_codeimg {
+        left: -47px;
+    }
+    .right_service {
+        width: 305px;
+    }
+    .right_service .item {
+	width: 58px;
+
+    }
+</style>
+<script type="text/javascript" language="javascript" src="//i2.hdfimg.com/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="//i2.hdfimg.com/passport/js/usercenter.ad622eeb.js"></script>
+<!-- <script src="//i2.hdfimg.com/partner/js/exposure.js" type="text/javascript"></script> -->
+<script src="//i2.hdfimg.com/ssi/usercenter/js/hdf_login.js?time=202301312" type="text/javascript"></script>
+<script src="//i1.hdfimg.com/ssi/js/geetest/gt.js?200629" type="text/javascript"></script>
+<script>
+    $("#index_codeimg").mouseover(function(){
+        $(".js-qrcode-box").show();
+        // var exposureId = $(".tips_index_codeimg").attr("id"); 
+        // countExposure(exposureId);
+    });
+    $("#index_codeimg").mouseout(function(){
+        $(".js-qrcode-box").hide();
+    });
+
+</script>
+<script>
+    var em = ['.myservice_login','.mycenter_login','.mydoctor_login'];
+    var hdf_login = new hdfLogin(em,{});
+</script>
+<script>
+function SetSearchType(type)
+{
+    $("#top_checkhidden").val(type);
+}
+</script>
+<script>
+function getCookie(c_name) {
+    if (document.cookie.length > 0)     {
+        c_start = document.cookie.indexOf(c_name + "=")           
+        if (c_start != -1){ 
+            c_start = c_start + c_name.length + 1 
+            c_end = document.cookie.indexOf(";", c_start) 
+            if (c_end == -1)   
+                c_end = document.cookie.length   
+                return unescape(document.cookie.substring(c_start, c_end))   
+            } 
+        } 
+    return "" 
+}
+
+$(function(){
+    $.ajax({
+         type: "POST"
+        , url: "/index/ajaxflowmarkcnt"
+        , cache: false
+        , success: function(data){
+            if(data == 0){
+                $("#flowmarkcnt").hide();
+            }else{
+                $('#flowmarkcnt').html(data).show();
+            }
+        }
+        , error: function(){
+        }
+    });
+    if (getCookie('userinfo[id]')) {
+        $.ajax({
+            url:"/complaincenter/ajaxGetUnReadMsg",
+        type:"post",
+        success:function(res){ 
+            res = JSON.parse(res);
+            if (res && res.data == 1) {
+	            $('.js-contact-assistant-dot').show();
+            }
+        }
+    });
+    }
+    
+})
+</script>
+<link rel="stylesheet" href="//i2.hdfimg.com/www/css/index_nav_noshadow_style.css?20171117" />
+<div class="navigation">
+    <div class="o_z_left"></div>
+    <div class="o_z_center">
+        <div class="o_z_index" style="width:88px"><a href="//www.haodf.com" target="_blank" rel="nofollow">首页</a></div>
+        <dl style="width:870px">
+             <dd class="clearfix" style="padding-left:13px">
+             <div>
+                  <h6>找大夫</h6>
+                  <ul class="clearfix" style="width:280px;">
+                      <li class="has_children">
+                          <a href="//www.haodf.com/hospital/list.html" target="_blank" id="">按医院找</a><span class="o_z_arrow">∨</span>
+                          <div class="o_z_area_box">
+                              <ul class="o_z_area">
+                                  <li><a href="//www.haodf.com/hospital/list-11.html" class="blue font12" target="_blank">北京</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-31.html" class="blue font12" target="_blank">上海</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-44.html" class="blue font12" target="_blank">广东</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-45.html"	class="blue font12" target="_blank">广西</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-32.html" class="blue font12" target="_blank">江苏</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-33.html"	class="blue font12" target="_blank">浙江</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-34.html" class="blue font12" target="_blank">安徽</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-36.html" class="blue font12" target="_blank">江西</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-35.html" class="blue font12" target="_blank">福建</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-37.html"	class="blue font12" target="_blank">山东</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-14.html" class="blue font12" target="_blank">山西</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-13.html" class="blue font12" target="_blank">河北</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-41.html" class="blue font12" target="_blank">河南</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-12.html" class="blue font12" target="_blank">天津</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-23.html" class="blue font12"	target="_blank">黑龙江</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-21.html"	class="blue font12" target="_blank"	>辽宁</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-22.html" class="blue font12" target="_blank">吉林</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-42.html" class="blue font12" target="_blank">湖北</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-43.html" class="blue font12" target="_blank">湖南</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-51.html" class="blue font12" target="_blank">四川</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-50.html" class="blue font12" target="_blank">重庆</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-61.html" class="blue font12" target="_blank">陕西</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-53.html" class="blue font12" target="_blank">云南</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-62.html" class="blue font12" target="_blank">甘肃</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-15.html" class="blue font12" target="_blank">内蒙古</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list-65.html" class="blue font12" target="_blank">新疆</a></li>
+                                  <li><a href="//www.haodf.com/hospital/list.html" class="blue font12" target="_blank">更多&gt;&gt;</a></li>
+                              </ul>
+                          </div>
+                       </li>
+                       <li>
+                           <span class="o_z_line"></span><a href="//www.haodf.com/citiao/list-jibing.html" target="_blank">按疾病找</a>
+                       </li>
+                       <li>
+                           <span class="o_z_line"></span><a href="//www.haodf.com/doctor/list.html" target="_blank">按专科找</a>
+                       </li>
+                    </ul>
+                    <div class="clear"></div>
+             </div>
+             <div>
+                    <h6 style=" letter-spacing: 14px;">问诊</h6>
+                    <ul class="clearfix" style="width:280px;">
+                        <li>
+                            <a href="//www.haodf.com/bingcheng/list.html" target="_blank">在线问诊</a>
+                        </li>
+                        <li>
+                            <span class="o_z_line"></span><a href="//www.haodf.com/zhuanlan/jiatingyisheng.html" target="_blank">家庭医生</a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+             </div>
+             </dd>
+             <dd class="clearfix" style="padding-left:7px">
+                    <div>
+                         <h6 style=" letter-spacing: 3px; width:48px">就诊</h6>
+                         <ul class="clearfix" style="width:430px">
+                             <li>
+                                 <a href="//guahao.haodf.com" target="_blank">预约挂号</a>
+                             </li>
+<!--                             <li>-->
+<!--                             <span class="o_z_line"></span><a href="--><!--" target="_blank">海外就诊</a>-->
+<!--                             </li>-->
+                             <li>
+                                 <span class="o_z_line"></span><a href="https://www.haodf.com/citiao/list.html" target="_blank">疾病知识</a>
+                             </li>
+                          </ul>
+                          <div class="clear"></div>
+                    </div>
+                    <div>
+                          <h6 style=" letter-spacing: 3px; width:48px">指南</h6>
+                          <ul class="clearfix" style="width:430px;">
+                              <li>
+                                  <a href="//www.haodf.com/citiao/yaopin.html" target="_blank">快速找药</a>
+                              </li>
+                              <li>
+                                  <span class="o_z_line"></span><a style="color: #ffe600; position: relative" href="https://www.haodf.com/zhuanlan/haodaifu/2024.html" target="_blank">年度好大夫</a>
+                              </li>
+                              <li>
+                                  <span class="o_z_line"></span><a style="color: #ffe600; position: relative" href="https://www.haodf.com/zhuanlan/haoyiyuan/2024.html" target="_blank">医院年度榜</a>
+                              </li>
+                              <li style="padding-right: 0;">
+                                  <span class="o_z_line"></span><a style="color: #ffe600; position: relative; padding: 0;" href="https://open.haodf.com/" target="_blank">开放合作平台</a>
+                              </li>
+                          </ul>
+                          <div class="clear"></div>
+                     </div>
+             </dd>
+       </dl>
+ </div>
+        <div class="o_z_right"></div>
+        <div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+
+
+ <!--搜索-->
+</div>
+    <div class="page_jj">
+      <div id="marquee_box" class="mt10">
+</div>
+      <div class="clearfix">
+	<div class="center_l">
+	  <div id="slide">
+<!--placebeg [ads][ad_index_one][disease_ads_one] -->
+
+<!--placeend [ads][ad_index_one][disease_ads_one] -->
+</div>
+	  <div id="searchdoctor"><style>
+    .module-wrapper{
+        background:#F7FAFF;
+        padding:14px 0 14px 20px;
+        border-radius: 6px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 608px;
+        box-sizing: border-box;
+        margin-left: 10px;
+    }
+    .module-list{
+        overflow: hidden;
+    }
+    .module-item{
+        float:left;
+        width:20%;
+        font-size: 12px;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-right: 15px;
+        box-sizing: border-box;
+
+    }
+    .module-list.five .module-item:nth-child(5n){
+        padding-right: 0;
+    }
+    .module-list.four .module-item:nth-child(4n){
+        padding-right: 0;
+    }
+    .module-item a,
+    .module-item a:link,
+    .module-item a:visited,
+    .module-item a:active{
+        color:#000;
+        text-decoration: none;
+    }
+    .module-item a:hover{
+        cursor: pointer;
+        color:#055AD7;
+        text-decoration: underline;
+    }
+    .module-item-sub{
+        color:#969696;
+    }
+    .module-list.four .module-item{
+        width:25%;
+    }
+
+    .look-all{
+        text-align: center;
+    }
+    .look-all-link{
+        font-size: 12px;
+        color:#055AD7;
+        text-decoration: none;
+        padding-right:12px;
+        position:relative;
+    }
+    .look-all-link::after{
+        content: '';
+        width: 7px;
+        height: 7px;
+        position: absolute;
+        right: 5px;
+        top: 3px;
+        bottom: auto;
+        transform: rotate(-45deg);
+        border-bottom: 1px solid #055ad7;
+        border-right: 1px solid #055ad7;
+    }
+    .m_title_bg .m_title_tit{
+        font-size:16px;
+    }
+    .m-title-sub-tit{
+        font-size: 12px;
+        color: #969696;
+        font-weight: normal;
+        margin-right: 5px;
+    }
+</style>
+
+<!--找好大夫-->
+<div class="um-tit um-tit-clearfix" style="z-index:10;">
+        <div class="um-tit-left">
+            <a href="//www.haodf.com/citiao/list-jibing.html" target="_blank">
+                <img class="um-tit-left-img" src="//i2.hdfimg.com/pcdynamic/img/dynamic-tit-left.png">
+                <span class="um-tit-left-txt um-title-bold">找大夫</span>
+                <img class="um-tit-left-arrow" src="//i2.hdfimg.com/pcdynamic/img/dynamic-arrow-down.png" >
+            </a>
+        </div>
+        <div class="um-rcol-tit-mid">
+            收录全国
+            <span style="color: #f60;">10,548</span>
+            家正规医院
+            <span style="color: #f60;">947,173</span>
+            位大夫
+        </div>
+        <div class="um-tit-right">
+            <a href="//www.haodf.com/citiao/list-jibing.html">更多&gt;&gt;</a>
+        </div>
+    </div>
+<div class="l_m_main" style="padding-bottom: 0">
+<div class="m_title">
+    <div class="m_title_bg"><span class="m_title_tit">
+            按疾病找大夫
+            <span class="m-title-sub-tit">2209个疾病</span>
+        </span></div>
+</div>
+    <!-- 按疾病找大夫 -->
+    <div class="module-wrapper">
+        <ul class="module-list five">
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-gaoxueya/tuijian-doctor.html" target="_blank">高血压</a>
+                <span class="module-item-sub">(13315位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-guanxinbing/tuijian-doctor.html" target="_blank">冠心病</a>
+                <span class="module-item-sub">(12181位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-guzhe/tuijian-doctor.html" target="_blank">骨折</a>
+                <span class="module-item-sub">(10154位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-yaozhuijianpantuchu/tuijian-doctor.html" target="_blank">腰椎间盘突出</a>
+                <span class="module-item-sub">(9305位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-feiai/tuijian-doctor.html" target="_blank">肺癌</a>
+                <span class="module-item-sub">(8706位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-yuejingshitiao/tuijian-doctor.html" target="_blank">月经失调</a>
+                <span class="module-item-sub">(7854位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-jingzhuibing/tuijian-doctor.html" target="_blank">颈椎病</a>
+                <span class="module-item-sub">(8111位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-naogengsi/tuijian-doctor.html" target="_blank">脑梗塞</a>
+                <span class="module-item-sub">(7812位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-zigongjiliu/tuijian-doctor.html" target="_blank">子宫肌瘤</a>
+                <span class="module-item-sub">(6975位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-tangniaobing/tuijian-doctor.html" target="_blank">糖尿病</a>
+                <span class="module-item-sub">(7015位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-buyunbuyu/tuijian-doctor.html" target="_blank">不孕不育</a>
+                <span class="module-item-sub">(6740位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-weiyan/tuijian-doctor.html" target="_blank">胃炎</a>
+                <span class="module-item-sub">(6904位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-ruxianai/tuijian-doctor.html" target="_blank">乳腺癌</a>
+                <span class="module-item-sub">(6334位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-danjieshi/tuijian-doctor.html" target="_blank">胆结石</a>
+                <span class="module-item-sub">(6088位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/citiao/jibing-xiaoerganmao/tuijian-doctor.html" target="_blank">小儿感冒</a>
+                <span class="module-item-sub">(5819位)</span>
+            </li>
+                    </ul>
+        <div class="look-all">
+            <a class="look-all-link" href="https://www.haodf.com/citiao/list-jibing.html" target="_blank">查看全部疾病</a>
+        </div>
+    </div>
+<div class="m_title">
+    <div class="m_title_bg"><span class="m_title_tit">
+            按医院找大夫
+            <span class="m-title-sub-tit">全国10548家医院</span>
+        </span></div>
+</div>
+    <!-- 按医院找大夫 -->
+    <div class="module-wrapper">
+        <ul class="module-list four">
+                        <li class="module-item">
+                <a href="//www.haodf.com/hospital/1.html" target="_blank">北京协和医院</a>
+                <span class="module-item-sub">(2131位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/hospital/422.html" target="_blank">上海九院</a>
+                <span class="module-item-sub">(1259位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/hospital/142.html" target="_blank">北医三院</a>
+                <span class="module-item-sub">(1361位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/hospital/24.html" target="_blank">北京儿童医院</a>
+                <span class="module-item-sub">(804位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/hospital/335.html" target="_blank">北京301医院</a>
+                <span class="module-item-sub">(2297位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/hospital/418.html" target="_blank">上海华山医院</a>
+                <span class="module-item-sub">(1435位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/hospital/494.html" target="_blank">武汉协和医院</a>
+                <span class="module-item-sub">(1779位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/hospital/426.html" target="_blank">上海新华医院</a>
+                <span class="module-item-sub">(1038位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/hospital/23.html" target="_blank">北大医院</a>
+                <span class="module-item-sub">(1334位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/hospital/552.html" target="_blank">郑大一附院</a>
+                <span class="module-item-sub">(2716位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/hospital/72.html" target="_blank">中日友好医院</a>
+                <span class="module-item-sub">(1285位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/hospital/424.html" target="_blank">上海瑞金医院</a>
+                <span class="module-item-sub">(1377位)</span>
+            </li>
+                    </ul>
+        <div class="look-all">
+            <a class="look-all-link" href="https://www.haodf.com/hospital/list-11.html">查看全部医院</a>
+        </div>
+    </div>
+<div class="m_title ask-keshi-mart">
+    <div class="m_title_bg"><span class="m_title_tit">
+            按科室找大夫
+            <span class="m-title-sub-tit">233个专业方向</span>
+        </span></div>
+</div>
+    <!-- 按科室找大夫 -->
+    <div class="module-wrapper">
+        <ul class="module-list four">
+                        <li class="module-item">
+                <a href="//www.haodf.com/doctor/list-all-erkezonghe.html" target="_blank">儿科</a>
+                <span class="module-item-sub">(41996位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/doctor/list-all-putongwaike.html" target="_blank">普外科</a>
+                <span class="module-item-sub">(42752位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/doctor/list-all-xinxueguanwaike.html" target="_blank">心血管外科</a>
+                <span class="module-item-sub">(4537位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/doctor/list-all-guwaike.html" target="_blank">骨科</a>
+                <span class="module-item-sub">(35007位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/doctor/list-all-fuchankezonghe.html" target="_blank">妇产科</a>
+                <span class="module-item-sub">(36283位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/doctor/list-all-zhongyizongheke.html" target="_blank">中医科</a>
+                <span class="module-item-sub">(40540位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/doctor/list-all-shenjingneike.html" target="_blank">神经内科</a>
+                <span class="module-item-sub">(30698位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/doctor/list-all-kouqiangke-zonghe.html" target="_blank">口腔科</a>
+                <span class="module-item-sub">(27437位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/doctor/list-all-putongneike.html" target="_blank">普通内科</a>
+                <span class="module-item-sub">(34071位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/doctor/list-all-pifuxingbing.html" target="_blank">皮肤性病科</a>
+                <span class="module-item-sub">(23568位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/doctor/list-all-xiaohuaneike.html" target="_blank">消化内科</a>
+                <span class="module-item-sub">(23538位)</span>
+            </li>
+                        <li class="module-item">
+                <a href="//www.haodf.com/doctor/list-all-huxineike.html" target="_blank">呼吸科</a>
+                <span class="module-item-sub">(22811位)</span>
+            </li>
+                    </ul>
+        <div class="look-all">
+            <a class="look-all-link" href="https://www.haodf.com/doctor/list.html">查看全部科室</a>
+        </div>
+    </div>
+</div></div>
+      <div id=""><style>
+    .look-all{
+        text-align: center;
+    }
+    .look-all-link{
+        font-size: 12px;
+        color:#055AD7;
+        text-decoration: none;
+        padding-right:12px;
+        position:relative;
+    }
+    .look-all-link::after{
+        content: '';
+        width: 7px;
+        height: 7px;
+        position: absolute;
+        right: 5px;
+        top: 3px;
+        bottom: auto;
+        transform: rotate(-45deg);
+        border-bottom: 1px solid #055ad7;
+        border-right: 1px solid #055ad7;
+    }
+    /* 科普知识 */
+    .zhishi-tab{
+        overflow: hidden;
+    }
+    .zhishi-tab-item{
+        float: left;
+        width:100px;
+        height:40px;
+        line-height: 40px;
+        padding:0 15px;
+        box-sizing: border-box;
+        color:#5399FF;
+        font-size: 12px;
+        text-align: center;
+        border:1px solid #C3DCFF;
+        border-radius: 6px;
+        margin-right: 15px;
+        cursor: pointer;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background:#F7FAFF;
+    }
+    .zhishi-tab-item.active{
+        border-bottom:1px solid #fff;
+        position: relative;
+        z-index: 1;
+        background: #fff;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .zhishi-con-wrapper{
+        padding:14px;
+        border:1px solid #C3DCFF;
+        border-radius: 6px;
+        width:610px;
+        box-sizing: border-box;
+        border-top-left-radius: 0;
+        position:relative;
+        top:-1px;
+    }
+    .zhishi-con{
+        display:none;
+    }
+    .zhishi-con.active{
+        display: block;
+    }
+    .zhishi-con-list{
+        overflow: hidden;
+    }
+    .zhishi-con-item{
+        float:left;
+        width:85px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-bottom: 14px;
+        margin-right: 14px;
+        background:#FAFAFA;
+        font-size: 12px;
+        text-align: center;
+        height:24px;
+        line-height: 24px;
+        border-radius: 2px;
+        color:#1E1E1E;
+    }
+    .zhishi-con-item:nth-child(6n){
+        margin-right: 0;
+    }
+    .zhishi-con-item a{
+        display: inline-block;
+        width:85px;
+        height:24px;
+    }
+    .zhishi-con-item a,
+    .zhishi-con-item a:link,
+    .zhishi-con-item a:visited,
+    .zhishi-con-item a:active{
+        color:#1E1E1E;
+        text-decoration: none;
+    }
+    .zhishi-con-item a:hover{
+        cursor: pointer;
+        color:#055AD7;
+        text-decoration: underline;
+    }
+
+    .kuzy-box{
+        margin-bottom: 23px;
+    }
+    .kuzy-box .consultation-sheet .hzssd-tit .kxzy-right{
+        width: 520px;
+    }
+    .kuzy-box .consultation-sheet .border{
+        padding: 20px;
+    }
+    .kuzy-box .tablet-list{
+        line-height: 1;
+        height: 16px;
+        white-space: nowrap;
+        margin-bottom: 12px;
+        font-size: 12px;
+        color: #000000;
+        overflow: hidden;
+    }
+    .kuzy-box .last{
+        margin-bottom: 0;
+    }
+    .kuzy-box .tablet-list span{
+        padding-right: 20px;
+    }
+    .kuzy-box .tablet-list a{
+        color: #0099CC;
+        padding-right: 18px;
+    }
+</style>
+<!--快速找药 start-->
+<div id="kuaisuzhaoyao" class="kuzy-box">
+    <div class="consultation-sheet">
+        <div class="hzssd-tit clearfix">
+            <div class="hzssd-tit-left">
+                <a href="//www.haodf.com/citiao/list.html" target="_blank">
+                    <img class="left-img" src="//i2.hdfimg.com/pcdynamic/img/dynamic-tit-left.png">
+                    <span class="hzssd-tit-left-txt um-title-bold">科普·知识</span>
+                    <img class="hzssd-tit-left-arrow" src="//i2.hdfimg.com/pcdynamic/img/dynamic-arrow-down.png" style="left: 48px;">
+                </a>
+            </div>
+	    <!--20170710 -->
+            <div class="hzssd-tit-right kxzy-right" style="text-align: right;" >
+   	        <a style="color: #09c;margin-right:10px;" href="//www.haodf.com/citiao/list.html">更多>></a>
+            </div>
+        </div>
+
+        <div class="border">
+            <div class="zhishi-wrapper">
+                <ul class="zhishi-tab">
+                    <li class="zhishi-tab-item active" key="jibing">疾病</li>
+                    <li class="zhishi-tab-item" key="yaopin">药品</li>
+                    <li class="zhishi-tab-item" key="yimiao">疫苗</li>
+                    <li class="zhishi-tab-item" key="jiancha">检查</li>
+                    <li class="zhishi-tab-item" key="zhiliao">治疗</li>
+                </ul>
+            </div>
+
+            <div class="zhishi-con-wrapper">
+
+                <!-- 疾病 -->
+                <div class="zhishi-con active" key="jibing">
+                    <ul class="zhishi-con-list">
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-shimian.html" target="_blank">失眠</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-yiyuzheng.html" target="_blank">抑郁症</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-yaozhuijianpantuchu.html" target="_blank">腰椎间盘突出</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-baidianfeng.html" target="_blank">白癜风</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-feiai.html" target="_blank">肺癌</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-jingzhuibing.html" target="_blank">颈椎病</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-buyunbuyu.html" target="_blank">不孕不育</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-zhichuang.html" target="_blank">痔疮</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-yechou.html" target="_blank">腋臭</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-tangniaobing.html" target="_blank">糖尿病</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-bahen.html" target="_blank">疤痕</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-shenjieshi.html" target="_blank">肾结石</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-biyan.html" target="_blank">鼻炎</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-jiakang.html" target="_blank">甲亢</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-jingmaiquzhang.html" target="_blank">静脉曲张</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-dianxian.html" target="_blank">癫痫</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-yigan.html" target="_blank">乙肝</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jibing-naogengsi.html" target="_blank">脑梗塞</a>
+                        </li>
+                    </ul>
+                    <div class="look-all">
+                        <a class="look-all-link" href="//www.haodf.com/citiao/list-jibing.html?from=zhishi">查看全部疾病</a>
+                    </div>
+                </div>
+
+                <!-- 药品 -->
+                <div class="zhishi-con" key="yaopin">
+                    <ul class="zhishi-con-list">
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934626471.html" target="_blank">感冒发烧</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934627159.html" target="_blank">头痛牙痛</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934627260.html" target="_blank">肌肉关节</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934627331.html" target="_blank">抗菌消炎</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934627899.html" target="_blank">口腔溃疡</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934627961.html" target="_blank">晕车晕船</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934616768.html" target="_blank">高血压类</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934617252.html" target="_blank">高血脂类</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934624681.html" target="_blank">西药降糖</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934623593.html" target="_blank">肝炎用药</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934625035.html" target="_blank">皮肤过敏</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934621712.html" target="_blank">妇科炎症</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934613886.html" target="_blank">神经衰弱</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934622255.html" target="_blank">紧急避孕</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934623454.html" target="_blank">滋阴补肾</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934618619.html" target="_blank">胃炎用药</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934614674.html" target="_blank">青霉素类</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/list-yaopin-4934612506.html" target="_blank">维生素类</a>
+                        </li>
+                    </ul>
+                    <div class="look-all">
+                        <a class="look-all-link" href="//www.haodf.com/citiao/yaopin.html">查看全部药品</a>
+                    </div>
+                </div>
+
+                <!-- 疫苗 -->
+                <div class="zhishi-con" key="yimiao">
+                    <ul class="zhishi-con-list">
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-kajiemiao.html" target="_blank">卡介苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-yiganyimiao.html" target="_blank">乙肝疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-jisuihuizhiyanyimiao.html" target="_blank">脊髓灰质炎疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-baibaipoyimiao.html" target="_blank">百白破疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-liunaoyimiao.html" target="_blank">流脑疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-yinaoyimiao.html" target="_blank">乙脑疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-masaifengyimiao.html" target="_blank">麻腮风疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-jiaganyimiao.html" target="_blank">甲肝疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-feiyanyimiao.html" target="_blank">肺炎疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-wulianyimiao.html" target="_blank">五联疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-silianyimiao.html" target="_blank">四联疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-lunzhuangbingduyimiao.html" target="_blank">轮状病毒疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-shuidouyimiao.html" target="_blank">水痘疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-liuganyimiao.html" target="_blank">流感疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-hpvyimiao.html" target="_blank">HPV疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-kuangquanbingyimiao.html" target="_blank">狂犬病疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-jiaxingh1n1liuganyimiao.html" target="_blank">甲型H1N1流感疫苗</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/yimiao-xinguanyimiao.html" target="_blank">新冠疫苗</a>
+                        </li>
+                    </ul>
+                    <div class="look-all">
+                        <a class="look-all-link" href="//www.haodf.com/citiao/list.html#yimiao">查看全部疫苗</a>
+                    </div>
+                </div>
+
+                <!-- 检查 -->
+                <div class="zhishi-con" key="jiancha">
+                    <ul class="zhishi-con-list">
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-chanqianjiancha.html" target="_blank">产前检查</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-guanjiejing.html" target="_blank">关节镜</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-tijian.html" target="_blank">体检</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-yunqianjiancha.html" target="_blank">孕前检查</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-fukejiancha.html" target="_blank">妇科检查</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-chaoshengzhenduan.html" target="_blank">超声诊断</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-fangshezhenduan.html" target="_blank">放射诊断</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-naodiantu.html" target="_blank">脑电图</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-binglizhenduan.html" target="_blank">病理诊断</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-guanmaizaoying.html" target="_blank">冠状动脉造影</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-taierxianxinbingzhenduan.html" target="_blank">胎儿先心病诊断</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-xinshengertinglishaicha.html" target="_blank">新生儿听力筛查</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-feichuancihuojianshu.html" target="_blank">穿刺活检术</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-yindaojing.html" target="_blank">阴道镜</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-weijing.html" target="_blank">胃镜</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-changjing.html" target="_blank">肠镜</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-beiyun.html" target="_blank">备孕</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/jiancha-qianliexianchuancihuojianshu.html" target="_blank">前列腺穿刺活检术</a>
+                        </li>
+                    </ul>
+                    <div class="look-all">
+                        <a class="look-all-link" href="//www.haodf.com/citiao/list.html#jiancha">查看全部检查</a>
+                    </div>
+                </div>
+
+                <!-- 治疗 -->
+                <div class="zhishi-con" key="zhiliao">
+                    <ul class="zhishi-con-list">
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-duanzhizaizhi.html" target="_blank">断肢再植</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-renliu.html" target="_blank">人流</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-xinzangdaqiao.html" target="_blank">心脏搭桥</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-jiaomoyizhi.html" target="_blank">角膜移植</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-yanbuzhengxing.html" target="_blank">眼部整形</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-bibuzhengxing.html" target="_blank">鼻部整形</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-erbuzhengxing.html" target="_blank">耳部整形</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-chunbuzhengxing.html" target="_blank">唇部整形</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-xiahezhengxing.html" target="_blank">下颌整形</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-tixingdiaosu.html" target="_blank">体形雕塑</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-rufangzhengxing.html" target="_blank">乳房整形</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-xingqiguanzhengxing.html" target="_blank">性器官整形</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-maofazhengxing.html" target="_blank">毛发整形</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-pifuzhengxing.html" target="_blank">皮肤整形</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-chuzhou.html" target="_blank">微整形除皱</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-rengongguanjiezhihuanshu.html" target="_blank">人工关节置换术</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-kouqiangxiufu.html" target="_blank">口腔修复</a>
+                        </li>
+                        <li class="zhishi-con-item">
+                            <a href="//www.haodf.com/citiao/zhiliao-xinzangjieru.html" target="_blank">心脏介入</a>
+                        </li>
+                    </ul>
+                    <div class="look-all">
+                        <a class="look-all-link" href="//www.haodf.com/citiao/list.html#zhiliao">查看全部治疗</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script>
+    // 科普知识tab事件
+    $(function () {
+        $('.zhishi-tab').delegate('.zhishi-tab-item', 'mouseover', function () {
+            var key = $(this).attr('key');
+            var currentSelector = '.zhishi-con[key=' + key + ']';
+            // 设置tab切换样式
+            $(this).siblings('.active').removeClass('active');
+            $(this).addClass('active');
+            // 设置对应内容展示
+            $('.zhishi-con.active').removeClass('active');
+            $(currentSelector).addClass('active');
+        });
+    });
+</script>
+<!--快速找药 end-->
+</div>
+	  <div id=""><!--20161219--智慧互谅网医院动态--start-->
+<link href="//i2.hdfimg.com/ssi/css/new_dynamicstyle.css?ccc" rel="stylesheet"/>
+<!--出诊专家start-->
+<div id="chuzhenzhuanjia" style="margin-bottom: 23px;">
+    <div class="visit-specialist">
+        <div class="czzj-tit clearfix">
+            <div class="czzj-tit-left">
+                <img class="left-img" src="//i2.hdfimg.com/pcdynamic/img/dynamic-tit-left.png">
+                <span class="czzj-tit-left-txt um-title-bold">出诊专家</span>
+                <img class="czzj-tit-left-arrow" style="left: 50%; margin-left: -5px;" src="//i2.hdfimg.com/pcdynamic/img/dynamic-arrow-down.png">
+            </div>
+            <div class="czzj-tit-right" style="width: 520px;font-size: 14px;">
+                当前出诊 <span class="color-FF8C28">14,549</span> 位
+            </div>
+        </div>
+        <div class="visit-ul-p">
+            <ul class="visit-ul clearfix js-visit-ul">
+                                <li class="visit-li clearfix">
+                                                                        <a class="visit-li-left js-color-148cfa" href="https://www.haodf.com/doctor/2477575444.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n4.hdfimg.com/g7/M05/9A/1E/z4YBAGB7hBaAfomGAAcFIEB-pUQ502_110_110_1.png?6af4">
+                                </div>
+                            </div>
+                            <p class="doc-info">曹守明 副主任医师</p>
+                            <p class="text-over">昆明医科大学第二附属医院  耳鼻喉科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                                                                        <a class="visit-li-right js-color-148cfa" href="https://www.haodf.com/doctor/17097.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n2.hdfimg.com/g2/M00/0F/FD/pIYBAFMXLTqAaAiHAC9i7qpPELE983_110_110_1.jpg?7778">
+                                </div>
+                            </div>
+                            <p class="doc-info">廖威明 主任医师</p>
+                            <p class="text-over">中山一院  关节外科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                    
+                </li>
+                                <li class="visit-li clearfix">
+                                                                        <a class="visit-li-left js-color-148cfa" href="https://www.haodf.com/doctor/6964453528.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n4.hdfimg.com/g4/M03/37/33/xoYBAF4LGT6ASFu5AAVspppGD9I516_110_110_1.png?bb1a">
+                                </div>
+                            </div>
+                            <p class="doc-info">宋贤亮 主治医师</p>
+                            <p class="text-over">亳州市人民医院  影像中心</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                                                                        <a class="visit-li-right js-color-148cfa" href="https://www.haodf.com/doctor/9032100779.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n1.hdfimg.com/g12/M06/31/DC/2YYBAGKA4yuAPGBqAADRA_185y8725_110_110_1.jpg?ebdc">
+                                </div>
+                            </div>
+                            <p class="doc-info">赵选忠 主治医师</p>
+                            <p class="text-over">内蒙古医科大学附属医院  血管外科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                    
+                </li>
+                                <li class="visit-li clearfix">
+                                                                        <a class="visit-li-left js-color-148cfa" href="https://www.haodf.com/doctor/6090889221.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n1.hdfimg.com/g2/M03/71/DC/yIYBAFw8OIyAQbw2AAAWC2_R7lQ743_110_110_1.png?4e88">
+                                </div>
+                            </div>
+                            <p class="doc-info">周榕 主治医师</p>
+                            <p class="text-over">赣南医科大学第一附属医院  呼吸与危重症学科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                                                                        <a class="visit-li-right js-color-148cfa" href="https://www.haodf.com/doctor/954977101.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n2.hdfimg.com/g2/M04/0F/6A/w4YBAGa6yLSARVm7AAb2NHQtnig255_110_110_1.png?d5f3">
+                                </div>
+                            </div>
+                            <p class="doc-info">周晓 主任医师</p>
+                            <p class="text-over">上海市第一人民医院（北部）  胸外科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                    
+                </li>
+                                <li class="visit-li clearfix">
+                                                                        <a class="visit-li-left js-color-148cfa" href="https://www.haodf.com/doctor/9032240992.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n1.hdfimg.com/g2/M03/71/DC/yIYBAFw8OIyAQbw2AAAWC2_R7lQ743_110_110_1.png?4e88">
+                                </div>
+                            </div>
+                            <p class="doc-info">刘静 医师</p>
+                            <p class="text-over">南阳市中心医院  乳腺科二病区</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                                                                        <a class="visit-li-right js-color-148cfa" href="https://www.haodf.com/doctor/9032054500.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n3.hdfimg.com/g12/M07/99/AB/2IYBAGHfoHqAMiYYAAMQeN70FVQ548_110_110_1.jpg?789c">
+                                </div>
+                            </div>
+                            <p class="doc-info">蔡金培 主治医师</p>
+                            <p class="text-over">温州市人民医院  儿科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                    
+                </li>
+                                <li class="visit-li clearfix">
+                                                                        <a class="visit-li-left js-color-148cfa" href="https://www.haodf.com/doctor/6964353062.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n4.hdfimg.com/g3/M00/2F/F2/v4YBAFvQH9-AMuo5AAXGe90U5ZY855_110_110_1.png?ee38">
+                                </div>
+                            </div>
+                            <p class="doc-info">陈黄剑 主治医师</p>
+                            <p class="text-over">绍兴市第七人民医院  精神科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                                                                        <a class="visit-li-right js-color-148cfa" href="https://www.haodf.com/doctor/9032090131.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n3.hdfimg.com/g6/M04/05/A2/0YYBAGZCLHWAAudjAAO6baWtoWo945_110_110_1.jpg?fc2a">
+                                </div>
+                            </div>
+                            <p class="doc-info">罗政 主治医师</p>
+                            <p class="text-over">湘雅二医院  PET影像中心</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                    
+                </li>
+                                <li class="visit-li clearfix">
+                                                                        <a class="visit-li-left js-color-148cfa" href="https://www.haodf.com/doctor/875254148.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n3.hdfimg.com/g11/M04/07/2F/1IYBAGJZVaiAakqqAAXxo7_EMOo765_110_110_1.png?c978">
+                                </div>
+                            </div>
+                            <p class="doc-info">张晶 主任医师</p>
+                            <p class="text-over">秦皇岛市第一医院  心血管内科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                                                                        <a class="visit-li-right js-color-148cfa" href="https://www.haodf.com/doctor/148128722.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n1.hdfimg.com/g11/M07/43/4D/1YYBAGN-LqOAFsG3AAFS9K7UaMA549_110_110_1.jpg?abad">
+                                </div>
+                            </div>
+                            <p class="doc-info">夏祖光 副主任医师</p>
+                            <p class="text-over">复旦大学附属肿瘤医院  肿瘤内科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                    
+                </li>
+                                <li class="visit-li clearfix">
+                                                                        <a class="visit-li-left js-color-148cfa" href="https://www.haodf.com/doctor/9031993809.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n4.hdfimg.com/g7/M04/01/44/zYYBAGDmYyuAOulgAAUhWhf6ISU616_110_110_1.png?cb9c">
+                                </div>
+                            </div>
+                            <p class="doc-info">赵飞 主治医师</p>
+                            <p class="text-over">郑大一附院  肾脏内科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                                                                        <a class="visit-li-right js-color-148cfa" href="https://www.haodf.com/doctor/239899.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n1.hdfimg.com/g7/M00/2B/D3/z4YBAF1s1x2AVXviAAU1KbxEt9A617_110_110_1.jpg?0823">
+                                </div>
+                            </div>
+                            <p class="doc-info">嵇若旭 副主任医师</p>
+                            <p class="text-over">上海新华医院  小儿呼吸内科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                    
+                </li>
+                                <li class="visit-li clearfix">
+                                                                        <a class="visit-li-left js-color-148cfa" href="https://www.haodf.com/doctor/6964353414.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n2.hdfimg.com/g2/M02/99/43/xIYBAFyvWjCAYAgLAAUO-5OplkA983_110_110_1.png?bca6">
+                                </div>
+                            </div>
+                            <p class="doc-info">黄晓东 副主任医师</p>
+                            <p class="text-over">厦门大学附属第一医院  急诊部</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                                                                        <a class="visit-li-right js-color-148cfa" href="https://www.haodf.com/doctor/138025.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n3.hdfimg.com/g2/M03/95/13/yIYBAFzG38SANuMmAAVZrVFiD48443_110_110_1.jpg?fae3">
+                                </div>
+                            </div>
+                            <p class="doc-info">李晓溪 副主任医师</p>
+                            <p class="text-over">上海市儿童医院  泌尿外科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                    
+                </li>
+                                <li class="visit-li clearfix">
+                                                                        <a class="visit-li-left js-color-148cfa" href="https://www.haodf.com/doctor/5608394225.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n1.hdfimg.com/g9/M04/42/C1/uYYBAF5BGT2Ae3uXAAYAtfbJoxs897_110_110_1.png?32c5">
+                                </div>
+                            </div>
+                            <p class="doc-info">王志剑 副主任医师</p>
+                            <p class="text-over">南昌大学第一附属医院  疼痛科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                                                                        <a class="visit-li-right js-color-148cfa" href="https://www.haodf.com/doctor/4455962579.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n1.hdfimg.com/g10/M09/93/2F/vIYBAFrqgxyATp82AAY38Ci6S0w607_110_110_1.png?367d">
+                                </div>
+                            </div>
+                            <p class="doc-info">王端平 副主任医师</p>
+                            <p class="text-over">齐齐哈尔市第一医院  肛肠科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                    
+                </li>
+                                <li class="visit-li clearfix">
+                                                                        <a class="visit-li-left js-color-148cfa" href="https://www.haodf.com/doctor/6536646464.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n3.hdfimg.com/g2/M00/28/89/yIYBAFti0CqAbOpEAAQnN1LNl-Q376_110_110_1.png?f9a8">
+                                </div>
+                            </div>
+                            <p class="doc-info">胡博 主治医师</p>
+                            <p class="text-over">天津医科大学总医院  普通外科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                                                                        <a class="visit-li-right js-color-148cfa" href="https://www.haodf.com/doctor/195634.html">
+                                                    <div class="doc-img">
+                                <div class="img-p">
+                                    <img src="https://n2.hdfimg.com/g12/M08/4E/83/14YBAGeI66aALcjaAAfanJF7mVE792_110_110_1.png?bf43">
+                                </div>
+                            </div>
+                            <p class="doc-info">王鸿祥 主治医师</p>
+                            <p class="text-over">上海交通大学医学院附属仁济医院（西院）  男科</p>
+                            <span class="doc-state color-FF8C28">出诊中</span>
+                        </a>
+                    
+                </li>
+                
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--出诊专家end-->
+<!--团队流拆分项目下架gwx-->
+<!--预约手术start--> 
+<!--
+<div id="huizhenshoushudan">
+    <div class="consultation-sheet">
+        <div class="hzssd-tit clearfix">
+            <div class="hzssd-tit-left">
+                <img class="left-img" src="//i2.hdfimg.com/pcdynamic/img/dynamic-tit-left.png">
+                <span class="hzssd-tit-left-txt um-title-bold">预约手术</span>
+                <img class="hzssd-tit-left-arrow" src="//i2.hdfimg.com/pcdynamic/img/dynamic-arrow-down.png" style="left: 50%; margin-left: -5px;">
+            </div>
+            <div class="hzssd-tit-right" style="width: 519px;">
+
+            </div>
+        </div>
+        <div class="border">
+            <div class="consultation-ul-p">
+                <ul class="consultation-ul clearfix js-consultation-ul">
+                                    </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--预约手术end-->
+<!--电子处方start-->
+<!--移动到网络咨询下面
+<div id="dianzichufang">
+    <div class="e-prescription" style="margin-bottom: 20px;">
+        <div class="dzcf-tit clearfix" style="z-index: 999">
+            <div class="dzcf-tit-left">
+                <img class="left-img" src="//i2.hdfimg.com/pcdynamic/img/dynamic-tit-left.png">
+                <span class="dzcf-tit-left-txt um-title-bold">处方建议</span>
+                <img class="dzcf-tit-left-arrow" style="left: 50%; margin-left: -5px;" src="//i2.hdfimg.com/pcdynamic/img/dynamic-arrow-down.png">
+            </div>
+            <div class="dzcf-tit-right" style="width: 519px;">
+
+            </div>
+        </div>
+        <div class="border">
+            <div class="e-prescription-p">
+                <ul class="consultation-ul clearfix js-e-prescription-ul">
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909382831.html">
+                            <p>上海市第二人民医院 整形外科 张颖医生给患者陈**开具了处方建议</p>
+                                                        <span class="consultation-time">刚刚</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909382831.html">
+                            <p>上海市第二人民医院 整形外科 张颖医生给患者陈**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909385788.html">
+                            <p>中国医科大学附属盛京医院 男科 曹志强医生给患者李**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8885624375.html">
+                            <p>广州医科大学附属市八医院 感染病中心 刘波医生给患者钟**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909399682.html">
+                            <p>深圳市儿童医院 介入科 周洋洋医生给患者孙**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909399635.html">
+                            <p>山东大学齐鲁医院 肝病科 范晓鹏医生给患者刘**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909399660.html">
+                            <p>上海市第一人民医院（北部） 男科 田汝辉医生给患者刘**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909362778.html">
+                            <p>上海市闵行区中心医院 皮肤科 李平卫医生给患者孙**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909399269.html">
+                            <p>北京大学首钢医院 胃肠外科 李昌龙医生给患者董**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909399463.html">
+                            <p>首都医科大学附属首都儿童医学中心 皮肤科 蒋丽潇医生给患者姚**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909399097.html">
+                            <p>北京大学首钢医院 胃肠外科 李昌龙医生给患者李**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909399568.html">
+                            <p>四川大学华西医院 心理卫生中心 孙元锋医生给患者杨**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909392940.html">
+                            <p>中国医学科学院皮肤病医院 皮肤科 齐淑贞医生给患者王**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8908808312.html">
+                            <p>宁波大学附属第一医院 生殖男科 陈涛伟医生给患者程**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8907523546.html">
+                            <p>西京医院 皮肤科 张海龙医生给患者潘**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909216719.html">
+                            <p>复旦大学附属华山医院 泌尿外科 张敏光医生给患者郑**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909392313.html">
+                            <p>中国医学科学院皮肤病医院 皮肤科 齐淑贞医生给患者N**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909398414.html">
+                            <p>上海市第一妇婴保健院 男性科 杨阳医生给患者潘**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                        <li class="consultation-li">
+                        <a class="consultation-a js-color-148cfa" href="https://www.haodf.com/bingcheng/8909396852.html">
+                            <p>云南大学附属医院 临床心理科 李培凯医生给患者李**开具了处方建议</p>
+                                                        <span class="consultation-time">刚才</span>
+                        </a>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--电子处方end-->
+<script src="//i2.hdfimg.com/pcdynamic/dynamicscript.js"></script>
+<script>
+    hospitalDynamic.init();
+</script>
+<!--20161219--智慧互谅网医院动态--end-->
+</div>
+	  <div id="thread"></div>
+
+	  <div id="appointment"></div>
+      <div id="share"></div>
+	</div>
+	<div class="center_r">
+	  <div id="top_sidebar"><!--医生登陆-->
+<div class="doc_login_new" style="background: #4cc9ff;">
+    <a class="doc" href="https://station.haodf.com" style="padding-left:0;height: 54px;
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 54px;
+        font-family: "\5FAE\8F6F\96C5\9ED1"!important;
+    padding-left: 70px;" target="_blank" rel="nofollow">医生入口
+    <img src="//i2.hdfimg.com/ssi/image/docimg.png" style="float:left;height:34px;margin:10px 16px;"></a>
+            <a href="https://station.haodf.com" style="color: #fff;font-size: 14px;"><span style=" padding-left: 30px;">登录</span> <b> | </b> </a>
+        <a href="https://passport.haodf.com/doctorreg/wxreg" style="color: #fff;font-size: 14px;"><span>注册</span></a>
+    </div>
+
+<!--诊疗提示-->
+
+<!--诊疗提示-->
+<div style="box-sizing:border-box;width:300px;height:104px;background:url(https://i2.hdfimg.com/ssi/image/niudefu/ndf_pc.png?20210616) no-repeat;background-size:100% 100%;margin-bottom:19px;padding:25px 86px 10px 10px;">
+    <p style="font-size:16px;color: #008DD0;line-height:16px;">好大夫在线提示</p>
+    <p style="margin-top:6px;font-size:12px;color: #696969;line-height:16px;">好大夫在线是医患沟通平台，医生基
+于患者自述病情所发表的言论仅供参考，不能作为诊断和治疗的直接依据。</p>
+</div>
+<!--20160420修改start-->
+<!-- 20160531修改： 删除好声音入口，还原到之前的图片。见邮件 -->
+<!--20160420修改end-->
+<div class="ask_enter">
+    <div class="enter_fir">
+    <span>295320</span><!--
+        --><span>位公立医院医生在线解答</span>
+    </div>
+    <a id="cnzz_zixun_entrance" href="https://www.haodf.com/doctor/list.html">立即问诊</a>
+    <script type="text/javascript">
+        $("#cnzz_zixun_entrance").click(function () {
+            _czc.push(['_trackEvent', '网络咨询页立即咨询', '点击立即咨询 ', '立即咨询', '1', '101010']);
+        });
+    </script>
+</div>
+<style type="text/css">
+    /*1127修改的css*/
+    .ask_enter .enter_fir {
+        display: block;
+        width: 270px;
+        margin: 14px auto 7px;
+        font-size: 18px;
+        color: #000000;
+        font-family: "Helvetica","Arial","PingFang SC","SimHei","SimSun","sans-serif" !important;
+    }
+
+    .ask_enter {
+        height: 90px;
+        text-align: center;
+        background: #FFF4EA;
+        position: relative;
+        border: #dcdcdc solid 1px;
+        margin-bottom: 10px;
+    }
+
+    .ask_enter a {
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 5px 16px;
+        background: #FFAC06;
+        border-radius: 4px;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    .ask_enter a:hover {
+        background: #e29700;
+        text-decoration: none;
+    }
+    /*结束*/
+</style>
+
+<!--去挂号start-->
+    <link rel="stylesheet" href="//fe1.hdfimg.com/nmenzhen/pcguahao/style/pcindex/index.2afd7a9e.css">
+<div id="pcGuaHao">
+    <a class="pcguahao-header"  target="_blank" id="pcguahao-header-title" href="//guahao.haodf.com"><i class="pcguahao-header-icon">i</i><span>预约挂号</span></a>
+    <div class='pcguahao-city-panel' id='pcguahao-city-selector'>
+        <i class='pcguahao-location-icon'></i>
+        <span class='pcguahao-city-display' id='pcguahao-city-display'></span>
+        <span class='pcguahao-city-change' id='pcguahao-city-change'>切换</span>
+        <div class='pcguahao-city-sel' id='pcguahao-city-sel'  style='display:none'>
+            <i class='pcguahao-close-icon' id='pcguahao-city-sel-close'></i>
+            <ul id='pcguahao-city-list'></ul>
+        </div>
+        <div class='pcguahao-zone-sel' id='pcguahao-zone-sel' style='display:none;'>
+            <i class='pcguahao-close-icon' id='pcguahao-zone-sel-close'></i>
+            <div class='pcguahao-city-display'>
+                <i class='pcguahao-location-icon'></i><span id='pcguahao-zone-city-display'></span><span class='pcguahao-zone-change' id='pcguahao-zone-change'>切换省份</span>
+            </div>
+            <ul class='pcguahao-zone-list' id='pcguahao-zone-list'>
+            </ul>
+        </div>
+    </div>
+    <div class='pcguahao-search-panel'>
+        <div><span class='pcguahao-search-label'>按医院</span>
+            <div class='pcguahao-input-panel'>
+                <input placeholder='请填写医院名称（选填）' id='pcguahao-search-hospital' type='text'/>
+                <ul class='pcguahao-input-suggestion' id='pcguahao-search-hospital-suggestion' style='display:none'>
+                </ul>
+            </div>
+        </div>
+        <div><span class='pcguahao-search-label'>按科室</span>
+            <div class='pcguahao-input-panel'>
+                <input placeholder='请填写科室名称（选填）' id='pcguahao-search-faculty' type='text'/>
+                <ul class='pcguahao-input-suggestion' id='pcguahao-search-faculty-suggestion' style='display:none'>
+                </ul>
+            </div>
+        </div>
+        <div><span class='pcguahao-search-label'>按疾病</span>
+            <div class='pcguahao-input-panel'>
+                <input placeholder='请填写疾病名称（选填）' id='pcguahao-search-diease' type='text'/>
+                <ul class='pcguahao-input-suggestion' id='pcguahao-search-diease-suggestion' style='display:none'>
+                </ul>
+            </div>
+        </div>
+        <div><a target='_blank' href='//guahao.haodf.com' class='pcguahao-search-btn'>去挂号</a></div>
+    </div>
+</div>
+    <script type="text/javascript" src="//fe1.hdfimg.com/nmenzhen/pcguahao/script/pcindex/index.c89799f0.js"></script>
+<!--去挂号end-->
+
+
+<!--出停诊信息-->
+<!--<div class="center_r_bar">-->
+<!--<div class="um-rcol-tit">-->
+<!--        <span class="um-rcol-tit-lt um-title-bold">-->
+<!--            最新出诊/停诊预报-->
+<!--        </span>-->
+<!--</div>-->
+<!--<div class="r_bar_con" id="announcelist" style="height: 82px; overflow: hidden;">-->
+<!--<ul class="r_bar_list">-->
+<!--	<li><span class="f_rt">--><!--</span>-->
+<!--    <a class="blue" href="//www.--><!--haodf.com/hospital/--><!--/tingzhen.html" target="_blank">-->
+<!--	--><!--</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--出停诊信息-->
+
+<!--权威专家观点-->
+<!--最新专家观点-->
+<div class="center_r_bar">
+<a href="//www.haodf.com/neirong/wenzhang/list.html" target="_blank" style="cursor:hand;text-decoration:none;">
+<div class="um-rcol-tit">
+        <span class="um-rcol-tit-lt um-title-bold">
+            专家文章
+        </span>
+        <a href="//www.haodf.com/neirong/wenzhang/list.html" class="um-rcol-tit-more">更多&gt;&gt;</a>
+</div>
+</a>
+<div class="r_bar_con">
+<ul class="r_bar_list2">
+
+<!--placebeg [haodf_index][onlyone][wenzhang_url] -->
+
+<!--placeend [haodf_index][onlyone][wenzhang_url] -->
+    <li >
+        <a href="https://www.haodf.com/neirong/wenzhang/9394374499.html" target="_blank"> 眼睑上的“小疙瘩”，激光帮你“打掉它...</a></li>
+        <li >
+        <a href="https://www.haodf.com/neirong/wenzhang/9394371445.html" target="_blank"> 要好孕，不要折腾6-No.278</a></li>
+        <li >
+        <a href="https://www.haodf.com/neirong/wenzhang/9394373832.html" target="_blank"> 我总对过去的遗憾感到后悔</a></li>
+        <li >
+        <a href="https://m.haodf.com/neirong/shipin/9394374157.html" target="_blank"> 先天性无睾症睾丸假体手术</a></li>
+        <li >
+        <a href="https://www.haodf.com/neirong/wenzhang/9394351959.html" target="_blank"> 骨髓增殖性肿瘤治疗目标之变迁</a></li>
+        <li >
+        <a href="https://www.haodf.com/neirong/wenzhang/9394375563.html" target="_blank"> Pelizaeus-Merzbacher 病的临床诊断要...</a></li>
+        <li >
+        <a href="https://m.haodf.com/neirong/shipin/9394117439.html" target="_blank"> 我和肺结节消融的这十年，从什么都会做...</a></li>
+        <li >
+        <a href="https://www.haodf.com/neirong/wenzhang/9394099294.html" target="_blank"> 小耳畸形舒展修复手术的优势</a></li>
+        <li >
+        <a href="https://www.haodf.com/neirong/wenzhang/9394246577.html" target="_blank"> 儿童荨麻疹专场</a></li>
+        <li >
+        <a href="https://www.haodf.com/neirong/wenzhang/9393929121.html" target="_blank"> 尖锐湿疣多久会长成菜花样</a></li>
+        <li >
+        <a href="https://www.haodf.com/neirong/wenzhang/9394205754.html" target="_blank"> 患者教育直播</a></li>
+        <li >
+        <a href="https://m.haodf.com/neirong/shipin/9393769377.html" target="_blank"> 当病理性高度近视遇上上睑下垂应该怎么...</a></li>
+        <li >
+        <a href="https://m.haodf.com/neirong/shipin/9394119674.html" target="_blank"> 这样表现的帕金森病人手术效果会很好</a></li>
+        <li >
+        <a href="https://www.haodf.com/neirong/wenzhang/9394374704.html" target="_blank"> 糖尿病药物使用注意事项</a></li>
+        <li >
+        <a href="https://www.haodf.com/neirong/wenzhang/9394367396.html" target="_blank"> 肺结节的风险许多人总在意于大小是否有...</a></li>
+        <li style='border-bottom:0px'>
+        <a href="https://m.haodf.com/neirong/shipin/9394373875.html" target="_blank"> 病理对病有什么作用？</a></li>
+    </ul>
+<p style="text-align:right;margin-top:10px;">
+<a style="color: #09c;" href="//www.haodf.com/neirong/wenzhang/list.html">查看全部专家文章>></a>
+</p>
+</div>
+</div>
+<!--最新专家观点--> 
+</div>
+	  <div id="middle_sidebar"></div>
+	  <div id="bottom_sidebar"></div>
+	  <div id="side_banner"></div>
+    </div>
+      </div>
+    </div>
+    <div id="footer"   class="mb180">
+<script src="//i2.hdfimg.com/ssi/www/js/bottomjs_ask_seo.js" type="text/javascript"></script>
+<table width="960" cellpadding="0" cellspacing="0" align="center" class="table_white" style="margin:0 auto;">
+	<tr>
+		<td align="center">
+		<table align="center" width="960" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+			<tr>
+				<td align="center">
+										<hr /></td>
+			</tr>
+			<tr>
+                <td height="80" align="center">
+                    <a href="//www.haodf.com/info/aboutus.php" rel="nofollow">关于好大夫</a>&nbsp;|
+                    <a href="//www.haodf.com/bingcheng/list.html">网上问诊</a>&nbsp;|
+					<a href="//www.haodf.com/info/contactus.php" rel="nofollow">联系好大夫网站</a>&nbsp;|
+					<a href="//my.haodf.com/suggestion/suggestion" class="blue" rel="nofollow">意见和建议</a>&nbsp;|
+					<a href="//www.haodf.com/info/eula.php" rel="nofollow">内容管理声明</a>/<a href="//www.haodf.com/info/copyrights.php" rel="nofollow">版权</a>&nbsp;|
+<!--                    <a href="--><!--" rel="nofollow">出国看病</a>&nbsp;|-->
+                    <a href="//m.haodf.com/p" rel="nofollow" style="text-decoration:none;">好大夫在线客户端</a>&nbsp;|
+                    <a href="//open.haodf.com/" rel="nofollow" class="blue">开放平台</a>&nbsp;|
+                    <a href="//www.haodf.com/info/privacy_policy.php" rel="nofollow" style="text-decoration:none;">隐私保护政策</a>&nbsp;|
+                    <a href="//www.haodf.com/info/datainforights.php" rel="nofollow" style="text-decoration:none;">数据获取使用声明</a>&nbsp;
+					<br />
+                    <div style="width:300px;margin:0 auto; padding:20px 0;">
+                        <a target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502030435" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="https://i2.hdfimg.com/ssi/www/image/small_guohui.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11010502030435号</p></a>
+                    </div>
+					<a href="//www.haodf.com/info/icp_auth.php" target="_blank" rel="nofollow">京ICP证</a> <a href="https://beian.miit.gov.cn" target="_blank" rel="nofollow">京ICP备2021003931号-2</a>  <a href="//www.haodf.com/info/ypxxfw_auth.php" target="_blank" rel="nofollow">互联网药品信息服务资格证书（京）-非经营性-2021-0042</a>  
+                    <a href="//www.haodf.com/info/hdfyyzz.php" target="_blank" rel="nofollow">营业执照</a>
+                    <a href="//www.haodf.com/info/yljg_auth.php" target="_blank" rel="nofollow">互联网医疗机构许可证</a>
+                    <a href="https://www.haodf.com/info/hr-license.php" target="_blank" rel="nofollow">人力资源服务许可证</a>
+					<br /> <a href="https://www.12377.cn/" style="text-decoration: underline;">网上有害信息举报专区</a> <a href="//www.haodf.com/info/contactus.php" style="text-decoration: underline;">违法和不良信息举报电话：010-59799065（包含涉未成年人的举报）</a> 举报邮箱：service@haodf.com
+          <br />好大夫互联网医院: 4001825799
+                    <br />好大夫在线版权所有 Copyright 2025				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+<div id="abc"></div> 
+<script type="text/javascript" src="https://i2.hdfimg.com/js/pvstat.js?20151209"></script>
+</div>
+  </div>
+
+<script type="text/javascript">BigPipe.onPageletArrive({"id":"thread","content":"<!--\u54a8\u8be2\u4e13\u5bb6-->\n <div class=\"um-tit um-tit-clearfix\">\n        <div class=\"um-tit-left\">\n            <a href=\"\/\/zixun.haodf.com\/ask.php\" target=\"_blank\">\n                <img class=\"um-tit-left-img\" src=\"\/\/i2.hdfimg.com\/pcdynamic\/img\/dynamic-tit-left.png\">\n                <span class=\"um-tit-left-txt um-title-bold\">\u4e13\u5bb6\u95ee\u8bca<\/span>\n                <img class=\"um-tit-left-arrow\" src=\"\/\/i2.hdfimg.com\/pcdynamic\/img\/dynamic-arrow-down.png\">\n            <\/a>\n        <\/div>\n        <div class=\"um-rcol-tit-mid\">\n            \u6b63\u89c4\u533b\u9662\u7684\n            <span style=\"color: #f60;\">\n                295,320            <\/span>\n            \u4f4d\u4e13\u5bb6\u672c\u4eba\u5728\u7ebf\u7b54\u7591\n        <\/div>\n    <\/div>\n<div class=\"l_m_main\">\n<ul class=\"zx_tw\">\n    <li>\n        <a class=\"consult-wrap\" href=\"https:\/\/www.haodf.com\/doctor\/list.html\" target=\"_blank\" rel=\"nofollow\">\n            <div class=\"consult\">\n                <div class=\"c-commit\">\u6211\u8981\u95ee\u8bca<\/div>\n                <textarea id=\"c-words\" class=\"focusOn\" rows=\"2\" cols=\"11\" readonly=\"readonly\" unselectable=\"on\">\u5728\u6b64\u95ee\u8bca\uff0c29\u4e07\u540d\u6743\u5a01\u4e13\u5bb6\u5728\u7ebf\u89e3\u7b54<\/textarea>\n            <\/div>\n        <\/a>\n    <\/li>\n    <div class=\"zxzx_doc\" style=\"width: 310px;\" id=\"onLineDoctor\">\n    <li style=\"padding-right: 0px;\">\n    <div class=\"zxzx_doc\" style=\"width: 310px;\" id=\"onLineDoctor\">\n      <div class=\"onLineDoctor-inner\">\n            <div class=\"clearfix\">\n        <div class=\"zxzx_doc_l\">\n        <table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n        <tbody>\n        <tr>\n        <td valign=\"middle\" align=\"center\" style=\"padding: 0px; border: 1px solid #DFDFDF; height: 58px; vertical-align: middle; width: 58px;\">\n        <a target=\"_blank\" href=\"https:\/\/www.haodf.com\/doctor\/124096.html\"><img  alt=\"\" style=\"border:none;\" src=\"https:\/\/n1.hdfimg.com\/g2\/M00\/01\/65\/pIYBAFIlwHiAXbzmAAAMosWDXEk315_58_58_1.jpg?c9e5\"><\/a>\n        <\/td>\n        <\/tr>\n        <\/tbody>\n        <\/table>\n        <\/div>\n        <div class=\"zxzx_doc_r\" style=\"white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 240px;\"><a href=\"https:\/\/www.haodf.com\/doctor\/124096.html\" class=\"blue2\" target=\"_blank\">\u91d1\u7389<\/a>\u4e3b\u4efb\u533b\u5e08          <br \/>\u5357\u4eac\u533b\u79d1\u5927\u5b66\u9644\u5c5e\u513f\u7ae5\u533b\u9662\u6d88\u5316\u79d1<br \/>\n            <span class=\"gray\">\u4eca\u5929<\/span><\/div>\n    <\/div><!-- clearfix -->\n              <div class=\"clearfix\">\n        <div class=\"zxzx_doc_l\">\n        <table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n        <tbody>\n        <tr>\n        <td valign=\"middle\" align=\"center\" style=\"padding: 0px; border: 1px solid #DFDFDF; height: 58px; vertical-align: middle; width: 58px;\">\n        <a target=\"_blank\" href=\"https:\/\/www.haodf.com\/doctor\/12387.html\"><img  alt=\"\" style=\"border:none;\" src=\"https:\/\/n1.hdfimg.com\/g2\/M03\/71\/DC\/yIYBAFw8OIyAQbw2AAAWC2_R7lQ743_58_58_1.png?1fa9\"><\/a>\n        <\/td>\n        <\/tr>\n        <\/tbody>\n        <\/table>\n        <\/div>\n        <div class=\"zxzx_doc_r\" style=\"white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 240px;\"><a href=\"https:\/\/www.haodf.com\/doctor\/12387.html\" class=\"blue2\" target=\"_blank\">\u97e9\u8fde\u4e66<\/a>\u4e3b\u4efb\u533b\u5e08          <br \/>\u4e0a\u6d77\u65b0\u534e\u533b\u9662\u513f\u7ae5\u5185\u5206\u6ccc\u9057\u4f20\u79d1<br \/>\n            <span class=\"gray\">\u4eca\u5929<\/span><\/div>\n    <\/div><!-- clearfix -->\n              <div class=\"clearfix\">\n        <div class=\"zxzx_doc_l\">\n        <table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n        <tbody>\n        <tr>\n        <td valign=\"middle\" align=\"center\" style=\"padding: 0px; border: 1px solid #DFDFDF; height: 58px; vertical-align: middle; width: 58px;\">\n        <a target=\"_blank\" href=\"https:\/\/www.haodf.com\/doctor\/176598.html\"><img  alt=\"\" style=\"border:none;\" src=\"https:\/\/n1.hdfimg.com\/g10\/M09\/D9\/6A\/vIYBAFsbuuiAPhv1AAUuMjF0QTo000_58_58_1.jpg?855d\"><\/a>\n        <\/td>\n        <\/tr>\n        <\/tbody>\n        <\/table>\n        <\/div>\n        <div class=\"zxzx_doc_r\" style=\"white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 240px;\"><a href=\"https:\/\/www.haodf.com\/doctor\/176598.html\" class=\"blue2\" target=\"_blank\">\u51af\u51e4\u829d<\/a>\u4e3b\u4efb\u533b\u5e08          <br \/>\u5317\u4eac\u534f\u548c\u533b\u9662\u5987\u79d1\u80bf\u7624\u4e2d\u5fc3<br \/>\n            <span class=\"gray\">\u4eca\u5929<\/span><\/div>\n    <\/div><!-- clearfix -->\n              <div class=\"clearfix\">\n        <div class=\"zxzx_doc_l\">\n        <table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n        <tbody>\n        <tr>\n        <td valign=\"middle\" align=\"center\" style=\"padding: 0px; border: 1px solid #DFDFDF; height: 58px; vertical-align: middle; width: 58px;\">\n        <a target=\"_blank\" href=\"https:\/\/www.haodf.com\/doctor\/150853.html\"><img  alt=\"\" style=\"border:none;\" src=\"https:\/\/n2.hdfimg.com\/g10\/M09\/BB\/42\/vIYBAFsG0LqAILxoADE9Ac2qbDg185_58_58_1.jpg?0301\"><\/a>\n        <\/td>\n        <\/tr>\n        <\/tbody>\n        <\/table>\n        <\/div>\n        <div class=\"zxzx_doc_r\" style=\"white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 240px;\"><a href=\"https:\/\/www.haodf.com\/doctor\/150853.html\" class=\"blue2\" target=\"_blank\">\u8d75\u632f\u6d77<\/a>\u4e3b\u4efb\u533b\u5e08          <br \/>\u4e1c\u76f4\u95e8\u533b\u9662\u5fc3\u7406\u95e8\u8bca<br \/>\n            <span class=\"gray\">\u4eca\u5929<\/span><\/div>\n    <\/div><!-- clearfix -->\n              <div class=\"clearfix\">\n        <div class=\"zxzx_doc_l\">\n        <table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n        <tbody>\n        <tr>\n        <td valign=\"middle\" align=\"center\" style=\"padding: 0px; border: 1px solid #DFDFDF; height: 58px; vertical-align: middle; width: 58px;\">\n        <a target=\"_blank\" href=\"https:\/\/www.haodf.com\/doctor\/263016.html\"><img  alt=\"\" style=\"border:none;\" src=\"https:\/\/n4.hdfimg.com\/g4\/M00\/17\/C0\/qoYBAFIlv7uAAFAiAAAUR9jfPso399_58_58_1.jpg?c917\"><\/a>\n        <\/td>\n        <\/tr>\n        <\/tbody>\n        <\/table>\n        <\/div>\n        <div class=\"zxzx_doc_r\" style=\"white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 240px;\"><a href=\"https:\/\/www.haodf.com\/doctor\/263016.html\" class=\"blue2\" target=\"_blank\">\u6768\u5fd7\u4ed9<\/a>          <br \/>\u5317\u4eac\u5927\u5b66\u4eba\u6c11\u533b\u9662\u513f\u79d1(\u795e\u7ecf\u4e13\u4e1a\u7ec4)<br \/>\n            <span class=\"gray\">\u4eca\u5929<\/span><\/div>\n    <\/div><!-- clearfix -->\n              <div class=\"clearfix\">\n        <div class=\"zxzx_doc_l\">\n        <table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n        <tbody>\n        <tr>\n        <td valign=\"middle\" align=\"center\" style=\"padding: 0px; border: 1px solid #DFDFDF; height: 58px; vertical-align: middle; width: 58px;\">\n        <a target=\"_blank\" href=\"https:\/\/www.haodf.com\/doctor\/191840.html\"><img  alt=\"\" style=\"border:none;\" src=\"https:\/\/n3.hdfimg.com\/g4\/M00\/18\/75\/qoYBAFImrTSAattgAAASRJ-lItU50_58_58_1.jpeg?5241\"><\/a>\n        <\/td>\n        <\/tr>\n        <\/tbody>\n        <\/table>\n        <\/div>\n        <div class=\"zxzx_doc_r\" style=\"white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 240px;\"><a href=\"https:\/\/www.haodf.com\/doctor\/191840.html\" class=\"blue2\" target=\"_blank\">\u803f\u7ea2\u5168<\/a>\u4e3b\u4efb\u533b\u5e08          <br \/>\u590d\u65e6\u5927\u5b66\u9644\u5c5e\u513f\u79d1\u533b\u9662\u6ccc\u5c3f\u5916\u79d1<br \/>\n            <span class=\"gray\">\u4eca\u5929<\/span><\/div>\n    <\/div><!-- clearfix -->\n              <div class=\"clearfix\">\n        <div class=\"zxzx_doc_l\">\n        <table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n        <tbody>\n        <tr>\n        <td valign=\"middle\" align=\"center\" style=\"padding: 0px; border: 1px solid #DFDFDF; height: 58px; vertical-align: middle; width: 58px;\">\n        <a target=\"_blank\" href=\"https:\/\/www.haodf.com\/doctor\/2774.html\"><img  alt=\"\" style=\"border:none;\" src=\"https:\/\/n4.hdfimg.com\/g4\/M00\/17\/B9\/qoYBAFIlv0SAc2BVAABX4Er2z5k624_58_58_1.jpg?464d\"><\/a>\n        <\/td>\n        <\/tr>\n        <\/tbody>\n        <\/table>\n        <\/div>\n        <div class=\"zxzx_doc_r\" style=\"white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 240px;\"><a href=\"https:\/\/www.haodf.com\/doctor\/2774.html\" class=\"blue2\" target=\"_blank\">\u6f58\u51cc\u4e9a<\/a>\u4e3b\u4efb\u533b\u5e08          <br \/>\u5317\u4eac\u534f\u548c\u533b\u9662\u5987\u79d1\u80bf\u7624\u4e2d\u5fc3<br \/>\n            <span class=\"gray\">\u4eca\u5929<\/span><\/div>\n    <\/div><!-- clearfix -->\n                <\/div><!-- onLineDoctor-inner -->\n    <\/div>\n    <\/li>\n    <div class=\"clear\"><\/div>\n <\/ul>\n\n\n<!-- add \u6700\u65b0\u7535\u8bdd\u54a8\u8be2\u8ba2\u5355\u5217\u8868 -->\n<!--<div style=\"clear: both;\" class=\"m_title\"><div class=\"m_title_bg\"><span class=\"m_title_tit\">\u7535\u8bdd\u95ee\u8bca<\/span><\/div><\/div>-->\n<!--<div class=\"J_tab\">-->\n<!--<div class=\"menu J_menu\">-->\n<!--        <a class=\"--><!--\" id=\"dh_--><!--\"-->\n<!--            target=\"_blank\" href=\"\/\/--><!--400.haodf.com\/index\/search?facultyname=--><!--\" >--><!--<\/a>-->\n<!--<\/div>-->\n<!---->\n<!--<div class=\"menu_con2 J_content\">-->\n<!---->\n<!--<div style=\"display: --><!--\">-->\n<!--<ul class=\"homeTelUl\">-->\n<!--      <span class=\"homeTelLi_span0\">-->\n<!--         <table>-->\n<!--           <tbody><tr><td>-->\n<!--                   --><!--           <a href=\"--><!--\" rel=\"nofollow\"><img alt=\"\" src=\"--><!--\" ><\/a>-->\n<!--           <\/td><\/tr>-->\n<!--         <\/tbody><\/table>-->\n<!--      <\/span>-->\n<!--      <span class=\"homeTelLi_span1\">-->\n<!--        <p>-->\n<!--            <a class=\"blue2\" href=\"--><!--\">--><!--<\/a>-->\n<!--            --><!--        <\/p>-->\n<!--        <p>--><!--<\/p>-->\n<!--        <p>--><!--<\/p>-->\n<!--      <\/span>-->\n<!--      <span class=\"homeTelLi_span1\">-->\n<!--        <p>-->\n<!--        <a href=\"--><!--\">-->\n<!--            --><!--            <\/a>-->\n<!--        <\/p>-->\n<!--            <p>\u6700\u8fd1\u901a\u8bdd\uff1a--><!--<\/p>-->\n<!--        <p><a href=\"\/\/www.--><!--haodf.com\/doctor\/--><!--.html#successAnswer\" target=\"_blank\" class=\"blue\" rel=\"nofollow\">\u67e5\u770b\u6700\u65b0\u7528\u6237\u5206\u4eab >><\/a><\/p>-->\n<!--      <\/span>-->\n<!--      <span class=\"homeTelLi_span3\">-->\n<!--        --><!--                <span class='mr5'>--><!--<\/span>-->\n<!--        --><!--      <\/span>-->\n<!---->\n<!--      <span class=\"homeTelLi_span4\">-->\n<!--        <a class=\"orange3\" href=\"\/\/www.--><!--haodf.com\/doctor\/--><!--\/fuwu-wenzhen.html\" rel=\"nofollow\">\u7acb\u523b\u9884\u7ea6<\/a>-->\n<!--      <\/span>-->\n<!--    <\/li>-->\n<!--<\/ul>-->\n<!--<div class=\"zx_more\"><span class=\"mt10 f_rt\">-->\n<!--<a target=\"_blank\" class=\"blue2\" href=\"\/\/--><!--400.haodf.com\/index\/search?facultyname=--><!--\" id=\"phone_doctor_list\">\u67e5\u770b\u5168\u90e8\u5927\u592b&gt;&gt;<\/a><\/span>-->\n<!--\u7535\u8bdd\u95ee\u8bca\u4ec5\u63d0\u4f9b\u5efa\u8bae\uff0c\u4e0d\u80fd\u8bca\u65ad\u3001\u5904\u65b9\u3001\u6cbb\u7597\u3002<br \/>-->\n<!--<span class=\"orange3\">100%<\/span>\u4e13\u5bb6\u672c\u4eba\u63a5\u542c\uff0c<span class=\"orange3\">90%<\/span>\u5f53\u5929\u901a\u8bdd\uff0c\u6ee1\u610f\u5ea6\u9ad8\u8fbe<span class=\"orange3\">99%\uff01<\/span>-->\n<!--<\/div>-->\n<!--<\/div>-->\n<!---->\n<!--<\/div>-->\n<!--<\/div>-->\n\n\n<!-- \u9996\u9875\u7f51\u7edc\u54a8\u8be2\u6a21\u5757 --!>\n<!-- add -->\n<div style=\"clear: both;\" class=\"m_title\"><div class=\"m_title_bg\"><span class=\"m_title_tit\">\u5728\u7ebf\u95ee\u8bca<\/span><\/div><\/div>\n<!-- add end-->\n<div class=\"J_tab\">\n<div class=\"menu_con2 J_content\">\n<div id=\"zxcon_0\" style=\"display:block;\">\n<ul>\n    <li class=\"zx_bg1\">\n    <span class=\"gray f_rt\">\n         <a href='\/\/www.haodf.com\/hospital\/33\/keshi\/607605885.html'>\u9996\u90fd\u533b\u79d1\u5927\u5b66\u9644\u5c5e\u590d\u5174\u533b\u9662\u5bab\u8154\u955c\u8bca\u6cbb\u4e2d\u5fc3<\/a>\n     <a href='https:\/\/www.haodf.com\/doctor\/6906049446.html'> \u5468\u5de7\u4e91<\/a> \u56de\u590d<\/span>\n    <a href=\"https:\/\/www.haodf.com\/bingcheng\/8909399468.html\" target=\"_blank\">2\u5e74\u5185\u6708\u7ecf\u91cf\u8fc7\u5927\u5bfc\u81f4\u8d2b\u8840\u6709\u7532\u51cf\u5df2\u5403\u836f...<\/a>\n    <\/li>\n<\/ul>\n<\/div>\n<div id=\"zxcon_1\" style=\"display:block;\">\n<ul>\n    <li class=\"zx_bg2\">\n    <span class=\"gray f_rt\">\n         <a href='\/\/www.haodf.com\/hospital\/424\/keshi\/1309.html'>\u4e0a\u6d77\u4ea4\u901a\u5927\u5b66\u533b\u5b66\u9662\u9644\u5c5e\u745e\u91d1\u533b\u9662\u70e7\u4f24\u6574\u5f62\u79d1<\/a>\n     <a href='https:\/\/www.haodf.com\/doctor\/4381490594.html'> \u9ec4\u6653\u7434<\/a> \u56de\u590d<\/span>\n    <a href=\"https:\/\/www.haodf.com\/bingcheng\/8909399453.html\" target=\"_blank\">\u70eb\u4f24\u540e\u75a4\u75d5\u589e\u751f\uff0c\u665a\u4e0a\u7619\u75d2\u5389\u5bb3\uff0c\u96be\u4ee5\u5165...<\/a>\n    <\/li>\n<\/ul>\n<\/div>\n<div id=\"zxcon_2\" style=\"display:block;\">\n<ul>\n    <li class=\"zx_bg1\">\n    <span class=\"gray f_rt\">\n         <a href='\/\/www.haodf.com\/hospital\/430\/keshi\/15643.html'>\u4e0a\u6d77\u5e02\u7b2c\u4e00\u5987\u5a74\u4fdd\u5065\u9662\u8f85\u52a9\u751f\u6b96\u533b\u5b66\u79d1<\/a>\n     <a href='https:\/\/www.haodf.com\/doctor\/2163423589.html'> \u6c60\u4e30\u4e3d<\/a> \u56de\u590d<\/span>\n    <a href=\"https:\/\/www.haodf.com\/bingcheng\/8909399390.html\" target=\"_blank\">\u6000\u5b55\u4e0d\u60f3\u8981\u4e86 \u521a\u505a\u7684\u4eba\u5de5\u6388\u7cbe\u4e0d\u60f3\u8981\u4e86...<\/a>\n    <\/li>\n<\/ul>\n<\/div>\n<div id=\"zxcon_3\" style=\"display:block;\">\n<ul>\n    <li class=\"zx_bg2\">\n    <span class=\"gray f_rt\">\n         <a href='\/\/www.haodf.com\/hospital\/142\/keshi\/8067.html'>\u5317\u4eac\u5927\u5b66\u7b2c\u4e09\u533b\u9662\u666e\u901a\u5916\u79d1<\/a>\n     <a href='https:\/\/www.haodf.com\/doctor\/9031966329.html'> \u5b8b\u806a\u777f<\/a> \u56de\u590d<\/span>\n    <a href=\"https:\/\/www.haodf.com\/bingcheng\/8909399389.html\" target=\"_blank\">\u7532\u72b6\u817a\u5f25\u6f2b\u6027\u75c5\u53d8\uff0c\u7532\u72b6\u817a\u5de6\u9875\u7ed3\u8282\uff08\u591a...<\/a>\n    <\/li>\n<\/ul>\n<\/div>\n<div id=\"zxcon_4\" style=\"display:block;\">\n<ul>\n    <li class=\"zx_bg1\">\n    <span class=\"gray f_rt\">\n         <a href='\/\/www.haodf.com\/hospital\/897\/keshi\/20356.html'>\u6d4e\u5357\u5e02\u4e2d\u5fc3\u533b\u9662\u76ae\u80a4\u79d1<\/a>\n     <a href='https:\/\/www.haodf.com\/doctor\/1579588316.html'> \u5e84\u4e50<\/a> \u56de\u590d<\/span>\n    <a href=\"https:\/\/www.haodf.com\/bingcheng\/8909399375.html\" target=\"_blank\">\u73ab\u7470\u75e4\u75ae\uff0c\u80fd\u5f00\u5948\u5fc5\u6d1b\u5c14\u8fd9\u4e2a\u836f\u5417 \u65e9\u671f...<\/a>\n    <\/li>\n<\/ul>\n<\/div>\n<div id=\"zxcon_5\" style=\"display:block;\">\n<ul>\n    <li class=\"zx_bg2\">\n    <span class=\"gray f_rt\">\n         <a href='\/\/www.haodf.com\/hospital\/487\/keshi\/5897.html'>\u5929\u6d25\u533b\u79d1\u5927\u5b66\u603b\u533b\u9662\u6ccc\u5c3f\u5916\u79d1<\/a>\n     <a href='https:\/\/www.haodf.com\/doctor\/1188414816.html'> \u6c64\u5764\u9f99<\/a> \u56de\u590d<\/span>\n    <a href=\"https:\/\/www.haodf.com\/bingcheng\/8909399372.html\" target=\"_blank\">\u5c3f\u8def\u4e0d\u9002 \u5c31\u662f\u6700\u540e\u4e00\u4e2a\u95ee\u9898\u6ca1\u95ee\u5b8c\u5927\u592b...<\/a>\n    <\/li>\n<\/ul>\n<\/div>\n<div id=\"zxcon_6\" style=\"display:block;\">\n<ul>\n    <li class=\"zx_bg1\">\n    <span class=\"gray f_rt\">\n         <a href='\/\/www.haodf.com\/hospital\/6972159809\/keshi\/6972015883.html'>\u798f\u5efa\u7701\u513f\u7ae5\u533b\u9662\u80be\u810f\/\u98ce\u6e7f\u514d\u75ab\u79d1<\/a>\n     <a href='https:\/\/www.haodf.com\/doctor\/87264.html'> \u4f59\u81ea\u534e<\/a> \u56de\u590d<\/span>\n    <a href=\"https:\/\/www.haodf.com\/bingcheng\/8909399356.html\" target=\"_blank\">\u80be\u75c5\u7efc\u5408\u5f81\u590d\u8bca 2\u5468\u7684\u5c3f\u5e38\u89c4\u68c0\u67e5\uff0c\u76ee\u524d...<\/a>\n    <\/li>\n<\/ul>\n<\/div>\n<div id=\"zxcon_7\" style=\"display:block;\">\n<ul>\n    <li class=\"zx_bg2\">\n    <span class=\"gray f_rt\">\n         <a href='\/\/www.haodf.com\/hospital\/6972279831\/keshi\/6972140094.html'>\u4e0a\u6d77\u5e02\u7b2c\u4e00\u4eba\u6c11\u533b\u9662\uff08\u5357\u90e8\uff09\u5987\u79d1<\/a>\n     <a href='https:\/\/www.haodf.com\/doctor\/6964379973.html'> \u9773\u6210\u5a1f<\/a> \u56de\u590d<\/span>\n    <a href=\"https:\/\/www.haodf.com\/bingcheng\/8909399337.html\" target=\"_blank\">\u82ac\u5417\u901a\u662f\u5426\u53ef\u4ee5\u548c\u7d27\u6025\u907f\u5b55\u836f\u4e00\u8d77\u5403\uff1f ...<\/a>\n    <\/li>\n<\/ul>\n<\/div>\n<div id=\"zxcon_8\" style=\"display:block;\">\n<ul>\n    <li class=\"zx_bg1\">\n    <span class=\"gray f_rt\">\n         <a href='\/\/www.haodf.com\/hospital\/429\/keshi\/42620.html'>\u4e0a\u6d77\u5e02\u7b2c\u5341\u4eba\u6c11\u533b\u9662\u513f\u79d1<\/a>\n     <a href='https:\/\/www.haodf.com\/doctor\/5640107554.html'> \u9648\u4e39<\/a> \u56de\u590d<\/span>\n    <a href=\"https:\/\/www.haodf.com\/bingcheng\/8909399331.html\" target=\"_blank\">\u80c3\u98df\u7ba1\u53cd\u6d41\u6216\u6d88\u5316\u4e0d\u826f\u8fd9\u79cd\u662f\u53cd\u6d41\u7684\u60c5\u51b5...<\/a>\n    <\/li>\n<\/ul>\n<\/div>\n<div id=\"zxcon_9\" style=\"display:block;\">\n<ul>\n    <li class=\"zx_bg2\">\n    <span class=\"gray f_rt\">\n         <a href='\/\/www.haodf.com\/hospital\/471\/keshi\/6972121164.html'>\u4e0a\u6d77\u4ea4\u901a\u5927\u5b66\u533b\u5b66\u9662\u9644\u5c5e\u4ec1\u6d4e\u533b\u9662\uff08\u4e1c\u9662\uff09\u5168\u79d1\u533b\u5b66\u79d1<\/a>\n     <a href='https:\/\/www.haodf.com\/doctor\/1527372535.html'> \u5434\u674e\u5a1c<\/a> \u56de\u590d<\/span>\n    <a href=\"https:\/\/www.haodf.com\/bingcheng\/8909399322.html\" target=\"_blank\">\u5de6\u4fa7\u653e\u5c04\u51a0\u5c0f\u52a8\u8109\u95ed\u585e\u6027\u8111\u6897\u585e\u7ed9\u51fa\u6cbb\u7597...<\/a>\n    <\/li>\n<\/ul>\n<\/div>\n<\/div>\n<div class=\"zx_more\">\n    <span class=\"f_rt\">\n        <a href=\"\/\/www.haodf.com\/bingcheng\/list.html\" class=\"blue2\" target=\"_blank\">\u67e5\u770b\u5168\u90e8\u95ee\u8bca>><\/a>\n    <\/span>\n<\/div>\n<\/div>\n<\/div>\n<!--\u7535\u5b50\u5904\u65b9start-->\n<!--\u79fb\u52a8\u5230\u7f51\u7edc\u54a8\u8be2\u4e0b\u9762-->\n<div id=\"dianzichufang\">\n    <div class=\"e-prescription\" style=\"margin-bottom: 20px;\">\n        <div class=\"dzcf-tit clearfix\" style=\"z-index: 999\">\n            <div class=\"dzcf-tit-left\">\n                <img class=\"left-img\" src=\"\/\/i2.hdfimg.com\/pcdynamic\/img\/dynamic-tit-left.png\">\n                <span class=\"dzcf-tit-left-txt um-title-bold\">\u5904\u65b9\u5efa\u8bae<\/span>\n                <img class=\"dzcf-tit-left-arrow\" style=\"left: 50%; margin-left: -5px;\" src=\"\/\/i2.hdfimg.com\/pcdynamic\/img\/dynamic-arrow-down.png\">\n            <\/div>\n            <div class=\"dzcf-tit-right\" style=\"width: 519px;\">\n\n            <\/div>\n        <\/div>\n        <div class=\"border\">\n            <div class=\"e-prescription-p\">\n                <ul class=\"consultation-ul clearfix js-e-prescription-ul\">\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909382831.html\">\n                            <p>\u4e0a\u6d77\u5e02\u7b2c\u4e8c\u4eba\u6c11\u533b\u9662 \u6574\u5f62\u5916\u79d1 \u5f20\u9896\u533b\u751f\u7ed9\u60a3\u8005\u9648**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u521a<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909382831.html\">\n                            <p>\u4e0a\u6d77\u5e02\u7b2c\u4e8c\u4eba\u6c11\u533b\u9662 \u6574\u5f62\u5916\u79d1 \u5f20\u9896\u533b\u751f\u7ed9\u60a3\u8005\u9648**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909385788.html\">\n                            <p>\u4e2d\u56fd\u533b\u79d1\u5927\u5b66\u9644\u5c5e\u76db\u4eac\u533b\u9662 \u7537\u79d1 \u66f9\u5fd7\u5f3a\u533b\u751f\u7ed9\u60a3\u8005\u674e**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8885624375.html\">\n                            <p>\u5e7f\u5dde\u533b\u79d1\u5927\u5b66\u9644\u5c5e\u5e02\u516b\u533b\u9662 \u611f\u67d3\u75c5\u4e2d\u5fc3 \u5218\u6ce2\u533b\u751f\u7ed9\u60a3\u8005\u949f**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909399682.html\">\n                            <p>\u6df1\u5733\u5e02\u513f\u7ae5\u533b\u9662 \u4ecb\u5165\u79d1 \u5468\u6d0b\u6d0b\u533b\u751f\u7ed9\u60a3\u8005\u5b59**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909399635.html\">\n                            <p>\u5c71\u4e1c\u5927\u5b66\u9f50\u9c81\u533b\u9662 \u809d\u75c5\u79d1 \u8303\u6653\u9e4f\u533b\u751f\u7ed9\u60a3\u8005\u5218**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909399660.html\">\n                            <p>\u4e0a\u6d77\u5e02\u7b2c\u4e00\u4eba\u6c11\u533b\u9662\uff08\u5317\u90e8\uff09 \u7537\u79d1 \u7530\u6c5d\u8f89\u533b\u751f\u7ed9\u60a3\u8005\u5218**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909362778.html\">\n                            <p>\u4e0a\u6d77\u5e02\u95f5\u884c\u533a\u4e2d\u5fc3\u533b\u9662 \u76ae\u80a4\u79d1 \u674e\u5e73\u536b\u533b\u751f\u7ed9\u60a3\u8005\u5b59**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909399269.html\">\n                            <p>\u5317\u4eac\u5927\u5b66\u9996\u94a2\u533b\u9662 \u80c3\u80a0\u5916\u79d1 \u674e\u660c\u9f99\u533b\u751f\u7ed9\u60a3\u8005\u8463**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909399463.html\">\n                            <p>\u9996\u90fd\u533b\u79d1\u5927\u5b66\u9644\u5c5e\u9996\u90fd\u513f\u7ae5\u533b\u5b66\u4e2d\u5fc3 \u76ae\u80a4\u79d1 \u848b\u4e3d\u6f47\u533b\u751f\u7ed9\u60a3\u8005\u59da**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909399097.html\">\n                            <p>\u5317\u4eac\u5927\u5b66\u9996\u94a2\u533b\u9662 \u80c3\u80a0\u5916\u79d1 \u674e\u660c\u9f99\u533b\u751f\u7ed9\u60a3\u8005\u674e**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909399568.html\">\n                            <p>\u56db\u5ddd\u5927\u5b66\u534e\u897f\u533b\u9662 \u5fc3\u7406\u536b\u751f\u4e2d\u5fc3 \u5b59\u5143\u950b\u533b\u751f\u7ed9\u60a3\u8005\u6768**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909392940.html\">\n                            <p>\u4e2d\u56fd\u533b\u5b66\u79d1\u5b66\u9662\u76ae\u80a4\u75c5\u533b\u9662 \u76ae\u80a4\u79d1 \u9f50\u6dd1\u8d1e\u533b\u751f\u7ed9\u60a3\u8005\u738b**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8908808312.html\">\n                            <p>\u5b81\u6ce2\u5927\u5b66\u9644\u5c5e\u7b2c\u4e00\u533b\u9662 \u751f\u6b96\u7537\u79d1 \u9648\u6d9b\u4f1f\u533b\u751f\u7ed9\u60a3\u8005\u7a0b**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8907523546.html\">\n                            <p>\u897f\u4eac\u533b\u9662 \u76ae\u80a4\u79d1 \u5f20\u6d77\u9f99\u533b\u751f\u7ed9\u60a3\u8005\u6f58**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909216719.html\">\n                            <p>\u590d\u65e6\u5927\u5b66\u9644\u5c5e\u534e\u5c71\u533b\u9662 \u6ccc\u5c3f\u5916\u79d1 \u5f20\u654f\u5149\u533b\u751f\u7ed9\u60a3\u8005\u90d1**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909392313.html\">\n                            <p>\u4e2d\u56fd\u533b\u5b66\u79d1\u5b66\u9662\u76ae\u80a4\u75c5\u533b\u9662 \u76ae\u80a4\u79d1 \u9f50\u6dd1\u8d1e\u533b\u751f\u7ed9\u60a3\u8005N**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909398414.html\">\n                            <p>\u4e0a\u6d77\u5e02\u7b2c\u4e00\u5987\u5a74\u4fdd\u5065\u9662 \u7537\u6027\u79d1 \u6768\u9633\u533b\u751f\u7ed9\u60a3\u8005\u6f58**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                        <li class=\"consultation-li\">\n                        <a class=\"consultation-a js-color-148cfa\" href=\"https:\/\/www.haodf.com\/bingcheng\/8909396852.html\">\n                            <p>\u4e91\u5357\u5927\u5b66\u9644\u5c5e\u533b\u9662 \u4e34\u5e8a\u5fc3\u7406\u79d1 \u674e\u57f9\u51ef\u533b\u751f\u7ed9\u60a3\u8005\u674e**\u5f00\u5177\u4e86\u5904\u65b9\u5efa\u8bae<\/p>\n                                                        <span class=\"consultation-time\">\u521a\u624d<\/span>\n                        <\/a>\n                    <\/li>\n                                    <\/ul>\n            <\/div>\n        <\/div>\n    <\/div>\n<\/div>\n<!--\u7535\u5b50\u5904\u65b9end-->\n\n","cssList":[],"jsList":[]});</script>
+
+<script type="text/javascript">BigPipe.onPageletArrive({"id":"middle_sidebar","content":"","cssList":[],"jsList":[]});</script>
+
+<script type="text/javascript">BigPipe.onPageletArrive({"id":"bottom_sidebar","content":"<!--\u597d\u5927\u592b\u52a8\u6001-->\n<div class=\"center_r_bar\">\n<div class=\"um-rcol-tit\">\n        <span class=\"um-rcol-tit-lt um-title-bold\">\n            \u597d\u5927\u592b\u52a8\u6001\n        <\/span>\n<\/div>\n<div class=\"r_bar_jj\"><\/div>\n\n<div class=\"r_bar_doc3\" >\n<div class=\"r_bar_doc3_l\">\n<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n<tbody>\n<tr>\n<td valign=\"middle\" align=\"center\" style=\"padding: 0px; border: 1px solid #DFDFDF; height: 31px; vertical-align: middle; width: 31px;\">\n<a target=\"_blank\" href=\"https:\/\/www.haodf.com\/doctor\/46360.html\"><img alt=\"\" style=\"border:none;\" src=\"https:\/\/n4.hdfimg.com\/g11\/M06\/89\/A1\/1IYBAGHWNgGABfQxAATwaRJt8Xc607_31_31_1.jpg?d071\"><\/a>\n<\/td>\n<\/tr>\n<\/tbody>\n<\/table>\n<\/div>\n<div class=\"r_bar_doc3_c\"><span style=\"float:right;\">8\u5206\u949f\u524d<\/span><a href=\"https:\/\/www.haodf.com\/doctor\/46360.html\" class=\"blue2\" target=\"_blank\">\u9648\u971e<\/a>\n\u4e3b\u4efb\u533b\u5e08<br \/>\n\u5929\u6d25\u5e02\u773c\u79d1\u533b\u9662 \n\u60a3\u8005\u88ab\u52a0\u5165\u4e86\u9ed8\u8ba4\u60a3\u53cb\u4f1a <br \/>\n<\/div>\n<div class=\"clear\"><\/div>\n<\/div>\n<div class=\"r_bar_doc3\" >\n<div class=\"r_bar_doc3_l\">\n<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n<tbody>\n<tr>\n<td valign=\"middle\" align=\"center\" style=\"padding: 0px; border: 1px solid #DFDFDF; height: 31px; vertical-align: middle; width: 31px;\">\n<a target=\"_blank\" href=\"https:\/\/www.haodf.com\/doctor\/9032175206.html\"><img alt=\"\" style=\"border:none;\" src=\"https:\/\/n2.hdfimg.com\/g12\/M06\/31\/32\/2IYBAGNuXtqAEmyEAAhGo2BkmjQ811_31_31_1.png?6a6d\"><\/a>\n<\/td>\n<\/tr>\n<\/tbody>\n<\/table>\n<\/div>\n<div class=\"r_bar_doc3_c\"><span style=\"float:right;\">8\u5206\u949f\u524d<\/span><a href=\"https:\/\/www.haodf.com\/doctor\/9032175206.html\" class=\"blue2\" target=\"_blank\">\u6c6a\u4f73\u73ae<\/a>\n\u526f\u4e3b\u4efb\u533b\u5e08<br \/>\n\u94dc\u9675\u5e02\u7acb\u533b\u9662 \n\u60a3\u8005\u88ab\u52a0\u5165\u4e86\u9ed8\u8ba4\u60a3\u53cb\u4f1a <br \/>\n<\/div>\n<div class=\"clear\"><\/div>\n<\/div>\n<div class=\"r_bar_doc3\" style='border-bottom:0px'>\n<div class=\"r_bar_doc3_l\">\n<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n<tbody>\n<tr>\n<td valign=\"middle\" align=\"center\" style=\"padding: 0px; border: 1px solid #DFDFDF; height: 31px; vertical-align: middle; width: 31px;\">\n<a target=\"_blank\" href=\"https:\/\/www.haodf.com\/doctor\/10469.html\"><img alt=\"\" style=\"border:none;\" src=\"https:\/\/n3.hdfimg.com\/g1\/M04\/FF\/C0\/x4YBAF727sSANldOAAThrsu2GzE489_31_31_1.png?ca87\"><\/a>\n<\/td>\n<\/tr>\n<\/tbody>\n<\/table>\n<\/div>\n<div class=\"r_bar_doc3_c\"><span style=\"float:right;\">8\u5206\u949f\u524d<\/span><a href=\"https:\/\/www.haodf.com\/doctor\/10469.html\" class=\"blue2\" target=\"_blank\">\u5218\u671d\u6656<\/a>\n\u4e3b\u4efb\u533b\u5e08<br \/>\n\u5317\u4eac\u5987\u4ea7\u533b\u9662 \n\u60a3\u8005\u88ab\u52a0\u5165\u4e86\u9ed8\u8ba4\u60a3\u53cb\u4f1a <br \/>\n<\/div>\n<div class=\"clear\"><\/div>\n<\/div>\n\n<\/div>\n<!--\u597d\u5927\u592b\u52a8\u6001-->\n","cssList":[],"jsList":[]});</script>
+
+<script type="text/javascript">BigPipe.onPageletArrive({"id":"appointment","content":"<!--\u9884\u7ea6\u8f6c\u8bca-->\n <div class=\"um-tit um-tit-clearfix\">\n        <div class=\"um-tit-left\">\n            <a href=\"\/\/guahao.haodf.com\" target=\"_blank\">\n                <img class=\"um-tit-left-img\" src=\"\/\/i2.hdfimg.com\/pcdynamic\/img\/dynamic-tit-left.png\">\n                <span class=\"um-tit-left-txt um-title-bold\">\n                    \u52a0\u73ed\u95e8\u8bca \n                <\/span>\n                <img class=\"um-tit-left-arrow\" src=\"\/\/i2.hdfimg.com\/pcdynamic\/img\/dynamic-arrow-down.png\" >\n            <\/a>\n        <\/div>\n        <div class=\"um-rcol-tit-mid\">\n            \u75c5\u60c5\u7b26\u5408\u4e13\u5bb6\u672c\u4eba\u7684\u8981\u6c42\uff0c\u5373\u53ef\u83b7\u5f97\u95e8\u8bca\u673a\u4f1a\n        <\/div>\n    <\/div>\n<div class=\"l_m_main\">\n<div class=\"yyjh_l\">\n<div class=\"jh_tj\"><span class=\"f14\">\u53ef\u9884\u7ea6\u5168\u56fd\u4e13\u5bb6\uff1a<span class=\"orange3\">11,502<\/span>\u4f4d<br \/>\n\u5df2\u6210\u529f\u5c31\u8bca\u60a3\u8005\uff1a<span class=\"orange3\">4,605,169<\/span> \u4f4d<\/span><\/div>\n<div class=\"jh_yy\"><a href=\"\/\/guahao.haodf.com\/\" target=\"_blank\">\u7acb\u523b\u514d\u8d39\u9884\u7ea6!<\/a><\/div>\n<\/div>\n<div class=\"yyjh_r\">\n<ul>\n\n\t<li class=\"jh_bg1\"><span class=\"f_rt gray\">35\u5206\u949f\u524d<\/span>h***\u9884\u7ea6\u6210\u529f\n\t\u4e0a\u6d77\u7b2c\u4e5d\u4eba\u6c11\u533b\u9662\u53e3\u8154\u7b2c\u4e8c\u95e8\u8bca\u90e8\t<a class=\"blue\" target=\"_blank\"\thref=\"https:\/\/www.haodf.com\/doctor\/9032124663.html\">\u674e\u6653<\/a>\u5927\u592b<\/li>\n\n\t<li ><span class=\"f_rt gray\">34\u5206\u949f\u524d<\/span>h***\u9884\u7ea6\u6210\u529f\n\t\u5c71\u4e1c\u5927\u5b66\u9f50\u9c81\u533b\u9662\u809d\u75c5\u79d1\t<a class=\"blue\" target=\"_blank\"\thref=\"https:\/\/www.haodf.com\/doctor\/27064.html\">\u8303\u6653\u9e4f<\/a>\u5927\u592b<\/li>\n\n\t<li class=\"jh_bg1\"><span class=\"f_rt gray\">34\u5206\u949f\u524d<\/span>h***\u9884\u7ea6\u6210\u529f\n\t\u4e0a\u6d77\u513f\u7ae5\u533b\u5b66\u4e2d\u5fc3\u76ae\u80a4\u79d1\t<a class=\"blue\" target=\"_blank\"\thref=\"https:\/\/www.haodf.com\/doctor\/886965048.html\">\u9093\u4e39<\/a>\u5927\u592b<\/li>\n\n\t<li ><span class=\"f_rt gray\">32\u5206\u949f\u524d<\/span>n***\u9884\u7ea6\u6210\u529f\n\t\u5ba3\u6b66\u533b\u9662\u795e\u7ecf\u5185\u79d1\t<a class=\"blue\" target=\"_blank\"\thref=\"https:\/\/www.haodf.com\/doctor\/5504541424.html\">\u9648\u98de<\/a>\u5927\u592b<\/li>\n<\/ul>\n<\/div>\n<div class=\"clear\"><\/div>\n<!--20170710 -->\n<p style=\"text-align:right;margin-top: 5px;\">\n    <a style=\"color: #09c;\" href=\"\/\/guahao.haodf.com\">\u67e5\u770b\u5168\u90e8\u52a0\u73ed\u95e8\u8bca>><\/a>\n<\/p>\n<\/div>\n<!--\u9884\u7ea6\u8f6c\u8bca-->\n","cssList":[],"jsList":[]});</script>
+
+<script type="text/javascript">BigPipe.onPageletArrive({"id":"share","content":"<!--\u5206\u4eab\u7ecf\u9a8c-->\n<style>\n    .ths-main {\n            width: 608px;\n            border-top: none;\n            padding: 5px 10px;\n            overflow: hidden;\n            zoom: 1;\n        }\n        .ths-content {\n            background-color: #F4F7FD;\n            padding: 16px;\n            border-radius: 6px;\n            margin-bottom: 10px;\n        }\n        .container {\n            position: relative;\n            display: block;\n            font-size: 14px;\n            font-weight: 400;\n            color: #000000;\n            line-height: 22px;\n        }\n        \/*\u6587\u672c\u8d85\u51fa\u540e\u663e\u793a\u7684\u56fe\u6807*\/\n        .icon-1{\n            position: absolute;\n            right: 0;\n            bottom: 3px;\n            line-height: 16px;\n            width: 70px;\n            margin-left: 8px;\n            display: block;\n            font-size: 14px;\n            color: #055AD7;\n        }\n        \n        .text_58 {\n            color: #969696;\n        }\n        .icon-1::after {\n            content: '';\n            width: 7px;\n            height: 7px;\n            position: absolute;\n            right: 5px;\n            top: 4px;\n            bottom: auto;\n            -moz-transform:rotate(-45deg);\n            -ms-transform:rotate(-45deg);\n            -o-transform:rotate(-45deg);\n            transform:rotate(-45deg);\n            -webkit-transform:rotate(-45deg);\n            border-bottom: 1px solid #055ad7;\n            border-right: 1px solid #055ad7;\n        }\n        .text_61 {\n            font-size: 14px;\n            font-weight: 400;\n            color: #969696;\n        }\n        .ths-head {\n            width: 18px;\n            height: 18px;\n            margin-left: 10px;\n            margin-right: 6px;\n            border-radius: 11px;\n            vertical-align: sub;\n        }\n        .group_15 {\n            display: block;\n            padding-top: 8px;\n            position: relative;\n        }\n        .text_62 {\n            font-size: 14px;\n            font-weight: 400;\n            color: #055AD7;\n        }\n        .text_63 {\n            position: absolute;\n            right: 0;\n            bottom: 0;\n            font-size: 12px;\n            font-weight: 400;\n            color: #969696;\n        }\n        .pingjia-wrapper {\n            text-align: center;\n        }\n        .text-wrapper_27 {\n\t    cursor: pointer;\n            display: inline-block;\n            margin-top: 10px;\n            background-color: #055AD7;\n            padding: 7px 40px;\n            font-size: 16px;\n            font-weight: 400;\n            color: #FFFFFF;\n            line-height: 22px;\n            border-radius: 6px;\n        }\n        .ths-main a:hover {\n            text-decoration: none;\n            color: #000;\n        }\n\t.dp-float {\n\t    z-index: 1001;\n\t}\n\t.dpwrap {\n\t    z-index: 1000;\n\t}\n<\/style>\n <div class=\"um-tit um-tit-clearfix\">\n        <div class=\"um-tit-left\">\n            <a target=\"_blank\">\n                <img class=\"um-tit-left-img\" src=\"\/\/i2.hdfimg.com\/pcdynamic\/img\/dynamic-tit-left.png\">\n                <span class=\"um-tit-left-txt um-title-bold\">\u5206\u4eab\u7ecf\u9a8c<\/span>\n                <img class=\"um-tit-left-arrow\" src=\"\/\/i2.hdfimg.com\/pcdynamic\/img\/dynamic-arrow-down.png\" >\n            <\/a>\n        <\/div>\n        <div class=\"um-rcol-tit-mid\">\n            \u628a\u611f\u8c22\u9001\u7ed9\u5927\u592b\uff0c\u628a\u7ecf\u9a8c\u7559\u7ed9\u60a3\u53cb\uff01\u5df2\u6709 <span style=\"color: #f60;\">6,573,146<\/span> \u7bc7\u7ecf\u9a8c\n        <\/div>\n    <\/div>\n<div class=\"l_m_main\">\n<div class=\"ths-main\">\n            <div class=\"ths-content\">\n            <a class=\"container\" href=\"https:\/\/www.haodf.com\/doctor\/572479206\/pingjia-zhenliao\/8278273606.html\">\n                    <span class=\"text_59\"><span class=\"text_58\">[\u60a3\u8005]<\/span>&nbsp;<span class = \"contentCls\">\u75c5\u60c5\u63cf\u8ff0:\n\u9f3b\u8154\u91cc\u6709\u80bf\u7269\n\u770b\u75c5\u8fc7\u7a0b:\n\u533b\u751f\u62a4\u58eb\u4eec\u6001\u5ea6\u90fd\u975e\u5e38\u597d\u3002\u770b\u75c5\u8fc7\u7a0b\u5f88\u987a\u5229\u3002\n\u5eb7\u590d\u60c5\u51b5:\n\u76ee\u524d\u6062\u590d\u7684\u5f88\u597d\uff0c\u6ca1\u6709\u4e0d\u9002\u611f\u3002<\/span><\/span>\n                    <span class=\"icon-1\">\u67e5\u770b\u8be6\u60c5<\/span>\n            <\/a>\n            <a class=\"group_15\" href=\"https:\/\/www.haodf.com\/doctor\/572479206.html\">\n                <span class=\"text_61\">\u5c31\u8bca\u533b\u751f<\/span>\n                <img class=\"ths-head\" src=\"https:\/\/n1.hdfimg.com\/g5\/M05\/BC\/2D\/zoYBAGBkfdKAMXRlAAOD8JYUC6c724_200_200_1.jpg?6c23\"\/>\n                <span class=\"text_62\">\u9648\u6653\u680b&nbsp;\u897f\u4eac\u533b\u9662<\/span>\n                <span class=\"text_63\">2025-06-15 18:02:21<\/span>\n            <\/a>\n        <\/div>\n            <div class=\"ths-content\">\n            <a class=\"container\" href=\"https:\/\/www.haodf.com\/doctor\/6964374541\/pingjia-zhenliao\/8278273666.html\">\n                    <span class=\"text_59\"><span class=\"text_58\">[\u60a3\u8005]<\/span>&nbsp;<span class = \"contentCls\">\u75c5\u60c5\u63cf\u8ff0:\n\u5168\u8eab\u75d2\n\u770b\u75c5\u8fc7\u7a0b:\n\u9093\u533b\u751f\u975e\u5e38\u6709\u8010\u5fc3\u7684\u8be2\u95ee\u4e86\u5b69\u5b50\u7684\u75c5\u60c5\uff0c\u56e0\u4e3a\u5b69\u5b50\u5168\u8eab\u75d2\uff0c\u8d77\u4e86\u5f88\u591a\u76ae\u75b9\uff0c\u9093\u533b\u751f\u8be6\u7ec6\u95ee\u4e86\u5b69\u5b50\u7528\u836f\uff0c\u996e\u98df\uff0c\u7761\u7720\uff0c\u5c45\u4f4f\u73af...<\/span><\/span>\n                    <span class=\"icon-1\">\u67e5\u770b\u8be6\u60c5<\/span>\n            <\/a>\n            <a class=\"group_15\" href=\"https:\/\/www.haodf.com\/doctor\/6964374541.html\">\n                <span class=\"text_61\">\u5c31\u8bca\u533b\u751f<\/span>\n                <img class=\"ths-head\" src=\"https:\/\/n1.hdfimg.com\/g12\/M05\/27\/21\/2YYBAGJ00uqAUIi5AAIDM1uQEzE996_200_200_1.jpg?bdf7\"\/>\n                <span class=\"text_62\">\u9093\u7ef4&nbsp;\u9996\u90fd\u533b\u79d1\u5927\u5b66\u9644\u5c5e\u9996\u90fd\u513f\u7ae5\u533b\u5b66\u4e2d\u5fc3<\/span>\n                <span class=\"text_63\">2025-06-15 18:21:07<\/span>\n            <\/a>\n        <\/div>\n            <div class=\"ths-content\">\n            <a class=\"container\" href=\"https:\/\/www.haodf.com\/doctor\/1198874496\/pingjia-zhenliao\/8278273675.html\">\n                    <span class=\"text_59\"><span class=\"text_58\">[\u60a3\u8005]<\/span>&nbsp;<span class = \"contentCls\">\u75c5\u60c5\u63cf\u8ff0:\n\u80c3\u764c\n\u770b\u75c5\u8fc7\u7a0b:\n24\u5e749\u6708\u5728\u54c8\u533b\u5927\u4e00\u9662\u80c3\u955c\u68c0\u67e5\u53d1\u73b0\u764c\u7ec6\u80de\uff0c10\u6708\u5230\u5317\u4eac\u80bf\u7624\u533b\u9662\uff0c\u5c31\u8bca\u4e8e\u5b63\u4e3b\u4efb\u79d1\u5ba4\uff0c\u5728\u6b64\u671f\u95f4\u5b63\u4e3b\u4efb\u8010\u5fc3\u95ee\u8baf\u75c5\u60c5\uff0c...<\/span><\/span>\n                    <span class=\"icon-1\">\u67e5\u770b\u8be6\u60c5<\/span>\n            <\/a>\n            <a class=\"group_15\" href=\"https:\/\/www.haodf.com\/doctor\/1198874496.html\">\n                <span class=\"text_61\">\u5c31\u8bca\u533b\u751f<\/span>\n                <img class=\"ths-head\" src=\"https:\/\/n3.hdfimg.com\/g6\/M02\/08\/A7\/0YYBAGZNXSuAAIE_AAOO9clu3FQ855_200_200_1.jpg?f378\"\/>\n                <span class=\"text_62\">\u5b63\u946b&nbsp;\u5317\u4eac\u5927\u5b66\u80bf\u7624\u533b\u9662<\/span>\n                <span class=\"text_63\">2025-06-15 18:22:02<\/span>\n            <\/a>\n        <\/div>\n            <div class=\"ths-content\">\n            <a class=\"container\" href=\"https:\/\/www.haodf.com\/doctor\/283325\/pingjia-zhenliao\/8278273612.html\">\n                    <span class=\"text_59\"><span class=\"text_58\">[\u60a3\u8005]<\/span>&nbsp;<span class = \"contentCls\">\u4eca\u5929\u6765\u95e8\u8bca\u627e\u674e\u7387\u533b\u751f\u505a\u79cd\u690d\u7259\uff0c\u624b\u672f\u8fc7\u7a0b\u4e2d\u975e\u5e38\u7684\u987a\u5229\uff0c\u6ca1\u6709\u4efb\u4f55\u7684\u4e0d\u9002\u5c31\u79cd\u690d\u7ed3\u675f\u4e86\uff0c\u672f\u540e\u52a9\u7406\u53c8\u5e26\u7740\u6211\u62cd\u4e86\u7247\u5b50\uff0c\u674e\u533b\u751f\u53c8\u5f88\u6709\u8d23\u4efb\u611f\u7684\u5e2e\u6211\u770b\u4e86\u672f\u540e\u7684...<\/span><\/span>\n                    <span class=\"icon-1\">\u67e5\u770b\u8be6\u60c5<\/span>\n            <\/a>\n            <a class=\"group_15\" href=\"https:\/\/www.haodf.com\/doctor\/283325.html\">\n                <span class=\"text_61\">\u5c31\u8bca\u533b\u751f<\/span>\n                <img class=\"ths-head\" src=\"https:\/\/n2.hdfimg.com\/g10\/M07\/1C\/51\/voYBAFpwJVSAC43lAAUEMSjS4DU654_200_200_1.jpg?f803\"\/>\n                <span class=\"text_62\">\u674e\u7387&nbsp;\u5317\u4eac\u5927\u5b66\u53e3\u8154\u533b\u9662<\/span>\n                <span class=\"text_63\">2025-06-15 18:03:29<\/span>\n            <\/a>\n        <\/div>\n            <div class=\"ths-content\">\n            <a class=\"container\" href=\"https:\/\/www.haodf.com\/doctor\/30746\/pingjia-zhenliao\/8278273637.html\">\n                    <span class=\"text_59\"><span class=\"text_58\">[\u60a3\u8005]<\/span>&nbsp;<span class = \"contentCls\">\u75c5\u60c5\u63cf\u8ff0:\n\u4f4e\u8840\u538b\u4e0d\u7a33\uff0c\u5de6\u4fa7\u624b\u811a\u4e0d\u542c\u4f7f\u5524\uff0c\u8d70\u8def\u4e0d\u7a33\uff0c\u8bf4\u8bdd\u97f3\u8f7b\uff0c\u6c14\u6025\uff0c\u8bb0\u5fc6\u4e0d\u597d\n\u770b\u75c5\u8fc7\u7a0b:\n\u4e00\u4e2a\u6708\u524d\u95e8\u8bca\u5c31\u533b\uff0c\u8ba9\u505aPat-ct\uff0c\u5e76\u5f00\u51fa\u4f4f\u9662\u5355\uff0c...<\/span><\/span>\n                    <span class=\"icon-1\">\u67e5\u770b\u8be6\u60c5<\/span>\n            <\/a>\n            <a class=\"group_15\" href=\"https:\/\/www.haodf.com\/doctor\/30746.html\">\n                <span class=\"text_61\">\u5c31\u8bca\u533b\u751f<\/span>\n                <img class=\"ths-head\" src=\"https:\/\/n1.hdfimg.com\/g10\/M03\/14\/B0\/vYYBAFmNewKAYD9aAAVaowT0Rys530_200_200_1.jpg?e5de\"\/>\n                <span class=\"text_62\">\u7f57\u5dcd&nbsp;\u6d59\u6c5f\u5927\u5b66\u533b\u5b66\u9662\u9644\u5c5e\u7b2c\u4e8c\u533b\u9662<\/span>\n                <span class=\"text_63\">2025-06-15 18:09:23<\/span>\n            <\/a>\n        <\/div>\n            <div class=\"pingjia-wrapper\">\n            <span class=\"text-wrapper_27\" onclick=\"show_comment_pop('process');\">\u6211\u4e5f\u8981\u5206\u4eab<\/span>\n        <\/div>\n    <\/div>\n<div class=\"clear\"><\/div>\n<\/div>\n<script>\n<\/script>\n<!--\u5206\u4eab\u7ecf\u9a8c-->\n","cssList":[],"jsList":[]});</script>
+
+<script type="text/javascript">BigPipe.onPageletArrive({"id":"side_banner","content":"<!-- \u793c\u7269\u52a8\u6001 -->\n <div class=\"center_r_bar mt10 mb10\">\n    <div class=\"um-rcol-tit\">\n        <span class=\"um-rcol-tit-lt um-title-bold\">\n            \u5fc3\u610f\u793c\u7269\u52a8\u6001\n        <\/span>\n\n    <\/div>\n    <div class=\"clearfix\" style=\"overflow: hidden; height: 165px; position: relative;\">\n        <ul class=\"clearfix presentPersonList-box f12\" style=\"position: relative;\" id=\"latestBoughtPresents\">\n            <!--start presentPersonList-box-->\n                    <li class=\"clearfix presentPersonList-box-item ml20 m10\">\n                    <div class=\"fl mr5 \">\n                        <a class=\"heartvaluetip showDoctorPatientRef\" href=\"\/doctor\/613246271\/pingjia-liwu.html\" target=\"_blank\" rel=\"nofollow\"><img src=\"https:\/\/n4.hdfimg.com\/g10\/M08\/E5\/90\/vIYBAFsjXS-AWJ7NAAAy-UBr3UI116_60_60_2.png?f231\" width=\"60\" height=\"60\" class=\"avatar\"\/><\/a>\n                    <\/div>\n                    <div class=\"pr fr presentPersonList-box-item-r-shell\">\n                        <div class=\"presentPersonList-box-item-r\">\n                            <ul class=\"gray2 pl20 pt5\">\n                                <li>\n                                                                        <a target=\"_blank\" class=\"reflink gray2\" href=\"\/doctor\/613246271\/pingjia-liwu.html\" title=\"\u7acb\u5373\u67e5\u770b\" rel=\"nofollow\">\n                                        <span class=\"fb\">\u8881\u6615<\/span>\u5927\u592b\u6536\u5230\u4e86<span class=\"fb\">h***<\/span><br>\u7cbe\u5fc3\u6311\u9009\u7684\u793c\u7269<span class=\"fb\">\u533b\u60a3\u540c\u5fc3<\/span>\n                                    <\/a>\n                                                                    <\/li>\n                                <li>\n                                    <a class=\"list_sendtomydoctor heartvaluetip showDoctorPatientRef unl blue mr10 fr\" href=\"https:\/\/www.haodf.com\/npresent\/pcnuanxin\/tip?origin=7&spaceId=5885357611\" target=\"_blank\" rel=\"nofollow\">\u6211\u4e5f\u8981\u9001<\/a>\n                                <\/li>\n                            <\/ul>\n                        <\/div>\n                    <\/div>\n                <\/li>\n                                <li class=\"clearfix presentPersonList-box-item ml20 m10\">\n                    <div class=\"fl mr5 \">\n                        <a class=\"heartvaluetip showDoctorPatientRef\" href=\"\/doctor\/2476\/pingjia-liwu.html\" target=\"_blank\" rel=\"nofollow\"><img src=\"https:\/\/n3.hdfimg.com\/g9\/M04\/78\/C7\/uYYBAF5gypGAXo9QAAAvNwgol8k524_60_60_2.png?efe2\" width=\"60\" height=\"60\" class=\"avatar\"\/><\/a>\n                    <\/div>\n                    <div class=\"pr fr presentPersonList-box-item-r-shell\">\n                        <div class=\"presentPersonList-box-item-r\">\n                            <ul class=\"gray2 pl20 pt5\">\n                                <li>\n                                                                        <a target=\"_blank\" class=\"reflink gray2\" href=\"\/doctor\/2476\/pingjia-liwu.html\" title=\"\u7acb\u5373\u67e5\u770b\" rel=\"nofollow\">\n                                        <span class=\"fb\">\u8463\u4fdd\u6210<\/span>\u5927\u592b\u6536\u5230\u4e86<span class=\"fb\">h***<\/span><br>\u7cbe\u5fc3\u6311\u9009\u7684\u793c\u7269<span class=\"fb\">\u5fc3\u610f\u6ee1\u6ee1<\/span>\n                                    <\/a>\n                                                                    <\/li>\n                                <li>\n                                    <a class=\"list_sendtomydoctor heartvaluetip showDoctorPatientRef unl blue mr10 fr\" href=\"https:\/\/www.haodf.com\/npresent\/pcnuanxin\/tip?origin=7&spaceId=1658025852\" target=\"_blank\" rel=\"nofollow\">\u6211\u4e5f\u8981\u9001<\/a>\n                                <\/li>\n                            <\/ul>\n                        <\/div>\n                    <\/div>\n                <\/li>\n                                <li class=\"clearfix presentPersonList-box-item ml20 m10\">\n                    <div class=\"fl mr5 \">\n                        <a class=\"heartvaluetip showDoctorPatientRef\" href=\"\/doctor\/1594862104\/pingjia-liwu.html\" target=\"_blank\" rel=\"nofollow\"><img src=\"https:\/\/n2.hdfimg.com\/g5\/M01\/29\/0B\/roYBAFYV3RKAPv6pAAAp74ehddE798_60_60_2.png?df2e\" width=\"60\" height=\"60\" class=\"avatar\"\/><\/a>\n                    <\/div>\n                    <div class=\"pr fr presentPersonList-box-item-r-shell\">\n                        <div class=\"presentPersonList-box-item-r\">\n                            <ul class=\"gray2 pl20 pt5\">\n                                <li>\n                                                                        <a target=\"_blank\" class=\"reflink gray2\" href=\"\/doctor\/1594862104\/pingjia-liwu.html\" title=\"\u7acb\u5373\u67e5\u770b\" rel=\"nofollow\">\n                                        <span class=\"fb\">\u8521\u5927\u5e78<\/span>\u5927\u592b\u6536\u5230\u4e86<span class=\"fb\">h***<\/span><br>\u7cbe\u5fc3\u6311\u9009\u7684\u793c\u7269<span class=\"fb\">\u6696\u6696\u5fc3\u610f<\/span>\n                                    <\/a>\n                                                                    <\/li>\n                                <li>\n                                    <a class=\"list_sendtomydoctor heartvaluetip showDoctorPatientRef unl blue mr10 fr\" href=\"https:\/\/www.haodf.com\/npresent\/pcnuanxin\/tip?origin=7&spaceId=5004812292\" target=\"_blank\" rel=\"nofollow\">\u6211\u4e5f\u8981\u9001<\/a>\n                                <\/li>\n                            <\/ul>\n                        <\/div>\n                    <\/div>\n                <\/li>\n                        <\/ul>\n    <\/div>\n    <div class=\"p10\">\u5171\u6709<span class=\"orange ml5 mr5 fb\">2,558,973<\/span>\u4f4d\u60a3\u8005\u9001\u51fa<span class=\"orange ml5 mr5 fb\">4,879,769<\/span>\u4ef6\u793c\u7269\uff0c\u4e0b\u4e00\u4e2a\u662f\u4f60\u4e48?\n    <\/div>\n<\/div>\n","cssList":[],"jsList":[]});</script>
+<script type="text/javascript">BigPipe.downloadJSList();</script><script type="text/javascript">
+	var urlprefix = '';
+</script>
+<script type="text/javascript"	src="//i2.hdfimg.com/js/jquery-1.4.2.min.js?20101126"></script>
+<script type="text/javascript" src="//i2.hdfimg.com/homepage/js/ks-core-min.js?20101126"></script>
+<script type="text/javascript" src="//i2.hdfimg.com/bigpipe/www/js/function.js?201511065"></script>
+<script type="text/javascript" src="//i2.hdfimg.com/my/js/jquery.framework.js?20140807"></script>
+<script type="text/javascript" src="//i2.hdfimg.com/js/login_bar_new.75969cfa.js"></script>
+<script type="text/javascript" src="//i2.hdfimg.com/js/jquery-ui-1.8/js/jquery-ui-1.8.custom.min.js"></script>            
+<script type="text/javascript" src="//i2.hdfimg.com/js/jquery-ui-1.8/development-bundle/ui/jquery.ui.dialog.js"></script> 
+<script type="text/javascript" src="//i2.hdfimg.com/js/fancybox/fancybox.js?1358357449"></script>
+<script type="text/javascript" src="//i2.hdfimg.com/space/present/present.js?2012072501"></script>
+<script type="text/javascript" src="//i2.hdfimg.com/searchfront/js/autocomplete.js?20210708"></script>
+<script src="//i2.hdfimg.com/ssi/www/js/bottomjs_ask_seo.js"></script>
+<!-- 处理两个弹窗同时出来时候只显示手机弹窗 -->
+<div class="phonePopShell f14 J_phonePopShell"></div>
+<script type="text/javascript" src="//i2.hdfimg.com/js/hdfpop.js"></script>
+<script type="text/javascript">
+var text = "在此咨询，11万名正规医院大夫给您网络就医指导...";
+</script>
+<script type="text/javascript" src="//i2.hdfimg.com/homepage/js/comment.js?20211020"></script>
+<script type="text/javascript"	src="//i2.hdfimg.com/js/thickbox/thickbox-compressed.js?20101126"></script>
+<!-- baidu广告开始 -->
+
+<!--心意礼物动态-->
+<script type="text/javascript">
+$(function(){
+    redHeartValue('heartvaluetip');
+    var J_box = $('#latestBoughtPresents'),timer;
+    function scrollItem(){
+        var liH = J_box.find("li").first().outerHeight(true);
+        var marginS = 'marginTop';
+        var num = 2;
+        var animater = {marginTop: -liH*num + "px"};
+        J_box.animate(animater, 3000, function(){
+            for(var i = 0; i<num; i++){
+                $('#latestBoughtPresents > li').first().appendTo(J_box);
+            }
+            J_box.css(marginS,"0px");
+        })
+    }
+    J_box.hover(function(){
+        clearInterval(timer);
+    },function(){
+        timer = setInterval(function(){
+            scrollItem();
+        },6000)
+    }).trigger("mouseleave");
+    $('.reflink').hover(function(){$(this).addClass('blue')}, function(){$(this).removeClass('blue')});
+
+});
+</script>
+<!-- 统计流量开始 -->
+<script type='text/javascript'  src='//i2.hdfimg.com/www/js/twodimension.js?20140916'></script>
+<!-- 统计流量结束 -->
+<script src="//i2.hdfimg.com/www/js/jquery.SuperSlide.2.1.1.js?20140910"></script>
+
+<script>
+    $(".has_children").hover(function(){
+        $(this).addClass("on").find(".o_z_area_box").show().end().find(".o_z_arrow").addClass("on");
+    },function(){
+        $(this).removeClass("on").find(".o_z_area_box").hide().end().find(".o_z_arrow").removeClass("on");
+    });
+    if($("#bannerSlide").find("img").length > 1){
+
+        $("#bannerSlide").hover(function () {
+            $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.2)
+        }, function () {
+            $(this).find(".prev,.next").fadeOut()
+        });
+
+        $("#bannerSlide").slide({
+            mainCell:".bd ul",
+            effect:"leftLoop",
+            //是否启用点击切换幻灯片，默认为滑动切换
+            //trigger: "click",
+            autoPlay:true
+        });
+    }else if($("#bannerSlide").find("img").length == 1){
+        $("#bannerSlide").slide({
+            mainCell:".bd ul",
+                effect:"leftLoop",
+                //是否启用点击切换幻灯片，默认为滑动切换
+                trigger: "click",
+                autoPlay:false
+        });
+    } else{
+        $("#bannerSlide").hide();
+    }
+</script>
+
+<!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " //");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256706712'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256706712%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>-->
+<script type="text/javascript">
+        // document.getElementById("cnzz_stat_icon_1256706712").style.display = "none";
+        $("#process").click(function(){_czc.push(['_trackEvent', 'PC医生首页', '看病经验感谢信', '点击', '1', '666006']);});
+        $("#thanks").click(function(){_czc.push(['_trackEvent', 'PC医生首页', '看病经验感谢信', '点击', '1', '666006']);});
+</script>
+<script type = "text/javascript">
+function toVague(str) {
+    return str.replace(/\*+/g, function(matchStr) {
+        return `<span class="blur" style="text-shadow: 0 2px 10px #002864;color: transparent;">${matchStr}</span>`;
+    });
+}
+
+for(let i = 0; i < document.getElementsByClassName('contentCls').length; i++ ) {
+    document.getElementsByClassName('contentCls')[i].innerHTML =  toVague(document.getElementsByClassName('contentCls')[i].innerHTML);
+}
+</script>
+<script src="https://gw.alipayobjects.com/render/p/yuyan_v/180020010000000339/4.8.3/index.js"></script>
+<script>
+    function getCookie(name){
+        var strcookie = document.cookie;//获取cookie字符串
+        var arrcookie = strcookie.split("; ");//分割
+        //遍历匹配
+        for ( var i = 0; i < arrcookie.length; i++) {
+            var arr = arrcookie[i].split("=");
+            if (arr[0] == name){
+                return arr[1];
+            }
+        }
+        return "";
+    }
+
+    var userId = getCookie('userinfo[id]');
+    // 初始化蚂蚁埋点配置
+    if(window.Tracert && window.Tracert.call){
+        window._to = { roleId: userId};
+        window.Tracert.call('set', { spmAPos: 'a4778', bizType: 'hdf', spmBPos: 'b117894', autoLogPv:false,
+            autoExpo: true, expoFixedDom: true, mdata: {client:  'PC', hdf_user_id: userId}
+        });
+        window.Tracert.call('logPv');
+    }
+</script>
+
+</body>
+</html>
+<script>
+function getCookie(name){
+    var strcookie = document.cookie;//获取cookie字符串
+    var arrcookie = strcookie.split("; ");//分割
+    //遍历匹配
+    for ( var i = 0; i < arrcookie.length; i++) {
+        var arr = arrcookie[i].split("=");
+        if (arr[0] == name){
+            return arr[1];
+        }
+    }
+    return "";
+}
+// preDoc添加我的工作站
+var _myStationIdx = 1;
+var _myStationTimer = undefined;
+
+function checkAddMystation() {
+    var _userId = getCookie('userinfo[id]');
+    var _hosttype = getCookie('userinfo[hosttype]');
+    if (_userId && _hosttype !== 'Doctor') { // 登录且不是医生
+        $.ajax({
+                url: '/index/isPreDoctorType',
+                type: 'post',
+                data: {
+                    userId: _userId
+                },
+                success: function (res) {
+                    var data = JSON.parse(res);
+                    if (data.isPreDoctorType == 1) {
+                        _addMyStation();
+                    }
+                }
+            });
+    }
+}
+checkAddMystation();
+function _addMyStation() {
+    if (_myStationTimer) {
+        window.clearTimeout(_myStationTimer);
+        _myStationTimer = undefined;
+    }
+    _myStationTimer = setTimeout(function () {
+        var messageDom = document.querySelector('#login_bar_user_msg');
+        if (!messageDom) {
+            _myStationIdx = _myStationIdx + 1;
+            if (_myStationIdx > 3) { // 最多重复三次
+                return;
+            }
+            _addMyStation();
+            return;
+        }
+        var stationDom = document.createElement('a');
+        stationDom.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;我的工作站';
+        stationDom.setAttribute('href', '//station.haodf.com');
+        messageDom.appendChild(stationDom);
+    }, 1000);
+}
+</script>

@@ -1,0 +1,4 @@
+2025/06/15-18:59:30.335 7fc4 Reusing MANIFEST D:\Study\Private\Python\Code\reproduction_economic\src\browser_profile\Default\Local Storage\leveldb/MANIFEST-000001
+2025/06/15-18:59:30.351 7fc4 Recovering log #3
+2025/06/15-18:59:30.351 7fc4 (ignoring error) D:\Study\Private\Python\Code\reproduction_economic\src\browser_profile\Default\Local Storage\leveldb/000003.log: dropping 4235 bytes; Corruption: checksum mismatch
+2025/06/15-18:59:30.359 7fc4 Reusing old log D:\Study\Private\Python\Code\reproduction_economic\src\browser_profile\Default\Local Storage\leveldb/000003.log 

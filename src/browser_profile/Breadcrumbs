@@ -1,0 +1,31 @@
+1:47:57 Tab1 FinishNav389
+1:47:57 Tab1 PageLoad
+1:47:57 Tab1 PageLoad
+1:47:57 Tab1 AddInfobar73
+1:48:12 Tab1 StartNav390 #typed
+1:48:12 Tab1 RemoveInfobar73
+1:48:12 Tab1 FinishNav390
+1:48:12 Tab1 PageLoad
+1:48:12 Tab1 AddInfobar73
+1:48:12 Tab1 StartNav391 #renderer-user #link
+1:48:13 Tab1 RemoveInfobar73
+1:48:13 Tab1 FinishNav391
+1:48:13 Tab1 StartNav392 #renderer-script #auto_subframe
+1:48:13 Tab1 AddInfobar73
+1:48:13 Tab1 FinishNav392
+1:48:13 Tab1 PageLoad
+1:48:13 Tab1 PageLoad
+1:58:24 Tab1 StartNav393 #typed
+1:58:24 Tab1 RemoveInfobar73
+1:58:24 Tab1 FinishNav393
+1:58:24 Tab1 AddInfobar73
+1:58:24 Tab1 PageLoad
+1:58:24 Tab1 StartNav394 #renderer-user #link
+1:58:24 Tab1 RemoveInfobar73
+1:58:24 Tab1 FinishNav394
+1:58:24 Tab1 AddInfobar73
+1:58:25 Tab1 StartNav395 #renderer-script #auto_subframe
+1:58:25 Tab1 FinishNav395
+1:58:25 Tab1 PageLoad
+1:58:25 Tab1 PageLoad
+1:58:39 Microsoft.Shutdown.ExitIgnoreUnloadHandlers

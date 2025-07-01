@@ -1,0 +1,8 @@
+2025/06/15-21:14:21.658 2138 Reusing MANIFEST D:\Study\Private\Python\Code\reproduction_economic\src\browser_profile\Default\Local Storage\leveldb/MANIFEST-000001
+2025/06/15-21:14:21.677 2138 Recovering log #3
+2025/06/15-21:14:21.677 2138 (ignoring error) D:\Study\Private\Python\Code\reproduction_economic\src\browser_profile\Default\Local Storage\leveldb/000003.log: dropping 4984 bytes; Corruption: checksum mismatch
+2025/06/15-21:14:21.677 2138 (ignoring error) D:\Study\Private\Python\Code\reproduction_economic\src\browser_profile\Default\Local Storage\leveldb/000003.log: dropping 135 bytes; Corruption: missing start of fragmented record(2)
+2025/06/15-21:14:21.685 2138 Reusing old log D:\Study\Private\Python\Code\reproduction_economic\src\browser_profile\Default\Local Storage\leveldb/000003.log 
+2025/06/15-21:38:55.174 74d0 Level-0 table #5: started
+2025/06/15-21:38:55.181 74d0 Level-0 table #5: 10893 bytes OK
+2025/06/15-21:38:55.183 74d0 Delete type=0 #3
