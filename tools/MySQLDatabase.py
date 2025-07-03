@@ -12,9 +12,8 @@ class MySQLDatabase:
                 password=password,
                 database=database
             )
-            print("Connection to MySQL DB successful")
         except Error as e:
-            print(f"The error '{e}' occurred")
+            print(f"\033[1;31mThe error '{e}' occurred\033[0m")
 
     def show_basic_inf(self):
         cursor = self._connection.cursor()
@@ -48,14 +47,17 @@ class MySQLDatabase:
 
     def execute_query(self, query, params=None):
         cursor = self._connection.cursor()
+        notice_str=""
         try:
             cursor.execute(query, params)
             self._connection.commit()
-            print("Query executed successfully")
+            notice_str="Query executed successfully"
         except Error as e:
-            print(f"The error '{e}' occurred")
+            notice_str=f"\033[1;31mThe error '{e}' occurred\033[0m"
+            print(notice_str)
         finally:
             cursor.close()
+            return notice_str
 
     def fetch_data(self, query, params=None):
         cursor = self._connection.cursor()
@@ -73,4 +75,3 @@ class MySQLDatabase:
     def close_connection(self):
         if self._connection.is_connected():
             self._connection.close()
-            print("MySQL connection is closed")

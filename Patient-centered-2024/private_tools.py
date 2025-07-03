@@ -3,6 +3,7 @@ import re
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
+from datetime import datetime
 
 
 def distinguish_title(text):
@@ -159,3 +160,21 @@ def extract_paragraphs_for_dialogue(img_array, blank_height=30, threshold=5, bg_
             paragraphs.append(last_region)
 
     return paragraphs
+
+
+def format_date(date_str):
+    # 获取当前年份
+    current_year = datetime.now().year
+
+    try:
+        # 解析原始字符串(假设格式为"月.日")
+        month, day = map(int, date_str.split('.'))
+
+        # 创建完整日期对象
+        full_date = datetime(current_year, month, day)
+
+        # 格式化为"YYYY.MM.DD"
+        return full_date.strftime("%Y.%m.%d")
+    except Exception as e:
+        print(f"格式转换错误: {e}")
+        return None

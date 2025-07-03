@@ -1,6 +1,8 @@
 import time
 import re
 import cv2
+
+from tools.MySQLDatabase import MySQLDatabase
 from tools.OCR import OCR
 from private_tools import *
 from tools.AndroidEmulator import AndroidEmulator
@@ -70,5 +72,13 @@ def compare_time():
 
 
 if __name__ == "__main__":
-    e=AndroidEmulator("")
-    e.debug()
+    str1="))23'"
+    str2=")15″"
+    str3="))23'"
+    list1=[]
+    dic={"huhuy":"yes"}
+    dic2={"huhuyy":"yes"}
+    list1.append(dic)
+    print(dic2==list1[-1])
+
+
