@@ -477,9 +477,9 @@ def android_spider(config):
 # <---------------------- 爬取问诊基本信息 ---------------------->
 def get_inquiry_information(emulator, paddleocr: OCR, config):
     # <-------------------- 初始化变量 -------------------->
-    case_information = ["疾病描述", "身高体重", "疾病","已就诊医院科室", "用药情况", "过敏史", "既往病史",
+    case_information = ["疾病描述", "身高体重", "疾病", "已就诊医院科室", "用药情况", "过敏史", "既往病史",
                         "希望获得的帮助"]
-    second_case_information=["怀孕情况","患病时长"]
+    second_case_information = ["怀孕情况", "患病时长"]
     advice_list = ["病例概要", "初步诊断", "处置"]
     inquiry_information = {"医生姓名": config["doctor_inf"]["姓名"]}
     project_path = config["project_path"]
@@ -491,7 +491,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
     # <-------------------- 爬虫部分 -------------------->
     for i in range(inquiry_number):
         # 重置数据
-        for item in case_information + second_case_information+advice_list:
+        for item in case_information + second_case_information + advice_list:
             inquiry_information[item] = None
         # ---> 计算两条数据之间的宽度，用于之后滑动
         print(f"\033[34m<---这是该医生第{i + 1}个病人--->\033[0m")
@@ -730,7 +730,10 @@ def get_interaction(emulator, paddleocr):
                     if re.fullmatch(r'\){0,2}\d+[\'\"\″]', text):
                         continue
                     item["content"] = item["content"] + text
-        if item != interaction_log[-1]:
+        if len(interaction_log) == 0:
+            interaction_log.append(item)
+            print("\t\t\t", interaction_log[-1])
+        elif item != interaction_log[-1]:
             if item["content"] and item["charactor"] and item["date"]:
                 interaction_log.append(item)
                 print("\t\t\t", interaction_log[-1])
@@ -770,7 +773,7 @@ def android_spider_start():
         "images_path": "images\\",
         "cache_path": "Patient-centered-2024\\tempt",
         "doctor_inf": {},
-        "is_app_open": True,
+        "is_app_open": False,
         "start_time": time.time(),
     }
     # emulator=AndroidEmulator("Patient-centered-2024\\tempt")
