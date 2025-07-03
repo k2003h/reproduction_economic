@@ -1,3 +1,4 @@
+import math
 import os
 import random
 import subprocess
@@ -11,9 +12,10 @@ class AndroidEmulator:
         self._project_path = self._basic_dir.replace("tools", "")
         self._save_path = save_path
         self.adb_path = self._basic_dir.replace("\\tools", "") + "\\src\\adb-tools\\adb.exe"
+        self.connect()
 
     def connect(self):
-        subprocess.run(self.adb_path + " disconnect", shell=False)
+        subprocess.run(self.adb_path + " disconnect", shell=True)
         r = subprocess.run(self.adb_path + " connect 127.0.0.1:62001", shell=False, stdout=subprocess.PIPE, text=True,
                            encoding="utf-8")
         if "cannot" in r.stdout:
@@ -48,7 +50,7 @@ class AndroidEmulator:
         click_cmd = self.adb_path + ' shell input tap ' + str(x) + ' ' + str(y)
         subprocess.run(click_cmd, shell=True, stdout=subprocess.PIPE, text=True)
 
-    def swipe(self, x1, y1, x2, y2, duration):
+    def swipe(self, x1, y1, x2, y2, duration=None):
         """
 
         :param x1:
@@ -58,6 +60,8 @@ class AndroidEmulator:
         :param duration: 单位：毫秒
         :return:
         """
+        if duration is None:
+            duration = int(math.sqrt(max((x1 - x2) ** 2 + (y1 - y2) ** 2, 0.1)) * 6)
         swipe_cmd = self.adb_path + ' shell input swipe ' + str(x1) + ' ' + str(y1) + ' ' + str(x2) + ' ' + str(
             y2) + ' ' + str(duration)
         subprocess.run(swipe_cmd, shell=True, stdout=subprocess.PIPE, text=True)
@@ -73,3 +77,6 @@ class AndroidEmulator:
 
     def disconnect(self):
         subprocess.run(self.adb_path + " disconnect", shell=False)
+
+    def debug(self):
+        subprocess.run(self.adb_path+" kill-server",shell=False)

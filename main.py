@@ -5,6 +5,7 @@ from paddleocr import PaddleOCR
 from tools.MySQLDatabase import MySQLDatabase
 from tools.functions import *
 from tools.AndroidEmulator import AndroidEmulator
+from tools.OCR import OCR
 
 
 def create_tables():
@@ -31,9 +32,10 @@ def ocr_with_paddleocr(image_path, lang='ch'):
         res.save_to_img("output")
         res.save_to_json("output")
 
+
 def get_line():
     path = "/Patient-centered-2024/images"
-    emulator=AndroidEmulator()
+    emulator = AndroidEmulator()
     emulator.connect()
     for i in range(10):
         emulator.screenshot("Patient-centered-2024\\images")
@@ -47,9 +49,9 @@ def get_line():
 
 
 if __name__ == "__main__":
-    emulator = AndroidEmulator()
-    emulator.connect()
-    emulator.screenshot("Patient-centered-2024\\images")
+    # emulator = AndroidEmulator()
+    # emulator.connect()
+    # emulator.screenshot("Patient-centered-2024\\images")
     # ocr_with_paddleocr()
     # path = "D:\\Study\\Private\\Python\Code\\reproduction_economic\\Patient-centered-2024\\images"
     # r = get_position(path + "\\wait_time.png", path + "\\screenshot.png")
@@ -70,6 +72,7 @@ if __name__ == "__main__":
     #     emulator.swipe(270, 250 + ys[1] - ys[0], 270, 250, 1500)
     #     print(ys[1] - ys[0])
     #     time.sleep(1)
-    r=ocr_with_paddleocr("Patient-centered-2024/images\\screenshot.png")
+    pd_ocr = OCR()
+    r = pd_ocr.predict("Patient-centered-2024\\images\\test.png")
     print(r)
     # get_line()

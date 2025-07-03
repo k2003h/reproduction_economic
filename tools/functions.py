@@ -4,6 +4,7 @@ import random
 import numpy as np
 from os import PathLike
 from selenium import webdriver
+from paddleocr import PaddleOCR
 from tools.MySQLDatabase import MySQLDatabase
 from selenium.webdriver.edge.service import Service
 from selenium.webdriver.edge.options import Options
@@ -153,3 +154,20 @@ def compare_image(img1: str | PathLike[str], img2: str | PathLike[str], scale: f
     _, max_val, _, _ = cv2.minMaxLoc(result)
 
     return max_val > threshold
+
+
+def ocr(image_path):
+    paddleocr = PaddleOCR(
+        use_doc_orientation_classify=False,
+        use_doc_unwarping=False,
+        use_textline_orientation=False)
+
+    # 对示例图像执行 OCR 推理
+    result = paddleocr.predict(
+        input=image_path)
+
+    # 可视化结果并保存 json 结果
+    for res in result:
+        res.print()
+        res.save_to_img("output")
+        res.save_to_json("output")
