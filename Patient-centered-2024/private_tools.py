@@ -76,11 +76,11 @@ def extract_paragraphs(img_array, blank_height=30, threshold=5, bg_threshold=253
                     start_idx = i
                 blank_count = 0
 
-    # 添加最后一段
     if start_idx < len(horizontal_proj):
         last_region = img_array[start_idx:, :]
-        last_proj = np.sum(cv2.cvtColor(last_region, cv2.COLOR_BGR2GRAY) > 252, axis=1)
-        if np.any(last_proj > threshold * last_region.shape[1] * 0.1):  # 至少10%区域有文本
+        last_gray = cv2.cvtColor(last_region, cv2.COLOR_BGR2GRAY)
+        last_proj = np.sum(last_gray < bg_threshold, axis=1)  # 更合理的投影计算
+        if np.sum(last_proj) > threshold * last_region.shape[1] * 0.1:  # 降低阈值至5%
             paragraphs.append(scaling_image(last_region, scaling))
 
     return paragraphs
@@ -145,13 +145,12 @@ def extract_paragraphs_for_dialogue(img_array, blank_height=30, threshold=5, bg_
                     start_idx = i
                 blank_count = 0
 
-    # 添加最后一段
     if start_idx < len(horizontal_proj):
         last_region = img_array[start_idx:, :]
-        last_proj = np.sum(cv2.cvtColor(last_region, cv2.COLOR_BGR2GRAY) > 252, axis=1)
-        if np.any(last_proj > threshold * last_region.shape[1] * 0.1):  # 至少10%区域有文本
+        last_gray = cv2.cvtColor(last_region, cv2.COLOR_BGR2GRAY)
+        last_proj = np.sum(last_gray < bg_threshold, axis=1)  # 更合理的投影计算
+        if np.sum(last_proj) > threshold * last_region.shape[1] * 0.1:  # 降低阈值至5%
             paragraphs.append(scaling_image(last_region, scaling))
-
     return paragraphs
 
 

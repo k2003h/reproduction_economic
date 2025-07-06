@@ -95,8 +95,11 @@ def local_database_add_column(table: str, field: str, datatype: str):
     db.execute_query(add_column_sql)
 
 
-def local_database_insert_dict(table_name, data_dict):
-    database = MySQLDatabase("reproduction_economic")
+def database_insert_dict(table_name, data_dict, is_local=False):
+    if is_local:
+        database = MySQLDatabase("reproduction_economic")
+    else:
+        database = MySQLDatabase("reproduction", "106.13.72.195", "k2003h", "Qwas1234!")
     # 处理字段和值
     columns = ', '.join(data_dict.keys())
     placeholders = ', '.join(['%s'] * len(data_dict))
@@ -439,7 +442,7 @@ def android_spider(config):
 
                     # -> 数据库操作
                     if doctor_name not in doctor_list:
-                        r = local_database_insert_dict("`医生信息`", doctor_inf)
+                        r = database_insert_dict("`医生信息`", doctor_inf,config["local_test"])
                         if r:
                             print("\033[32m<Inf:已录入医生信息>\033[0m")
                         config["inquiry_number"] = config["inquiry_num_per_doctor"]
@@ -482,8 +485,8 @@ def android_spider(config):
                     try_first = True
 
                     # 重启
-                    if time.time()-refresh_start_time>10000:
-                        refresh_start_time=time.time()
+                    if time.time() - refresh_start_time > 10000:
+                        refresh_start_time = time.time()
                         emulator.restart()
                         go_to_page(config, emulator)
                         time.sleep(3)
@@ -683,7 +686,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
         with open("./tempt/testdata.json", "w", encoding="utf-8") as f:
             json.dump(inquiry_information, f, ensure_ascii=False, indent=4)
 
-        r = local_database_insert_dict("`问诊信息`", inquiry_information)
+        r = database_insert_dict("`问诊信息`", inquiry_information,config["local_test"])
         if r:
             print("\033[32m<Inf:已录入问诊信息>\033[0m")
         # 返回
@@ -830,18 +833,18 @@ def debug():
 
 def android_spider_start():
     config = {
-        "local_test": True,  # 是否运行在本地数据库
+        "local_test": False,  # 是否运行在本地数据库
         "program_id": 1,  # 程序id,唯一
-        "doctor_num": 30,
-        "inquiry_num_per_doctor": 15,
+        "doctor_num": 10,
+        "inquiry_num_per_doctor": 200,
         "project_path": "D:\\Study\\Private\\Python\Code\\reproduction_economic\\Patient-centered-2024\\",
         "screenshot_path": "tempt\\screenshot.png",
         "images_path": "images\\",
         "cache_path": "Patient-centered-2024\\tempt",
-        "is_app_open": True,  # 是否已经在爬虫页面
+        "is_app_open": False,  # 是否已经在爬虫页面
         "start_time": time.time(),
         "load": 7,  # 负荷0-10，10为全速，0为最低速，用于平衡图片识别时CPU功耗
-        "skip_doctor_inquiry_num": 10,  # 根据数据库中问诊数量跳过医生
+        "skip_doctor_inquiry_num": 150,  # 根据数据库中问诊数量跳过医生
         "doctor_inf": None,  # 内部所需参数，此处用于初始化
         "inquiry_number": None,  # 内部所需参数，此处用于初始化
     }
@@ -853,6 +856,6 @@ def android_spider_start():
 
 
 if __name__ == "__main__":
-    database_create_table(False)
-    # android_spider_start()
+    # database_create_table(False)
+    android_spider_start()
     # debug()
