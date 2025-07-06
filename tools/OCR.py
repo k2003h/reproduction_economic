@@ -11,7 +11,6 @@ class OCR:
 
     def predict(self, image_path):
         result = self.paddleocr.predict(input=image_path)
-        # 可视化结果并保存 json 结果
         if result:
             text = result[0]["rec_texts"]
             position_box = result[0]["rec_boxes"]

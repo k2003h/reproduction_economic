@@ -51,8 +51,11 @@ def create_tables():
     db.close_connection()
 
 
-def local_database_create_table():
-    db = MySQLDatabase("reproduction_economic")
+def database_create_table(is_local=True):
+    if is_local:
+        db = MySQLDatabase("reproduction_economic")
+    else:
+        db = MySQLDatabase("reproduction", "106.13.72.195", "k2003h", "Qwas1234!")
     # ---->建表(一次性操作)
     create_doctor_inf_table_sql = "CREATE TABLE IF NOT EXISTS `医生信息` (" \
                                   "id INT PRIMARY KEY AUTO_INCREMENT," \
@@ -74,12 +77,16 @@ def local_database_create_table():
                                    "`过敏史` TEXT," \
                                    "`既往病史` TEXT," \
                                    "`希望获得的帮助` TEXT," \
-                                   "`病例概要` TEXT," \
+                                   "`病历概要` TEXT," \
                                    "`初步诊断` TEXT," \
                                    "`处置` TEXT," \
                                    "`医患交流` TEXT," \
                                    "FOREIGN KEY (`医生姓名`) REFERENCES `医生信息`(`姓名`))"
     db.execute_query(create_inquiry_inf_table_sql)
+    create_operating_table_sql = "CREATE TABLE IF NOT EXISTS operating (" \
+                                 "program_id INT UNIQUE KEY," \
+                                 "doctor_name varchar(20))"
+    db.execute_query(create_operating_table_sql)
 
 
 def local_database_add_column(table: str, field: str, datatype: str):
@@ -250,15 +257,17 @@ def get_num_by_class_name(browser, class_name):
 
 
 # >************************  用于Android爬虫  ************************<
-def go_to_page(config, emulator):
+def go_to_page(config, emulator, is_fist=False):
     # 准备开始
-    print("即将在5s后开始爬虫,请打开模拟器", end="")
-    start_time = time.time()
-    end_time = start_time + 5
-    while time.time() < end_time:
-        print(".", end="")
-        time.sleep(1)
-
+    if is_fist:
+        print("即将在5s后开始爬虫,请打开模拟器", end="")
+        start_time = time.time()
+        end_time = start_time + 5
+        while time.time() < end_time:
+            print(".", end="")
+            time.sleep(1)
+    else:
+        print("正在尝试前往爬虫对应页面")
     # 初始化相关变量(在之前的版本中未通过config传递，为了尽量减少代码改动仍然新建两个变量)
     screenshot_path = config["screenshot_path"]
     images_path = config["images_path"]
@@ -274,6 +283,9 @@ def go_to_page(config, emulator):
             break
         time.sleep(0.5)
     position, _ = get_position(images_path + "experts_list_button.png", screenshot_path)
+    time.sleep(5)
+    emulator.click(200, 700, random.randint(0, 10))
+    time.sleep(5)
     emulator.click(position[0], position[1], random.randint(0, 10))
     print("-->点击'按科室找'", end="")
     while True:
@@ -284,7 +296,7 @@ def go_to_page(config, emulator):
     position, val = get_position(images_path + "endocrinology_department.png", screenshot_path)
     if val > 0.7:
         emulator.click(position[0], position[1], random.randint(0, 5))
-        print("-->点击'内分泌科'", end="")
+        print("-->点击'内分泌科'")
     while True:
         emulator.screenshot()
         if compare_image(images_path + "\\line.png", screenshot_path):
@@ -296,19 +308,6 @@ def go_to_page(config, emulator):
 def android_spider(config):
     # <-------------------- 初始化变量 -------------------->
     # ----> 在新版本中使用config进行参数传递
-    # config = {
-    #     "local_test": True,
-    #     "program_id": 1,
-    #     "doctor_num": 30,
-    #     "inquiry_num_per_doctor": 30,
-    #     "project_path": "D:\\Study\\Private\\Python\Code\\reproduction_economic\\Patient-centered-2024\\",
-    #     "screenshot_path": "tempt\\screenshot.png",
-    #     "images_path": "images\\",
-    #     "cache_path": "Patient-centered-2024\\tempt",
-    #     "doctor_inf": {},
-    #     "is_app_open": True,
-    #     "start_time": time.time(),
-    # }
     project_path = config["project_path"]
     screenshot_path = project_path + config["screenshot_path"]
     images_path = project_path + config["images_path"]
@@ -321,31 +320,50 @@ def android_spider(config):
 
     # ---->判断app是否已在运行
     if not config["is_app_open"]:
-        go_to_page(config, emulator)
+        go_to_page(config, emulator, True)
 
     # <-------------------- 爬虫开始 -------------------->
     i = 0  # 计数器
     start_time = config["start_time"]  # 计时器
     doctor_name = ""  # 用于判断是否重复爬取
-    try_first = True
-    time_count = time.time()
+    try_first = True  # 用于下拉操作时的提示(避免反复弹出提示)
+    time_count = time.time()  # 用于计算超时，当60s以上还未进入医生界面，则强制执行下拉操作
+    refresh_start_time = time.time()  # 用于定时重启模拟器
     while i < doctor_num:
+        # <----------------- 数据库操作 ----------------->
         is_operating_doctor_name = []  # 其他程序正在操作的医生姓名
-        doctors_list = []  # 已存入医生信息的医生
-        # --->在循环内初始化database(否则时间长了connection会关闭)
+        doctor_list = []  # 已存入'医生信息'表的医生
+        doctors_inquiries_dict = {}
+        skip_doctors_list = []  # 需要跳过的医生
+
+        # ---> 在循环内初始化database (否则时间长了connection会关闭)
         if config["local_test"]:
             database = MySQLDatabase("reproduction_economic")
         else:
-            database = MySQLDatabase("reproduction", "", "k2003h", "Qwas1234!")
+            database = MySQLDatabase("reproduction", "106.13.72.195", "k2003h", "Qwas1234!")
+
+        # ---> 获取其他程序正在操作的医生姓名
         result = database.fetch_data(f"SELECT doctor_name FROM operating where program_id !={program_id}")
         if result:
             for r in result:
                 is_operating_doctor_name.append(r[0])
+
+        # ---> 获取已存入'医生信息'表的医生姓名
         result = database.fetch_data(f"SELECT `姓名` FROM `医生信息`")
         if result:
             for r in result:
-                doctors_list.append(r[0])
-        # ---> 计算下一个医生需要上滑的距离
+                doctor_list.append(r[0])
+
+        # ---> 获取每个医生的问诊数量
+        result = database.fetch_data(
+            f"SELECT `医生姓名`,COUNT(*) FROM `问诊信息` GROUP BY `医生姓名`")
+        if result:
+            for r in result:
+                doctors_inquiries_dict[r[0]] = r[1]
+                if r[1] > config["skip_doctor_inquiry_num"]:
+                    skip_doctors_list.append(r[0])
+
+        # ---> 计算爬取下一个医生需要上滑的距离
         emulator.screenshot()
         split_lines = get_positions(images_path + "\\line.png", screenshot_path)
         split_lines_ordinate = []
@@ -359,16 +377,16 @@ def android_spider(config):
         doctor_name_img = img[288:364, 110:357]
         ocr_result = paddleocr.predict(doctor_name_img)
 
-        # <----------------- 爬虫部分 ----------------->
+        # <----------------- 爬虫部分(条件判断) ----------------->
         # --->若ocr只识别出一个以下，那么一定划到最底了，需要上拉进行刷新
         if len(ocr_result["text"]) <= 1:
-            database.close_connection()
+            database.close_connection()  # 及时关闭connection
             pass
         else:
             present_doctor_name = ocr_result["text"][0]
             appointment = ocr_result["text"][1]
 
-            # --> 如果 医生名字与上一个爬虫不同 且 提取到'门诊可预约' 且没有其他应用在爬虫：开始爬虫
+            # --> 如果 医生名字与上一个爬虫不同 且 提取到'门诊可预约' 开始爬虫
             if doctor_name != present_doctor_name and "门诊可预约" in appointment:
                 doctor_name = present_doctor_name
                 doctor_inf["姓名"] = doctor_name
@@ -376,85 +394,103 @@ def android_spider(config):
                 # -> 如果其他应用在操作该医生，则重新爬取
                 if doctor_name in is_operating_doctor_name:
                     print(f"\033[33m<Notice:{doctor_name}有其他应用在爬取，跳到下一条医生>\033[0m")
-                    emulator.swipe(270, 300 + split_lines_ordinate_asc[0] - 250, 200, 300)
                     database.close_connection()
-                    time.sleep(3)
-                    continue
+                    time_count = time.time()
+                elif doctor_name in skip_doctors_list:
+                    print(f"\033[32m<<Inf:{doctor_name}已有足够多问诊信息，跳到下一条医生>\033[0m")
+                    database.close_connection()
+                    time_count = time.time()
+                # <-------------------- 正式爬虫部分 -------------------->
                 else:
                     database.execute_query(
                         f"UPDATE operating SET doctor_name=%s WHERE program_id=%s", (doctor_name, program_id))
                     database.close_connection()
-
-                # <--------------- 爬取医生信息 --------------->
-                emulator.click(360, 400, 20)  # 点击列表第一个医生
-                # -> 判断是否进入医生界面
-                while True:
-                    emulator.screenshot()
-                    if compare_image(images_path + "error_correction.png", screenshot_path):
-                        break
+                    # <--------------- 爬取医生信息 --------------->
+                    emulator.click(360, 400, 20)  # 点击列表第一个医生
+                    # -> 判断是否进入医生界面
+                    while True:
+                        emulator.screenshot()
+                        if compare_image(images_path + "error_correction.png", screenshot_path):
+                            break
+                        time.sleep(1)
+                    pos, _ = get_position(images_path + "check.png", screenshot_path)
+                    emulator.click(360, 150)  # 点击空白处，免得弹出ai助理
                     time.sleep(1)
-                pos, _ = get_position(images_path + "check.png", screenshot_path)
-                emulator.click(360, 150)  # 点击空白处，免得弹出ai助理
-                time.sleep(1)
-                emulator.click(pos[0], pos[1], 3)
-                # ->判断是否进入医生个人信息界面
-                while True:
-                    emulator.screenshot()
-                    if compare_image(images_path + "self_introduction.png", screenshot_path):
-                        break
-                    time.sleep(1)
+                    emulator.click(pos[0], pos[1], 3)
+                    # ->判断是否进入医生个人信息界面
+                    while True:
+                        emulator.screenshot()
+                        if compare_image(images_path + "self_introduction.png", screenshot_path):
+                            break
+                        time.sleep(1)
 
-                # -> 爬取医生职称
-                img = cv2.imread("tempt/screenshot.png")
-                cropped_img = img[185:330, :]
-                ocr_result = paddleocr.predict(cropped_img)
-                if len(ocr_result["text"]) >= 2:
-                    cleaned_list = [x for x in ocr_result["text"] if x.strip()]
-                    doctor_inf["医疗职称"], doctor_inf["教育职称"] = distinguish_title(
-                        cleaned_list[-1])
-                print("\n\033[94m<" + "-" * 25 + f" 这是第{i + 1}个医生 " + "-" * 25 + ">\033[0m")
-                minutes, seconds = int((time.time() - start_time) / 60), int((time.time() - start_time) % 60)
-                print("\033[96m" + " " * 50 + f"->总用时:{minutes}min{seconds}s\033[0m")
-                print(doctor_inf)
+                    # -> 爬取医生职称
+                    img = cv2.imread("tempt/screenshot.png")
+                    cropped_img = img[185:330, :]
+                    ocr_result = paddleocr.predict(cropped_img)
+                    if len(ocr_result["text"]) >= 2:
+                        cleaned_list = [x for x in ocr_result["text"] if x.strip()]
+                        doctor_inf["医疗职称"], doctor_inf["教育职称"] = distinguish_title(
+                            cleaned_list[-1])
+                    print("\n\033[94m<" + "-" * 25 + f" 这是第{i + 1}个医生 " + "-" * 25 + ">\033[0m")
+                    minutes, seconds = int((time.time() - start_time) / 60), int((time.time() - start_time) % 60)
+                    print("\033[96m" + " " * 50 + f"->总用时:{minutes}min{seconds}s\033[0m")
+                    print(doctor_inf)
 
-                # -> 数据库操作
-                if doctor_name not in doctors_list:
-                    r = local_database_insert_dict("`医生信息`", doctor_inf)
-                    if r:
-                        print("\033[32m<Inf:已录入医生信息>\033[0m")
-                else:
-                    print("\033[33m<Notice:医生信息中已存在该医生，不再重复录入>\033[0m")
-                # -> 退出界面开始爬取问诊信息
-                emulator.key_event(4)
-                time.sleep(1)
-                while True:
-                    emulator.screenshot()
-                    pos, val = get_position(images_path + "online_inquiry.png", screenshot_path)
-                    if val > 0.8:
-                        break
-                    emulator.swipe(360, 1000, 360, 300, 2000)
-                    time.sleep(0.5)
-                emulator.click(600, pos[1] + 10)
-                while True:
-                    emulator.screenshot()
-                    if compare_image(images_path + "inquiry_inf\\patient.png", screenshot_path):
-                        break
+                    # -> 数据库操作
+                    if doctor_name not in doctor_list:
+                        r = local_database_insert_dict("`医生信息`", doctor_inf)
+                        if r:
+                            print("\033[32m<Inf:已录入医生信息>\033[0m")
+                        config["inquiry_number"] = config["inquiry_num_per_doctor"]
+                    else:
+                        print("\033[33m<Notice:医生信息中已存在该医生，不再重复录入>\033[0m")
+                        if doctor_name in doctors_inquiries_dict:
+                            config["inquiry_number"] = config["inquiry_num_per_doctor"] - doctors_inquiries_dict[
+                                doctor_name]
+                        else:
+                            config["inquiry_number"] = config["inquiry_num_per_doctor"]
+
+                    # -> 退出界面开始爬取问诊信息
+                    emulator.key_event(4)
                     time.sleep(1)
-                config["doctor_inf"] = doctor_inf
-                get_inquiry_information(emulator, paddleocr, config)
-                emulator.key_event(4)
-                while True:
-                    emulator.screenshot()
-                    pos, val = get_position(images_path + "online_inquiry.png", screenshot_path)
-                    if val > 0.8:
-                        break
-                    time.sleep(0.5)
-                emulator.key_event(4)
-                i += 1
-                try_first = True
-                time_count = time.time()
+                    while True:
+                        emulator.screenshot()
+                        pos, val = get_position(images_path + "online_inquiry.png", screenshot_path)
+                        if val > 0.8:
+                            break
+                        emulator.swipe(360, 1000, 360, 300, 2000)
+                        time.sleep(0.5)
+                    emulator.click(600, pos[1] + 10)
+                    while True:
+                        emulator.screenshot()
+                        if compare_image(images_path + "inquiry_inf\\patient.png", screenshot_path):
+                            break
+                        time.sleep(1)
+                    config["doctor_inf"] = doctor_inf
+                    get_inquiry_information(emulator, paddleocr, config)
+                    time.sleep(1)
+                    emulator.key_event(4)
+                    while True:
+                        emulator.screenshot()
+                        pos, val = get_position(images_path + "online_inquiry.png", screenshot_path)
+                        if val > 0.8:
+                            break
+                        time.sleep(0.5)
+                    emulator.key_event(4)
+                    i += 1
+                    try_first = True
+
+                    # 重启
+                    if time.time()-refresh_start_time>10000:
+                        refresh_start_time=time.time()
+                        emulator.restart()
+                        go_to_page(config, emulator)
+                        time.sleep(3)
+                    time_count = time.time()
             else:
                 database.close_connection()
+
         if sliding_distance < 400 or time.time() - time_count > 60:
             if try_first:
                 print("\033[33m--->尝试下拉菜单进行刷新···\033[0m")
@@ -471,7 +507,6 @@ def android_spider(config):
             time.sleep(2)
             continue
         emulator.swipe(270, 300 + split_lines_ordinate_asc[0] - 250, 200, 300)
-        time.sleep(3)
 
 
 # <---------------------- 爬取问诊基本信息 ---------------------->
@@ -480,19 +515,19 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
     case_information = ["疾病描述", "身高体重", "疾病", "已就诊医院科室", "用药情况", "过敏史", "既往病史",
                         "希望获得的帮助"]
     second_case_information = ["怀孕情况", "患病时长"]
-    advice_list = ["病例概要", "初步诊断", "处置"]
+    advice_list = ["病历概要", "初步诊断", "处置"]
     inquiry_information = {"医生姓名": config["doctor_inf"]["姓名"]}
     project_path = config["project_path"]
     screenshot_path = project_path + config["screenshot_path"]
     images_path = project_path + config["images_path"]
-    inquiry_number = config["inquiry_num_per_doctor"]
+    inquiry_number = config["inquiry_number"]
     start_time = time.time()
 
     # <-------------------- 爬虫部分 -------------------->
     for i in range(inquiry_number):
         # 重置数据
         for item in case_information + second_case_information + advice_list:
-            inquiry_information[item] = None
+            inquiry_information[item] = ""
         # ---> 计算两条数据之间的宽度，用于之后滑动
         print(f"\033[34m<---这是该医生第{i + 1}个病人--->\033[0m")
         minutes, seconds = int((time.time() - start_time) / 60), int((time.time() - start_time) % 60)
@@ -537,49 +572,56 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
                     case_information_img = img
                 else:
                     case_information_img = np.vstack((case_information_img, img))
-                emulator.swipe(360, 1120, 360, 169, 5500)
-        cv2.imwrite("./tempt/case_information_full.png", case_information_img)
+                emulator.swipe(360, 1120, 360, 167, 5500)
+        if not (case_information_img is None):
+            # 如果病例信息存在才执行此操作
+            cv2.imwrite("./tempt/case_information_full.png", case_information_img)
 
-        # ---> 文字识别
-        print("\t<---爬取病例信息--->")
-        previous_key = ""
-        for p in extract_paragraphs(case_information_img, 35, 1):
-            ocr_result = paddleocr.predict(p)
-            full_text = ''.join(ocr_result["text"]).replace("·", "")
-            if not full_text:
-                continue
-            # ---> 如果字段你有冒号，则判断是否为新字段
-            if "：" in full_text:
-                parts: str = full_text.split("：", 1)
-                if parts[0] in case_information:
-                    if "患病时长：" in parts[1]:
-                        second_parts = parts[1].split("患病时长：", 1)
-                        inquiry_information[parts[0]] = second_parts[0]
-                        inquiry_information["患病时长"] = second_parts[1]
-                        print("\t\t" + parts[0] + ":" + second_parts[0])
-                        print("\t\t" + "患病时长:" + second_parts[1])
-                        continue
-                    elif "怀孕情况：" in parts[1]:
-                        second_parts = parts[1].split("怀孕情况：", 1)
-                        inquiry_information[parts[0]] = second_parts[0]
-                        inquiry_information["怀孕情况"] = second_parts[1]
-                        print("\t\t" + parts[0] + ":" + second_parts[0])
-                        print("\t\t" + "怀孕情况：" + second_parts[1])
-                        continue
-                    inquiry_information[parts[0]] = parts[1]
-                    if previous_key:
-                        print("\t\t" + previous_key + ":" + inquiry_information[previous_key])
-                    previous_key = parts[0]
+            # ---> 文字识别
+            print("\t<---爬取病例信息--->")
+            previous_key = ""
+            for p in extract_paragraphs(case_information_img, 35, 1, scaling=0.7):
+                # -> 暂停避免CPU过热
+                if config["load"] != 10:
+                    time.sleep(10 - config["load"])  # 暂停避免CPU过热
+
+                ocr_result = paddleocr.predict(p)
+                full_text = ''.join(ocr_result["text"]).replace("·", "")
+                if not full_text:
                     continue
-            inquiry_information[previous_key] = inquiry_information[previous_key] + full_text
-        print("\t\t" + previous_key + ":" + inquiry_information[previous_key])
+                # ---> 如果字段你有冒号，则判断是否为新字段
+                if "：" in full_text:
+                    parts: str = full_text.split("：", 1)
+                    if parts[0] in case_information:
+                        if "患病时长：" in parts[1]:
+                            second_parts = parts[1].split("患病时长：", 1)
+                            inquiry_information[parts[0]] = second_parts[0]
+                            inquiry_information["患病时长"] = second_parts[1]
+                            print("\t\t" + parts[0] + ":" + second_parts[0])
+                            print("\t\t" + "患病时长:" + second_parts[1])
+                            continue
+                        elif "怀孕情况：" in parts[1]:
+                            second_parts = parts[1].split("怀孕情况：", 1)
+                            inquiry_information[parts[0]] = second_parts[0]
+                            inquiry_information["怀孕情况"] = second_parts[1]
+                            print("\t\t" + parts[0] + ":" + second_parts[0])
+                            print("\t\t" + "怀孕情况：" + second_parts[1])
+                            continue
+                        inquiry_information[parts[0]] = parts[1]
+                        if previous_key:
+                            print("\t\t" + previous_key + ":" + inquiry_information[previous_key])
+                        previous_key = parts[0]
+                        continue
+                inquiry_information[previous_key] = inquiry_information[previous_key] + full_text
+            print("\t\t" + previous_key + ":" + inquiry_information[previous_key])
 
         # <----------------- 爬取问诊建议 ----------------->
         emulator.screenshot()
         img = cv2.imread(screenshot_path)
         advice_img = None
-        if compare_image(images_path + "inquiry_inf\\advice.png", img[170:250, :]):
-            emulator.swipe(360, 1100, 360, 960)
+        pos, val = get_position(images_path + "inquiry_inf\\advice.png", img[170:250, :])
+        if val > 0.8:
+            emulator.swipe(360, pos[1] + 250, 360, 160)
             time.sleep(1)
 
             # ---> 拼接问诊建议的图
@@ -604,11 +646,18 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
                         advice_img = img
                     else:
                         advice_img = np.vstack((advice_img, img))
-                    emulator.swipe(360, 1120, 360, 169, 5500)
+                    emulator.swipe(360, 1120, 360, 167, 5500)
             cv2.imwrite("./tempt/advice_full.png", advice_img)
 
             # ---> 文字识别
-            for p in extract_paragraphs(advice_img, 45, 1):
+            advice_key = ""
+            is_first = True
+            for p in extract_paragraphs(advice_img, 20, 1, scaling=0.7):
+                # -> 暂停避免CPU过热
+                if config["load"] != 10:
+                    time.sleep(10 - config["load"])
+
+                is_advice_key = False
                 ocr_result = paddleocr.predict(p)
                 # --> 识别为空则跳过
                 if not ocr_result["text"]:
@@ -616,12 +665,20 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
                 full_text = ''.join(ocr_result["text"])
                 for item in advice_list:
                     if item in full_text:
-                        print("\t\t" + item + ":" + full_text.replace(item, "", 1))
+                        if is_first:
+                            is_first = False
+                        else:
+                            print("\t\t" + advice_key + ":" + inquiry_information[advice_key])
                         inquiry_information[item] = full_text.replace(item, "", 1)
+                        advice_key = item
+                        is_advice_key = True
+                if not is_advice_key:
+                    inquiry_information[advice_key] += full_text
+            print("\t\t" + advice_key + ":" + inquiry_information[advice_key])
 
         # <------------------------------爬取医患交流------------------------------>
         emulator.screenshot()
-        interaction = get_interaction(emulator, paddleocr)
+        interaction = get_interaction(emulator, paddleocr, config)
         inquiry_information["医患交流"] = interaction
         with open("./tempt/testdata.json", "w", encoding="utf-8") as f:
             json.dump(inquiry_information, f, ensure_ascii=False, indent=4)
@@ -632,22 +689,22 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
         # 返回
         time.sleep(1)
         emulator.key_event(4)
-        if i != inquiry_number:
-            time.sleep(1)
-            emulator.swipe(360, patient_icons_ordinate_asc[1], 360, 215)
         time.sleep(1)
+        if i != inquiry_number:
+            emulator.swipe(360, patient_icons_ordinate_asc[1], 360, 215)
 
 
 # <------------------------- 爬取对话 ------------------------->
-def get_interaction(emulator, paddleocr):
+def get_interaction(emulator, paddleocr, config):
     date_list = ["今天", "昨天"]
     project_path = "D:\\Study\\Private\\Python\Code\\reproduction_economic\\Patient-centered-2024\\"
     screenshot_path = project_path + "tempt\\screenshot.png"
     images_path = project_path + "images\\"
     emulator.screenshot()
     interaction_log = []
-    if compare_image(images_path + "inquiry_inf\\interaction.png", screenshot_path):
-        emulator.swipe(360, 1100, 360, 970)
+    pos, val = get_position(images_path + "inquiry_inf\\interaction.png", screenshot_path)
+    if val > 0.8:
+        emulator.swipe(360, pos[0] + 50, 360, 170)
         time.sleep(1)
         print("\t<---爬取医患交流--->")
         interaction_img = None
@@ -684,7 +741,7 @@ def get_interaction(emulator, paddleocr):
                     interaction_img = img
                 else:
                     interaction_img = np.vstack((interaction_img, img))
-                emulator.swipe(360, 1120, 360, 155)
+                emulator.swipe(360, 1120, 360, 167, 6000)
         cv2.imwrite("./tempt/interaction_full.png", interaction_img)
         print("拼接完成-->")
         # <------------------------------ 图像识别 ------------------------------>
@@ -692,7 +749,12 @@ def get_interaction(emulator, paddleocr):
         item = {"date": "", "charactor": "", "content": ""}
         is_first = True
         is_show = ""
-        for p in extract_paragraphs_for_dialogue(interaction_img, 20, 1, 190):
+        interaction_scaling = 0.6
+        for p in extract_paragraphs_for_dialogue(interaction_img, 20, 1, 190, scaling=interaction_scaling):
+            # -> 暂停避免CPU过热
+            if config["load"] != 10:
+                time.sleep(10 - config["load"])
+
             ocr_result = paddleocr.predict(p)
             text = ''.join(ocr_result["text"])
             position = ocr_result["position"]
@@ -700,7 +762,7 @@ def get_interaction(emulator, paddleocr):
                 continue
             # ----> 首先判断是否为日期，["今天/昨天"为汉字，其他日期为"mm.dd"格式]
             if (text in date_list or re.match(r'\d+.\d+', text)) and abs(
-                    (position[0][0] + position[0][2]) / 2 - 360) < 10:
+                    (position[0][0] + position[0][2]) / 2 - 360 * interaction_scaling) < 10 * interaction_scaling:
                 if is_first:
                     is_first = False
                 else:
@@ -717,18 +779,20 @@ def get_interaction(emulator, paddleocr):
                 item = {"date": text, "charactor": "", "content": ""}
             else:
                 # --->判断是否为系统信息(居中且没有角色信息)
-                if abs((position[0][0] + position[0][2]) / 2 - 355) < 10 and not item["charactor"]:
+                if abs((position[0][0] + position[0][
+                    2]) / 2 - 355 * interaction_scaling) < 10 * interaction_scaling and not item["charactor"]:
                     item["charactor"] = "system"
                     item["content"] = text
                 # --->判断是否为医生信息(靠左)
-                elif abs(position[0][0] - 106) < 5:
+                elif abs(position[0][0] - 106 * interaction_scaling) < 5 * interaction_scaling:
                     text = text.replace("以上文字由机器转写，仅供参考", "")
                     item["charactor"] = text
-                elif abs(position[0][0] - 572) < 5:
+                elif abs(position[0][0] - 572 * interaction_scaling) < 5 * interaction_scaling:
                     item["charactor"] = text
                 else:
                     if re.fullmatch(r'\){0,2}\d+[\'\"\″]', text):
                         continue
+                    text = text.replace("以上文字由机器转写，仅供参考", "")
                     item["content"] = item["content"] + text
         if len(interaction_log) == 0:
             interaction_log.append(item)
@@ -752,36 +816,43 @@ def debug():
         "screenshot_path": "tempt\\screenshot.png",
         "images_path": "images\\",
         "cache_path": "Patient-centered-2024\\tempt",
-        "doctor_inf": {},
-        "is_app_open": True,
+        "doctor_inf": {"姓名": "xxx"},
+        "is_app_open": False,
         "start_time": time.time(),
     }
     emulator = AndroidEmulator("Patient-centered-2024\\tempt")
+    # emulator.debug()
     paddleocr = OCR()
-    get_interaction(emulator, paddleocr)
+    get_inquiry_information(emulator, paddleocr, config)
+    # get_interaction(emulator, paddleocr)
     # android_spider(config)
 
 
 def android_spider_start():
     config = {
-        "local_test": True,
-        "program_id": 1,
+        "local_test": True,  # 是否运行在本地数据库
+        "program_id": 1,  # 程序id,唯一
         "doctor_num": 30,
         "inquiry_num_per_doctor": 15,
         "project_path": "D:\\Study\\Private\\Python\Code\\reproduction_economic\\Patient-centered-2024\\",
         "screenshot_path": "tempt\\screenshot.png",
         "images_path": "images\\",
         "cache_path": "Patient-centered-2024\\tempt",
-        "doctor_inf": {},
-        "is_app_open": False,
+        "is_app_open": True,  # 是否已经在爬虫页面
         "start_time": time.time(),
+        "load": 7,  # 负荷0-10，10为全速，0为最低速，用于平衡图片识别时CPU功耗
+        "skip_doctor_inquiry_num": 10,  # 根据数据库中问诊数量跳过医生
+        "doctor_inf": None,  # 内部所需参数，此处用于初始化
+        "inquiry_number": None,  # 内部所需参数，此处用于初始化
     }
-    # emulator=AndroidEmulator("Patient-centered-2024\\tempt")
+    # emulator = AndroidEmulator("Patient-centered-2024\\tempt")
+    # emulator.kill()
     # paddleocr=OCR()
-    # get_interaction(emulator,paddleocr)
+    # get_inquiry_information(emulator,paddleocr, config)
     android_spider(config)
 
 
 if __name__ == "__main__":
-    local_database_create_table()
-    android_spider_start()
+    database_create_table(False)
+    # android_spider_start()
+    # debug()

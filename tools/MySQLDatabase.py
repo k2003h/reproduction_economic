@@ -3,14 +3,15 @@ from mysql.connector import Error
 
 
 class MySQLDatabase:
-    def __init__(self, database,host="localhost", user="root", password="1234"):
+    def __init__(self, database,host="localhost", user="root", password="1234",encoding="utf8mb4"):
         self._connection = None
         try:
             self._connection = mysql.connector.connect(
                 host=host,
                 user=user,
                 password=password,
-                database=database
+                database=database,
+                charset=encoding
             )
         except Error as e:
             print(f"\033[1;31mThe error '{e}' occurred\033[0m")

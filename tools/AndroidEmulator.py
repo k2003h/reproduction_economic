@@ -1,5 +1,7 @@
 import math
 import os
+import sys
+import time
 import random
 import subprocess
 import numpy as np
@@ -7,21 +9,31 @@ import cv2
 
 
 class AndroidEmulator:
-    def __init__(self, save_path):
+    def __init__(self, save_path, id="127.0.0.1:62001"):
         self._basic_dir = os.path.dirname(os.path.abspath(__file__))
         self._project_path = self._basic_dir.replace("tools", "")
         self._save_path = save_path
+        self._id = id
         self.adb_path = self._basic_dir.replace("\\tools", "") + "\\src\\adb-tools\\adb.exe"
-        self.connect()
+        self._connect()
 
     def connect(self):
-        subprocess.run(self.adb_path + " disconnect", shell=True)
-        r = subprocess.run(self.adb_path + " connect 127.0.0.1:62001", shell=False, stdout=subprocess.PIPE, text=True,
+        subprocess.run(self.adb_path + " disconnect", shell=False)
+        r = subprocess.run(self.adb_path + f" connect {self._id}", shell=False, stdout=subprocess.PIPE, text=True,
                            encoding="utf-8")
         if "cannot" in r.stdout:
-            raise ConnectionError("无法连接到模拟器")
+            return False
         else:
-            print("adb连接成功")
+            return "adb连接成功"
+
+    def _connect(self):
+        subprocess.run(self.adb_path + " disconnect", shell=False)
+        r = subprocess.run(self.adb_path + f" connect {self._id}", shell=False, stdout=subprocess.PIPE, text=True,
+                           encoding="utf-8")
+        if "connected to" in r.stdout:
+            return True
+        else:
+            raise ConnectionError("无法连接到模拟器")
 
     def screenshot(self, path=None):
         """
@@ -31,10 +43,10 @@ class AndroidEmulator:
         """
         if not path:
             path = self._save_path
-        subprocess.run(self.adb_path + ' shell screencap -p /sdcard/screenshot.png', shell=False,
+        subprocess.run(self.adb_path + f' -s {self._id} shell screencap -p /sdcard/screenshot.png', shell=False,
                        stdout=subprocess.PIPE, text=True, encoding="utf-8")
         screenshot_path = self._project_path + path
-        subprocess.run(self.adb_path + ' pull /sdcard/screenshot.png ' + screenshot_path, shell=False,
+        subprocess.run(self.adb_path + f' -s {self._id} pull /sdcard/screenshot.png ' + screenshot_path, shell=False,
                        stdout=subprocess.PIPE, text=True)
 
     def click(self, x, y, offset=0):
@@ -47,7 +59,7 @@ class AndroidEmulator:
         """
         x += random.randint(-offset, offset)
         y += random.randint(-offset, offset)
-        click_cmd = self.adb_path + ' shell input tap ' + str(x) + ' ' + str(y)
+        click_cmd = self.adb_path + f' -s {self._id} shell input tap ' + str(x) + ' ' + str(y)
         subprocess.run(click_cmd, shell=True, stdout=subprocess.PIPE, text=True)
 
     def swipe(self, x1, y1, x2, y2, duration=None):
@@ -62,7 +74,7 @@ class AndroidEmulator:
         """
         if duration is None:
             duration = int(math.sqrt(max((x1 - x2) ** 2 + (y1 - y2) ** 2, 0.1)) * 6)
-        swipe_cmd = self.adb_path + ' shell input swipe ' + str(x1) + ' ' + str(y1) + ' ' + str(x2) + ' ' + str(
+        swipe_cmd = self.adb_path + f' -s {self._id} shell input swipe ' + str(x1) + ' ' + str(y1) + ' ' + str(x2) + ' ' + str(
             y2) + ' ' + str(duration)
         subprocess.run(swipe_cmd, shell=True, stdout=subprocess.PIPE, text=True)
 
@@ -72,11 +84,33 @@ class AndroidEmulator:
         :param code: 3->Home键;4->Back键
         :return:
         """
-        back_cmd = self.adb_path + ' shell input keyevent ' + str(code)
+        back_cmd = self.adb_path + f' -s {self._id} shell input keyevent ' + str(code)
         subprocess.run(back_cmd, shell=True, stdout=subprocess.PIPE, text=True)
 
     def disconnect(self):
-        subprocess.run(self.adb_path + " disconnect", shell=False)
+        subprocess.run(self.adb_path + f" -s {self._id} disconnect", shell=False)
 
-    def debug(self):
-        subprocess.run(self.adb_path+" kill-server",shell=False)
+    def kill(self):
+        subprocess.run(self.adb_path + " kill-server", shell=False)
+
+    def restart(self):
+        proc = subprocess.Popen(
+            [self.adb_path, "-s", f"{self._id}", "reboot"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE
+        )
+        # 5秒后强制终止（模拟Ctrl+C）
+        time.sleep(5)
+        proc.terminate()
+        time.sleep(5)
+        print("\033[33m<Notice:此处会进行emulator kill操作，出现error属于正常现象>\033[0m")
+        self.kill()
+        time_out = time.time() + 60
+        while True:
+            if self.connect():
+                print(f"\033[33m<Notice:重启并重新连接成功\033[0m")
+                break
+            if time.time() > time_out:
+                print(f"\033[33m<Error:连接超时>\033[0m")
+                sys.exit()
+            time.sleep(5)

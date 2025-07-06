@@ -40,6 +40,7 @@ def distinguish_title(text):
         academic_title.group(0) if academic_title else None
     )
 
+
 def ocr_total():
     paddleocr = OCR()
     img = cv2.imread("tempt/screenshot.png")
@@ -47,38 +48,47 @@ def ocr_total():
     # cv2.imshow("img_cropped", cropped_img)
     # cv2.waitKey(10000)
 
+
 def compare_time():
     project_path = "D:\\Study\\Private\\Python\Code\\reproduction_economic\\Patient-centered-2024\\tempt\\"
     screenshot_path = project_path + "screenshot.png"
     paddleocr = OCR()
-    start_time=time.time()
+    start_time = time.time()
     img = cv2.imread("tempt/screenshot.png")
     print(paddleocr.predict(img))
     full_img_time = time.time() - start_time
-    po1=get_position(project_path+"describe.png",screenshot_path)
-    po2=get_position(project_path+"height.png",screenshot_path)
-    po3=get_position(project_path+"illness.png",screenshot_path)
-    po4=get_position(project_path+"time.png",screenshot_path)
-    po5=get_position(project_path+"already.png",screenshot_path)
-    po6=get_position(project_path+"medicine.png",screenshot_path)
-    po7=get_position(project_path+"guomin.png",screenshot_path)
-    print(paddleocr.predict(img[po1[0][1]:po2[0][1],:]))
-    print(paddleocr.predict(img[po2[0][1]:po3[0][1],:]))
-    print(paddleocr.predict(img[po3[0][1]:po4[0][1],:]))
-    print(paddleocr.predict(img[po4[0][1]:po5[0][1],:]))
-    print(paddleocr.predict(img[po5[0][1]:po6[0][1],:]))
-    print(paddleocr.predict(img[po6[0][1]:po7[0][1],:]))
-    print(full_img_time,"分开:",time.time()-start_time-full_img_time)
+    po1 = get_position(project_path + "describe.png", screenshot_path)
+    po2 = get_position(project_path + "height.png", screenshot_path)
+    po3 = get_position(project_path + "illness.png", screenshot_path)
+    po4 = get_position(project_path + "time.png", screenshot_path)
+    po5 = get_position(project_path + "already.png", screenshot_path)
+    po6 = get_position(project_path + "medicine.png", screenshot_path)
+    po7 = get_position(project_path + "guomin.png", screenshot_path)
+    print(paddleocr.predict(img[po1[0][1]:po2[0][1], :]))
+    print(paddleocr.predict(img[po2[0][1]:po3[0][1], :]))
+    print(paddleocr.predict(img[po3[0][1]:po4[0][1], :]))
+    print(paddleocr.predict(img[po4[0][1]:po5[0][1], :]))
+    print(paddleocr.predict(img[po5[0][1]:po6[0][1], :]))
+    print(paddleocr.predict(img[po6[0][1]:po7[0][1], :]))
+    print(full_img_time, "分开:", time.time() - start_time - full_img_time)
 
 
 if __name__ == "__main__":
-    str1="))23'"
-    str2=")15″"
-    str3="))23'"
-    list1=[]
-    dic={"huhuy":"yes"}
-    dic2={"huhuyy":"yes"}
-    list1.append(dic)
-    print(dic2==list1[-1])
-
-
+    img = cv2.imread("./tempt/interaction_full.png")
+    pd = OCR()
+    start_time = time.time()
+    for p in extract_paragraphs_for_dialogue(img, 20, 1, 190, scaling=0.6):
+        # cv2.imshow("hh",p)
+        # cv2.waitKey(10000)
+        r = pd.predict(p)
+        text = ''.join(r["text"])
+        print(text)
+    # print(f"{int(time.time()-start_time)}")
+    # str = "您好😋，感谢您的信任。我是"
+    # db = MySQLDatabase("reproduction_economic")
+    # # db.execute_query("INSERT INTO operating VALUES (%s,%s)", (-2,str))
+    # r=db.fetch_data("SELECT * FROM operating")
+    # for i in r:
+    #     print(i)
+    # emulator=AndroidEmulator("Patient-centered-2024\\tempt")
+    # emulator.click(0,0,0)
