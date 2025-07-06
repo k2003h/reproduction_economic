@@ -1,6 +1,6 @@
 # ver 1.0.1
 
-## fix bug
+## 一、修复bug
 
 1.  在对话识别中，新增对只有一段对话的检验
 
@@ -14,7 +14,7 @@ if len(interaction_log) == 0:
 ···
 ```
 # ver 1.0.2
-## fix bug
+## 一、修复bug
 
 1. 在数据库增加了对表情符号的适配
 
@@ -42,7 +42,7 @@ if len(interaction_log) == 0:
 	subprocess.run(f"adb -s {self.id} ····")
 ```
 
-## 优化
+## 二、程序优化
 
 1. 在段落分割函数使用图像缩放以节省后续识图时间。
 
@@ -51,10 +51,11 @@ if len(interaction_log) == 0:
 3. 新增云存储
 
 # ver 1.0.3-1.0.4
+## 一、新增内容
 commit一些未进行包管理的文件
 
 # ver 1.0.5
-## fix bug
+## 一、修复
 1. 新增上传云数据库(增加对是否是云端)
 ```python
 def database_insert_dict(table_name, data_dict, is_local=False):  
@@ -74,3 +75,12 @@ if start_idx < len(horizontal_proj):
         paragraphs.append(scaling_image(last_region, scaling))
 ```
 3. 更新了gitignore，新增对tempt文件夹的ignore
+
+
+## ver 1.0.6
+## 一、新增内容
+1. 从笔记本中本地数据库导出信息
+2. 新增数据预处理文件（data_preprocessing）
+## 二、优化
+1. 优化代码注释
+2. 优化更新文件中格式
