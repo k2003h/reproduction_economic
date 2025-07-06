@@ -1,2 +1,4 @@
 .idea/
 venv/
+Patient-centered-2024/tempt/*
+!Patient-centered-2024/tempt/.gitkeep
