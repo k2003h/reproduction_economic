@@ -1,7 +1,6 @@
 import time
 import re
 import cv2
-
 from tools.MySQLDatabase import MySQLDatabase
 from tools.OCR import OCR
 from private_tools import *

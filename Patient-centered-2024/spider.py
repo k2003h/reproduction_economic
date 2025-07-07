@@ -543,7 +543,10 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
         patient_icons_ordinate_asc = sorted(patient_icons_ordinate)
 
         # <----------------- 爬取病例信息 ----------------->
-        emulator.click(360, 300, 20)
+        if config["inquiry_holding"]:
+            config["inquiry_holding"] = False
+        else:
+            emulator.click(360, 300, 20)
         # ---> 判断是否进入问诊信息界面
         while True:
             emulator.screenshot()
@@ -700,7 +703,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
 # <------------------------- 爬取对话 ------------------------->
 def get_interaction(emulator, paddleocr, config):
     date_list = ["今天", "昨天"]
-    project_path = "D:\\Study\\Private\\Python\Code\\reproduction_economic\\Patient-centered-2024\\"
+    project_path =config["project_path"]
     screenshot_path = project_path + "tempt\\screenshot.png"
     images_path = project_path + "images\\"
     emulator.screenshot()
@@ -815,7 +818,7 @@ def debug():
         "program_id": 1,
         "doctor_num": 30,
         "inquiry_num_per_doctor": 15,
-        "project_path": "D:\\Study\\Private\\Python\Code\\reproduction_economic\\Patient-centered-2024\\",
+        "project_path": "D:\\Study\\Private\\Python\\Code\\reproduction_economic\\Patient-centered-2024\\",
         "screenshot_path": "tempt\\screenshot.png",
         "images_path": "images\\",
         "cache_path": "Patient-centered-2024\\tempt",
@@ -832,21 +835,23 @@ def debug():
 
 
 def android_spider_start():
+    current_file_path = os.path.abspath(__file__).replace("spider.py", "")
     config = {
         "local_test": False,  # 是否运行在本地数据库
-        "program_id": 1,  # 程序id,唯一
-        "doctor_num": 10,
+        "program_id": 2,  # 程序id,唯一
+        "doctor_num": 1,
         "inquiry_num_per_doctor": 200,
-        "project_path": "D:\\Study\\Private\\Python\Code\\reproduction_economic\\Patient-centered-2024\\",
+        "project_path": current_file_path,
         "screenshot_path": "tempt\\screenshot.png",
         "images_path": "images\\",
         "cache_path": "Patient-centered-2024\\tempt",
         "is_app_open": False,  # 是否已经在爬虫页面
         "start_time": time.time(),
-        "load": 7,  # 负荷0-10，10为全速，0为最低速，用于平衡图片识别时CPU功耗
+        "load": 10,  # 负荷0-10，10为全速，0为最低速，用于平衡图片识别时CPU功耗
         "skip_doctor_inquiry_num": 150,  # 根据数据库中问诊数量跳过医生
         "doctor_inf": None,  # 内部所需参数，此处用于初始化
         "inquiry_number": None,  # 内部所需参数，此处用于初始化
+        "inquiry_holding":True,  # 在爬取问诊信息时等待
     }
     # emulator = AndroidEmulator("Patient-centered-2024\\tempt")
     # emulator.kill()

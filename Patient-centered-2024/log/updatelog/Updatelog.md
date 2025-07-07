@@ -84,3 +84,10 @@ if start_idx < len(horizontal_proj):
 ## 二、优化
 1. 优化代码注释
 2. 优化更新文件中格式
+
+
+## ver 1.0.7
+一、优化
+1.实用 os.path.abspath(__file__)来表示路径
+
+2. 新增断点继续的功能（通过设置inquiry_holding=True使程序暂停)

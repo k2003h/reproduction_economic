@@ -1,12 +1,18 @@
+import paddle
 from paddleocr import PaddleOCR
 
 
 class OCR:
     def __init__(self):
+        paddle.set_device('cpu')
         self.paddleocr = PaddleOCR(
             use_doc_orientation_classify=False,
             use_doc_unwarping=False,
-            use_textline_orientation=False
+            use_textline_orientation=False,
+            ocr_version="PP-OCRv5",
+            # text_recognition_model_dir=""
+            device="cpu"
+
         )
 
     def predict(self, image_path):
