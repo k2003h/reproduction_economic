@@ -535,15 +535,10 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
         print(f"\033[34m<---这是该医生第{i + 1}个病人--->\033[0m")
         minutes, seconds = int((time.time() - start_time) / 60), int((time.time() - start_time) % 60)
         print("\033[36m" + " " * 7 + f"->本轮用时:{minutes}min{seconds}s\033[0m")
-        emulator.screenshot()
-        patient_icons = get_positions(images_path + "inquiry_inf\\patient.png", screenshot_path, 0.8, 0.5)
-        patient_icons_ordinate = []
-        for ((_, ordinate), _) in patient_icons:
-            patient_icons_ordinate.append(ordinate)
-        patient_icons_ordinate_asc = sorted(patient_icons_ordinate)
 
         # <----------------- 爬取病例信息 ----------------->
         if config["inquiry_holding"]:
+            print("\033[33m<Notice:正在等待中，请点击中断处的问诊信息>\033[0m")
             config["inquiry_holding"] = False
         else:
             emulator.click(360, 300, 20)
@@ -554,6 +549,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
             if val > 0.8:
                 break
             time.sleep(1)
+
         emulator.swipe(360, pos[1], 360, 95)
         case_information_img = None
 
@@ -696,7 +692,14 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
         time.sleep(1)
         emulator.key_event(4)
         time.sleep(1)
+
         if i != inquiry_number:
+            emulator.screenshot()
+            patient_icons = get_positions(images_path + "inquiry_inf\\patient.png", screenshot_path, 0.8, 0.5)
+            patient_icons_ordinate = []
+            for ((_, ordinate), _) in patient_icons:
+                patient_icons_ordinate.append(ordinate)
+            patient_icons_ordinate_asc = sorted(patient_icons_ordinate)
             emulator.swipe(360, patient_icons_ordinate_asc[1], 360, 215)
 
 

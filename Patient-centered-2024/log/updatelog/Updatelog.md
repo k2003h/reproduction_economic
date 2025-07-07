@@ -87,8 +87,14 @@ if start_idx < len(horizontal_proj):
 
 
 ## ver 1.0.7
-一、优化
+## 一、优化
 
 1. 实用 os.path.abspath(__file__)来表示路径
 
 2. 新增断点继续的功能（通过设置inquiry_holding=True使程序暂停)
+
+
+# ver 1.0.8
+## 一、优化
+1. 将get_inquiry_information函数中滑动列表的操作置于循环最后
+2. 优化了断点继续爬虫的提示
