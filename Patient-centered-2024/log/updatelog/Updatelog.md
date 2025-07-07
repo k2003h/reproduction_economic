@@ -98,3 +98,9 @@ if start_idx < len(horizontal_proj):
 ## 一、优化
 1. 将get_inquiry_information函数中滑动列表的操作置于循环最后
 2. 优化了断点继续爬虫的提示
+
+
+# ver 1.0.9 
+## 一、新增内容
+1. 可以自动跳过已爬取部分
+2. 使用config存储配置，增加跨端适配性

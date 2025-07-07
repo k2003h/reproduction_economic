@@ -1,4 +1,5 @@
 import json
+import sys
 import time
 from tools.OCR import OCR
 from private_tools import *
@@ -320,6 +321,7 @@ def android_spider(config):
     paddleocr = OCR()
     doctor_inf = {"姓名": None, "医疗职称": None, "教育职称": None}
     doctor_num = config["doctor_num"]
+    config["start_time"]=time.time()
 
     # ---->判断app是否已在运行
     if not config["is_app_open"]:
@@ -442,7 +444,7 @@ def android_spider(config):
 
                     # -> 数据库操作
                     if doctor_name not in doctor_list:
-                        r = database_insert_dict("`医生信息`", doctor_inf,config["local_test"])
+                        r = database_insert_dict("`医生信息`", doctor_inf, config["local_test"])
                         if r:
                             print("\033[32m<Inf:已录入医生信息>\033[0m")
                         config["inquiry_number"] = config["inquiry_num_per_doctor"]
@@ -471,7 +473,9 @@ def android_spider(config):
                             break
                         time.sleep(1)
                     config["doctor_inf"] = doctor_inf
+
                     get_inquiry_information(emulator, paddleocr, config)
+
                     time.sleep(1)
                     emulator.key_event(4)
                     while True:
@@ -524,6 +528,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
     screenshot_path = project_path + config["screenshot_path"]
     images_path = project_path + config["images_path"]
     inquiry_number = config["inquiry_number"]
+    skip_number = config["inquiry_num_per_doctor"] - config["inquiry_number"]
     start_time = time.time()
 
     # <-------------------- 爬虫部分 -------------------->
@@ -531,7 +536,22 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
         # 重置数据
         for item in case_information + second_case_information + advice_list:
             inquiry_information[item] = ""
-        # ---> 计算两条数据之间的宽度，用于之后滑动
+
+        # ---> 自动前往上次中断的位置
+        while config["auto_skip_inquiry"]:
+            emulator.screenshot()
+            patient_icons = get_positions(images_path + "inquiry_inf\\patient.png", screenshot_path, 0.8, 0.5)
+            patient_icons_ordinate = []
+            for ((_, ordinate), _) in patient_icons:
+                patient_icons_ordinate.append(ordinate)
+            patient_icons_ordinate_asc = sorted(patient_icons_ordinate)
+            if skip_number > 0:
+                emulator.swipe(360, patient_icons_ordinate_asc[-1], 360, 215)
+                skip_number -= len(patient_icons_ordinate_asc)
+            else:
+                break
+
+        # ---> 提示信息
         print(f"\033[34m<---这是该医生第{i + 1}个病人--->\033[0m")
         minutes, seconds = int((time.time() - start_time) / 60), int((time.time() - start_time) % 60)
         print("\033[36m" + " " * 7 + f"->本轮用时:{minutes}min{seconds}s\033[0m")
@@ -685,7 +705,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
         with open("./tempt/testdata.json", "w", encoding="utf-8") as f:
             json.dump(inquiry_information, f, ensure_ascii=False, indent=4)
 
-        r = database_insert_dict("`问诊信息`", inquiry_information,config["local_test"])
+        r = database_insert_dict("`问诊信息`", inquiry_information, config["local_test"])
         if r:
             print("\033[32m<Inf:已录入问诊信息>\033[0m")
         # 返回
@@ -706,7 +726,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
 # <------------------------- 爬取对话 ------------------------->
 def get_interaction(emulator, paddleocr, config):
     date_list = ["今天", "昨天"]
-    project_path =config["project_path"]
+    project_path = config["project_path"]
     screenshot_path = project_path + "tempt\\screenshot.png"
     images_path = project_path + "images\\"
     emulator.screenshot()
@@ -838,24 +858,9 @@ def debug():
 
 
 def android_spider_start():
-    current_file_path = os.path.abspath(__file__).replace("spider.py", "")
-    config = {
-        "local_test": False,  # 是否运行在本地数据库
-        "program_id": 2,  # 程序id,唯一
-        "doctor_num": 1,
-        "inquiry_num_per_doctor": 200,
-        "project_path": current_file_path,
-        "screenshot_path": "tempt\\screenshot.png",
-        "images_path": "images\\",
-        "cache_path": "Patient-centered-2024\\tempt",
-        "is_app_open": False,  # 是否已经在爬虫页面
-        "start_time": time.time(),
-        "load": 10,  # 负荷0-10，10为全速，0为最低速，用于平衡图片识别时CPU功耗
-        "skip_doctor_inquiry_num": 150,  # 根据数据库中问诊数量跳过医生
-        "doctor_inf": None,  # 内部所需参数，此处用于初始化
-        "inquiry_number": None,  # 内部所需参数，此处用于初始化
-        "inquiry_holding":True,  # 在爬取问诊信息时等待
-    }
+    with open("config.json", "r",encoding="utf-8") as f:
+        config=json.load(f)
+    print(config)
     # emulator = AndroidEmulator("Patient-centered-2024\\tempt")
     # emulator.kill()
     # paddleocr=OCR()
@@ -863,7 +868,32 @@ def android_spider_start():
     android_spider(config)
 
 
+def create_config():
+    current_file_path = os.path.abspath(__file__).replace("spider.py", "")
+    config = {
+        "local_test": False,  # 是否运行在本地数据库
+        "program_id": 1,  # 程序id,唯一
+        "doctor_num": 1,
+        "inquiry_num_per_doctor": 200,
+        "project_path": current_file_path,
+        "screenshot_path": "tempt\\screenshot.png",
+        "images_path": "images\\",
+        "cache_path": "Patient-centered-2024\\tempt",
+        "is_app_open": True,  # 是否已经在爬虫页面
+        "start_time": 0,
+        "load": 7,  # 负荷0-10，10为全速，0为最低速，用于平衡图片识别时CPU功耗
+        "skip_doctor_inquiry_num": 150,  # 根据数据库中问诊数量跳过医生
+        "doctor_inf": None,  # 内部所需参数，此处用于初始化
+        "inquiry_number": None,  # 内部所需参数，此处用于初始化
+        "inquiry_holding": False,  # 在爬取问诊信息时等待
+        "auto_skip_inquiry": True,  # 自动跳过问诊信息
+    }
+    with open("config.json", "w") as f:
+        json.dump(config, f, indent=4)
+
+
 if __name__ == "__main__":
     # database_create_table(False)
+    # create_config()
     android_spider_start()
     # debug()
