@@ -9,11 +9,11 @@ import cv2
 
 
 class AndroidEmulator:
-    def __init__(self, save_path, id="127.0.0.1:62001"):
+    def __init__(self, save_path, emulator_id="127.0.0.1:62001"):
         self._basic_dir = os.path.dirname(os.path.abspath(__file__))
         self._project_path = self._basic_dir.replace("tools", "")
         self._save_path = save_path
-        self._id = id
+        self._id = emulator_id
         self.adb_path = self._basic_dir.replace("\\tools", "") + "\\src\\adb-tools\\adb.exe"
         self._connect()
 

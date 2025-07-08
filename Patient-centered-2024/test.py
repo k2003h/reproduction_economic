@@ -73,15 +73,16 @@ def compare_time():
 
 
 if __name__ == "__main__":
-    img = cv2.imread("./tempt/interaction_full.png")
-    pd = OCR()
-    start_time = time.time()
-    for p in extract_paragraphs_for_dialogue(img, 20, 1, 190, scaling=0.6):
-        # cv2.imshow("hh",p)
-        # cv2.waitKey(10000)
-        r = pd.predict(p)
-        text = ''.join(r["text"])
-        print(text)
+    # emulator=AndroidEmulator()
+    # img = cv2.imread("./tempt/interaction_full.png")
+    # pd = OCR()
+    # start_time = time.time()
+    # for p in extract_paragraphs_for_dialogue(img, 20, 1, 190, scaling=0.6):
+    #     # cv2.imshow("hh",p)
+    #     # cv2.waitKey(10000)
+    #     r = pd.predict(p)
+    #     text = ''.join(r["text"])
+    #     print(text)
     # print(f"{int(time.time()-start_time)}")
     # str = "您好😋，感谢您的信任。我是"
     # db = MySQLDatabase("reproduction_economic")
@@ -89,5 +90,7 @@ if __name__ == "__main__":
     # r=db.fetch_data("SELECT * FROM operating")
     # for i in r:
     #     print(i)
-    # emulator=AndroidEmulator("Patient-centered-2024\\tempt")
-    # emulator.click(0,0,0)
+    emulator=AndroidEmulator("Patient-centered-2024\\tempt")
+    emulator.kill()
+    emulator.screenshot()
+    print(cv2.imread("tempt/screenshot.png"))

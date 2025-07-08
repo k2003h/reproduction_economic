@@ -104,3 +104,26 @@ if start_idx < len(horizontal_proj):
 ## 一、新增内容
 1. 可以自动跳过已爬取部分
 2. 使用config存储配置，增加跨端适配性
+
+
+# ver 1.0.10
+## 一、修复
+1. 修复自动跳过已爬取部分中，有部分不会跳过导致重复的bug（skip_number = skip_number - len(patient_icons_ordinate_asc)==+1== ）
+```python
+while config["auto_skip_inquiry"]:  
+    emulator.screenshot()  
+    patient_icons = get_positions(images_path + "inquiry_inf\\patient.png", screenshot_path, 0.8, 0.5)  
+    patient_icons_ordinate = []  
+    for ((_, ordinate), _) in patient_icons:  
+        patient_icons_ordinate.append(ordinate)  
+    patient_icons_ordinate_asc = sorted(patient_icons_ordinate)  
+    if skip_number > 0:  
+        emulator.swipe(360, patient_icons_ordinate_asc[-1], 360, 215)  
+        skip_number = skip_number - len(patient_icons_ordinate_asc)+1  
+    else:  
+        break
+``` 
+2. 解决APP出现“系统异常”的问题
+3. ![[Pasted image 20250708115719.png]]
+# 二、优化
+1. 优化了时间的显示逻辑（显示小时）

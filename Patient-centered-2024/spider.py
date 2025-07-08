@@ -1,5 +1,4 @@
 import json
-import sys
 import time
 from tools.OCR import OCR
 from private_tools import *
@@ -118,7 +117,7 @@ def database_insert_dict(table_name, data_dict, is_local=False):
 # --------------------用于Web爬虫--------------------
 def get_doctor_home_page_urls():
     db = MySQLDatabase("reproduction_economic")
-    base_dir = os.path.dirname(os.path.abspath(__file__)).replace("\\Patient-centered-2024", "")
+    base_dir = str(os.path.dirname(os.path.abspath(__file__)).replace("\\Patient-centered-2024", ""))
     browser_file_path = base_dir + "\\src\\browser_profile"
     driver_path = base_dir + "\\src\\driver\\msedgedriver.exe"
     options = Options()
@@ -438,8 +437,9 @@ def android_spider(config):
                         doctor_inf["医疗职称"], doctor_inf["教育职称"] = distinguish_title(
                             cleaned_list[-1])
                     print("\n\033[94m<" + "-" * 25 + f" 这是第{i + 1}个医生 " + "-" * 25 + ">\033[0m")
-                    minutes, seconds = int((time.time() - start_time) / 60), int((time.time() - start_time) % 60)
-                    print("\033[96m" + " " * 50 + f"->总用时:{minutes}min{seconds}s\033[0m")
+                    hours = int((time.time() - start_time) / 3600)
+                    minutes, seconds = int((time.time() - start_time) % 3600), int((time.time() - start_time) % 60)
+                    print("\033[96m" + " " * 50 + f"->总用时:{hours}h{minutes}min{seconds}s\033[0m")
                     print(doctor_inf)
 
                     # -> 数据库操作
@@ -547,14 +547,15 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
             patient_icons_ordinate_asc = sorted(patient_icons_ordinate)
             if skip_number > 0:
                 emulator.swipe(360, patient_icons_ordinate_asc[-1], 360, 215)
-                skip_number -= len(patient_icons_ordinate_asc)
+                skip_number = skip_number - len(patient_icons_ordinate_asc)+1
             else:
                 break
 
         # ---> 提示信息
         print(f"\033[34m<---这是该医生第{i + 1}个病人--->\033[0m")
-        minutes, seconds = int((time.time() - start_time) / 60), int((time.time() - start_time) % 60)
-        print("\033[36m" + " " * 7 + f"->本轮用时:{minutes}min{seconds}s\033[0m")
+        hours=int((time.time() - start_time)/3600)
+        minutes, seconds = int((time.time() - start_time) %3600), int((time.time() - start_time) % 60)
+        print("\033[36m" + " " * 7 + f"->本轮用时:{hours}h{minutes}min{seconds}s\033[0m")
 
         # <----------------- 爬取病例信息 ----------------->
         if config["inquiry_holding"]:
@@ -565,6 +566,11 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
         # ---> 判断是否进入问诊信息界面
         while True:
             emulator.screenshot()
+            if compare_image(images_path + "system_error.png", screenshot_path):
+                emulator.key_event(4)
+                time.sleep(1)
+                emulator.click(360, 300, 20)
+                time.sleep(1)
             pos, val = get_position(images_path + "inquiry_inf\\case_information.png", screenshot_path)
             if val > 0.8:
                 break
@@ -613,7 +619,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
                     continue
                 # ---> 如果字段你有冒号，则判断是否为新字段
                 if "：" in full_text:
-                    parts: str = full_text.split("：", 1)
+                    parts: list[str] = full_text.split("：", 1)
                     if parts[0] in case_information:
                         if "患病时长：" in parts[1]:
                             second_parts = parts[1].split("患病时长：", 1)
@@ -819,7 +825,7 @@ def get_interaction(emulator, paddleocr, config):
                 elif abs(position[0][0] - 572 * interaction_scaling) < 5 * interaction_scaling:
                     item["charactor"] = text
                 else:
-                    if re.fullmatch(r'\){0,2}\d+[\'\"\″]', text):
+                    if re.fullmatch(r'\){0,2}\d+[\'″]', text):
                         continue
                     text = text.replace("以上文字由机器转写，仅供参考", "")
                     item["content"] = item["content"] + text
@@ -872,7 +878,7 @@ def create_config():
     current_file_path = os.path.abspath(__file__).replace("spider.py", "")
     config = {
         "local_test": False,  # 是否运行在本地数据库
-        "program_id": 1,  # 程序id,唯一
+        "program_id": 2,  # 程序id,唯一
         "doctor_num": 1,
         "inquiry_num_per_doctor": 200,
         "project_path": current_file_path,
@@ -881,7 +887,7 @@ def create_config():
         "cache_path": "Patient-centered-2024\\tempt",
         "is_app_open": True,  # 是否已经在爬虫页面
         "start_time": 0,
-        "load": 7,  # 负荷0-10，10为全速，0为最低速，用于平衡图片识别时CPU功耗
+        "load": 10,  # 负荷0-10，10为全速，0为最低速，用于平衡图片识别时CPU功耗
         "skip_doctor_inquiry_num": 150,  # 根据数据库中问诊数量跳过医生
         "doctor_inf": None,  # 内部所需参数，此处用于初始化
         "inquiry_number": None,  # 内部所需参数，此处用于初始化
