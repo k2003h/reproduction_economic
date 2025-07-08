@@ -737,14 +737,14 @@ def get_interaction(emulator, paddleocr, config):
     images_path = project_path + "images\\"
     emulator.screenshot()
     interaction_log = []
+    if compare_image(images_path+"inquiry_inf\\no_interaction.png",screenshot_path):
+        print("\t<---无医患交流--->")
+        return interaction_log
     pos, val = get_position(images_path + "inquiry_inf\\interaction.png", screenshot_path)
     if val > 0.8:
         emulator.swipe(360, pos[0] + 50, 360, 170)
         time.sleep(1)
         print("\t<---爬取医患交流--->")
-        if compare_image(images_path+"inquiry_inf\\no_interaction.png",screenshot_path):
-            print("\t<---无医患交流--->")
-            return interaction_log
         interaction_img = None
         print("\t\t<--图片拼接中", end="")
 
