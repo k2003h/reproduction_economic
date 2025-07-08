@@ -127,3 +127,11 @@ while config["auto_skip_inquiry"]:
 3. ![[Pasted image 20250708115719.png]]
 # 二、优化
 1. 优化了时间的显示逻辑（显示小时）
+
+
+# ver 1.0.11
+## 一、修复
+1. 修复时间显示的bug
+ ![[Pasted image 20250708122327.png]]
+# 二、新增
+1. 可视化模块

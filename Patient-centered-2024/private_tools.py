@@ -24,7 +24,7 @@ def distinguish_title(text):
     )
 
 
-def extract_paragraphs(img_array, blank_height=30, threshold=5, bg_threshold=253, scaling=1):
+def extract_paragraphs(img_array:np.ndarray, blank_height:int=30, threshold:int=5, bg_threshold:int=253, scaling:float=1):
     """
     参数:
         img_array: OpenCV读取的BGR图像数组

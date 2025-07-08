@@ -438,7 +438,7 @@ def android_spider(config):
                             cleaned_list[-1])
                     print("\n\033[94m<" + "-" * 25 + f" 这是第{i + 1}个医生 " + "-" * 25 + ">\033[0m")
                     hours = int((time.time() - start_time) / 3600)
-                    minutes, seconds = int((time.time() - start_time) % 3600), int((time.time() - start_time) % 60)
+                    minutes, seconds = int(((time.time() - start_time) % 3600)/60), int((time.time() - start_time) % 60)
                     print("\033[96m" + " " * 50 + f"->总用时:{hours}h{minutes}min{seconds}s\033[0m")
                     print(doctor_inf)
 
@@ -554,7 +554,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
         # ---> 提示信息
         print(f"\033[34m<---这是该医生第{i + 1}个病人--->\033[0m")
         hours=int((time.time() - start_time)/3600)
-        minutes, seconds = int((time.time() - start_time) %3600), int((time.time() - start_time) % 60)
+        minutes, seconds = int(((time.time() - start_time) %3600)/60), int((time.time() - start_time) % 60)
         print("\033[36m" + " " * 7 + f"->本轮用时:{hours}h{minutes}min{seconds}s\033[0m")
 
         # <----------------- 爬取病例信息 ----------------->
