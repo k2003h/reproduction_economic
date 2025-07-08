@@ -110,7 +110,7 @@ def plot_ocr_scaling_performance():
     accuracy_list=[]
     start_time = time.time()
     answer = []
-    img = cv2.imread("./images/test/interaction_test.png")
+    img = cv2.imread("./images/test/advice_test.png")
     ocr = OCR()
     for p in extract_paragraphs(img, 20, 1, 200, 1):
         result = ocr.predict(p)

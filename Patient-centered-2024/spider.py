@@ -729,7 +729,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
             emulator.swipe(360, patient_icons_ordinate_asc[1], 360, 215)
 
 
-# <------------------------- 爬取对话 ------------------------->
+# <------------------------- 爬取医患交流 ------------------------->
 def get_interaction(emulator, paddleocr, config):
     date_list = ["今天", "昨天"]
     project_path = config["project_path"]
@@ -742,6 +742,9 @@ def get_interaction(emulator, paddleocr, config):
         emulator.swipe(360, pos[0] + 50, 360, 170)
         time.sleep(1)
         print("\t<---爬取医患交流--->")
+        if compare_image(images_path+"inquiry_inf\\no_interaction.png",screenshot_path):
+            print("\t<---无医患交流--->")
+            return interaction_log
         interaction_img = None
         print("\t\t<--图片拼接中", end="")
 
@@ -766,7 +769,7 @@ def get_interaction(emulator, paddleocr, config):
                 else:
                     interaction_img = np.vstack((interaction_img, img))
                 break
-            # ----> "没有更多交流了"信息有概率被遮挡，此时再往上滑动后，截图y轴160~300坐标内必有间隔线
+            # ----> "没有更多交流了"信息有概率被遮挡，此时再往上滑动后，截图y轴160~300 坐标内必有间隔线
             elif compare_image(images_path + "line.png", img[160:300, :]):
                 break
             # ----> 截图并拼接

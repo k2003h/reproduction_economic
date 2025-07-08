@@ -135,3 +135,9 @@ while config["auto_skip_inquiry"]:
  ![[Pasted image 20250708122327.png]]
 # 二、新增
 1. 可视化模块
+
+
+# ver 1.0.12
+## 一、修复
+1.修复无交流记录时报错的情况
+![[no_interaction.png]]

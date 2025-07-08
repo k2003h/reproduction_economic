@@ -31,4 +31,4 @@ def load_data(is_local=False):
 
 
 if __name__=="__main__":
-    load_data(True)
+    load_data(False)
