@@ -124,14 +124,14 @@ while config["auto_skip_inquiry"]:
         break
 ``` 
 2. 解决APP出现“系统异常”的问题
-3. ![[Pasted image 20250708115719.png]]
+![[Pasted image 20250708115719.png]]
 # 二、优化
 1. 优化了时间的显示逻辑（显示小时）
 
 
 # ver 1.0.11
 ## 一、修复
-1. 修复时间显示的bug
+1. 修复时间显示的bug（分钟显示出错）
  ![[Pasted image 20250708122327.png]]
 # 二、新增
 1. 可视化模块
@@ -141,3 +141,12 @@ while config["auto_skip_inquiry"]:
 ## 一、修复
 1.修复无交流记录时报错的情况
 ![[no_interaction.png]]
+
+
+
+# ver 1.0.13
+# 一、新增
+1. 新增HDFEmulator类，增加泛用性。
+2. config新增wait_time，用于有些操作失败（如返回上一级）尝试重新操作，时间过长则程序中断
+3. config新增ocr_model_path，加载本地ocr模型
+4. config新增image_scaling，将图像缩放写入config使不同设备能使用不同缩放比例

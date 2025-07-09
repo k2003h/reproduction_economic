@@ -1,11 +1,14 @@
 import json
+import sys
 import time
+from pprint import pprint
 from tools.OCR import OCR
 from private_tools import *
 from tools.functions import *
 from selenium import webdriver
 from datetime import datetime, timedelta
 from selenium.webdriver.common.by import By
+from assets.HDFEmulator import HDFEmulator
 from tools.MySQLDatabase import MySQLDatabase
 from tools.AndroidEmulator import AndroidEmulator
 from selenium.webdriver.edge.service import Service
@@ -261,7 +264,15 @@ def get_num_by_class_name(browser, class_name):
 
 # >************************  用于Android爬虫  ************************<
 def go_to_page(config, emulator, is_fist=False):
-    # 准备开始
+    # <-------------------- 初始化变量 -------------------->
+    wait_time_0_start = 0
+    wait_time_1_start = 0
+    wait_time_0=config["wait_time_0"]
+    wait_time_1=config["wait_time_1"]
+    screenshot_path = config["screenshot_path"]
+    images_path = config["images_path"]
+
+    # <-------------------- 进入APP -------------------->
     if is_fist:
         print("即将在5s后开始爬虫,请打开模拟器", end="")
         start_time = time.time()
@@ -271,58 +282,102 @@ def go_to_page(config, emulator, is_fist=False):
             time.sleep(1)
     else:
         print("正在尝试前往爬虫对应页面")
-    # 初始化相关变量(在之前的版本中未通过config传递，为了尽量减少代码改动仍然新建两个变量)
-    screenshot_path = config["screenshot_path"]
-    images_path = config["images_path"]
 
-    # 打开APP并进入相关界面
+    # ----> 打开APP并进入相关界面
     emulator.screenshot()
     position, _ = get_position(images_path + "app_icon.png", screenshot_path)
     emulator.click(position[0], position[1], random.randint(0, 5))  # 打开APP
     print("\n-->点击APP", end="")
-    while True:  # APP启动时需要加载
+
+    # ----> 判断是否进入APP
+    wait_time_0_start=time.time()
+    wait_time_1_start=time.time()
+    while True:
         emulator.screenshot("Patient-centered-2024\\tempt")
+        if time.time() - wait_time_1_start > wait_time_1:
+            raise TimeoutError("程序超时")
+        elif time.time() - wait_time_0_start > wait_time_0:
+            emulator.click(position[0], position[1], random.randint(0, 5))
+            wait_time_0_start=time.time()
+        # ---> 如果提示更新，则点击取消
+        if compare_image(images_path + "updating.png", screenshot_path):
+            emulator.click(200, 700, random.randint(0, 10))
+            time.sleep(1)
+            break
         if compare_image(images_path + "experts_list_button.png", screenshot_path):
             break
         time.sleep(0.5)
+
+    # ----> 如果提示更新，则点击取消
+    if compare_image(images_path + "updating.png", screenshot_path):
+        emulator.click(200, 700, random.randint(0, 10))
+        time.sleep(1)
+        emulator.screenshot()
+
+    # <-------------------- 点击"按照科室找" -------------------->
     position, _ = get_position(images_path + "experts_list_button.png", screenshot_path)
-    time.sleep(5)
-    emulator.click(200, 700, random.randint(0, 10))
-    time.sleep(5)
     emulator.click(position[0], position[1], random.randint(0, 10))
     print("-->点击'按科室找'", end="")
+
+    # ----> 判断是否进入科室选择界面
+    wait_time_0_start = time.time()
+    wait_time_1_start = time.time()
     while True:
         emulator.screenshot()
         if compare_image(images_path + "find_by_illness_button.png", screenshot_path):
             break
+        if time.time() - wait_time_1_start > wait_time_1:
+            raise TimeoutError("程序超时")
+        elif time.time() - wait_time_0_start > wait_time_0:
+            emulator.click(position[0], position[1], random.randint(0, 5))
+            wait_time_0_start=time.time()
         time.sleep(0.5)
+
+    # <-------------------- 点击内分泌科 -------------------->
     position, val = get_position(images_path + "endocrinology_department.png", screenshot_path)
     if val > 0.7:
         emulator.click(position[0], position[1], random.randint(0, 5))
         print("-->点击'内分泌科'")
+
+    # ----> 判断是否进入医生列表
+    wait_time_0_start = time.time()
+    wait_time_1_start = time.time()
     while True:
         emulator.screenshot()
         if compare_image(images_path + "\\line.png", screenshot_path):
             break
+        if time.time() - wait_time_1_start > wait_time_1:
+            raise TimeoutError("程序超时")
+        elif time.time() - wait_time_0_start > wait_time_0:
+            emulator.click(position[0], position[1], random.randint(0, 5))
+            wait_time_0_start=time.time()
         time.sleep(0.5)
 
 
 # <------------------------- 开始爬虫 ------------------------->
 def android_spider(config):
     # <-------------------- 初始化变量 -------------------->
-    # ----> 在新版本中使用config进行参数传递
+    # ----> 基础参数
     project_path = config["project_path"]
     screenshot_path = project_path + config["screenshot_path"]
     images_path = project_path + config["images_path"]
     program_id = config["program_id"]
-    # ---->初始化三个关键参数:emulator、paddleocr、database
-    emulator = AndroidEmulator(config["cache_path"])
-    paddleocr = OCR()
     doctor_inf = {"姓名": None, "医疗职称": None, "教育职称": None}
     doctor_num = config["doctor_num"]
     config["start_time"]=time.time()
+    image_scaling=config["image_scaling"]
 
-    # ---->判断app是否已在运行
+    # ----> 关键类
+    paddleocr = OCR(config["ocr_model_path"])
+    emulator = HDFEmulator(config["cache_path"])
+
+    # ----> 超时相关
+    wait_time_0_start = 0
+    wait_time_1_start = 0
+    wait_time_0=config["wait_time_0"]
+    wait_time_1=config["wait_time_1"]
+
+    # ----> 判断app是否已在运行
     if not config["is_app_open"]:
         go_to_page(config, emulator, True)
 
@@ -401,7 +456,7 @@ def android_spider(config):
                     database.close_connection()
                     time_count = time.time()
                 elif doctor_name in skip_doctors_list:
-                    print(f"\033[32m<<Inf:{doctor_name}已有足够多问诊信息，跳到下一条医生>\033[0m")
+                    print(f"\033[32m<Inf:{doctor_name}已有足够多问诊信息，跳到下一条医生>\033[0m")
                     database.close_connection()
                     time_count = time.time()
                 # <-------------------- 正式爬虫部分 -------------------->
@@ -474,8 +529,8 @@ def android_spider(config):
                         time.sleep(1)
                     config["doctor_inf"] = doctor_inf
 
+                    # -> 爬取问诊信息
                     get_inquiry_information(emulator, paddleocr, config)
-
                     time.sleep(1)
                     emulator.key_event(4)
                     while True:
@@ -529,7 +584,12 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
     images_path = project_path + config["images_path"]
     inquiry_number = config["inquiry_number"]
     skip_number = config["inquiry_num_per_doctor"] - config["inquiry_number"]
+    image_scaling = config["image_scaling"]
     start_time = time.time()
+    wait_time_0_start = 0
+    wait_time_1_start = 0
+    wait_time_0 = config["wait_time_0"]
+    wait_time_1 = config["wait_time_1"]
 
     # <-------------------- 爬虫部分 -------------------->
     for i in range(inquiry_number):
@@ -608,7 +668,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
             # ---> 文字识别
             print("\t<---爬取病例信息--->")
             previous_key = ""
-            for p in extract_paragraphs(case_information_img, 35, 1, scaling=0.7):
+            for p in extract_paragraphs(case_information_img, 35, 1,190,scaling=image_scaling):
                 # -> 暂停避免CPU过热
                 if config["load"] != 10:
                     time.sleep(10 - config["load"])  # 暂停避免CPU过热
@@ -617,7 +677,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
                 full_text = ''.join(ocr_result["text"]).replace("·", "")
                 if not full_text:
                     continue
-                # ---> 如果字段你有冒号，则判断是否为新字段
+                # ---> 如果字段你有冒号，则判断为新字段
                 if "：" in full_text:
                     parts: list[str] = full_text.split("：", 1)
                     if parts[0] in case_information:
@@ -680,7 +740,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
             # ---> 文字识别
             advice_key = ""
             is_first = True
-            for p in extract_paragraphs(advice_img, 20, 1, scaling=0.7):
+            for p in extract_paragraphs(advice_img, 20, 1, scaling=image_scaling):
                 # -> 暂停避免CPU过热
                 if config["load"] != 10:
                     time.sleep(10 - config["load"])
@@ -706,6 +766,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
 
         # <------------------------------爬取医患交流------------------------------>
         emulator.screenshot()
+
         interaction = get_interaction(emulator, paddleocr, config)
         inquiry_information["医患交流"] = interaction
         with open("./tempt/testdata.json", "w", encoding="utf-8") as f:
@@ -718,6 +779,19 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
         time.sleep(1)
         emulator.key_event(4)
         time.sleep(1)
+
+        # ---> 判断是否返回
+        wait_time_0_start = time.time()
+        wait_time_1_start = time.time()
+        while True:
+            emulator.screenshot()
+            if compare_image(images_path + "inquiry_inf\\patient.png", screenshot_path):
+                break
+            if time.time() - wait_time_1_start > wait_time_1:
+                raise TimeoutError("程序超时")
+            elif time.time() - wait_time_0_start > wait_time_0:
+                emulator.key_event(4)
+                wait_time_0_start = time.time()
 
         if i != inquiry_number:
             emulator.screenshot()
@@ -733,8 +807,9 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
 def get_interaction(emulator, paddleocr, config):
     date_list = ["今天", "昨天"]
     project_path = config["project_path"]
-    screenshot_path = project_path + "tempt\\screenshot.png"
-    images_path = project_path + "images\\"
+    screenshot_path = project_path + config["screenshot_path"]
+    images_path = project_path + config["images_path"]
+    image_scaling = config["image_scaling"]
     emulator.screenshot()
     interaction_log = []
     if compare_image(images_path+"inquiry_inf\\no_interaction.png",screenshot_path):
@@ -786,9 +861,8 @@ def get_interaction(emulator, paddleocr, config):
         print("\t\t<--图片识别中")
         item = {"date": "", "charactor": "", "content": ""}
         is_first = True
-        is_show = ""
-        interaction_scaling = 0.6
-        for p in extract_paragraphs_for_dialogue(interaction_img, 20, 1, 190, scaling=interaction_scaling):
+        interaction_scaling = config["image_scaling"]
+        for p in extract_paragraphs_for_dialogue(interaction_img, 20, 1, 190, scaling=image_scaling):
             # -> 暂停避免CPU过热
             if config["load"] != 10:
                 time.sleep(10 - config["load"])
@@ -843,7 +917,7 @@ def get_interaction(emulator, paddleocr, config):
 
     return interaction_log
 
-
+# <------------------------- 测试与程序入口 ------------------------->
 def debug():
     config = {
         "local_test": True,
@@ -869,7 +943,11 @@ def debug():
 def android_spider_start():
     with open("config.json", "r",encoding="utf-8") as f:
         config=json.load(f)
-    print(config)
+    config["project_path"]=os.path.abspath(__file__).replace("spider.py", "")
+    config["ocr_model_path"]=os.path.abspath(__file__).replace("Patient-centered-2024\\spider.py", "")+"src\\paddleocr"
+    config["ocr_model_path"]=os.path.abspath(__file__).replace("Patient-centered-2024\\spider.py", "")+"src\\paddleocr"
+    pprint(config)
+    time.sleep(1)
     # emulator = AndroidEmulator("Patient-centered-2024\\tempt")
     # emulator.kill()
     # paddleocr=OCR()
@@ -896,6 +974,9 @@ def create_config():
         "inquiry_number": None,  # 内部所需参数，此处用于初始化
         "inquiry_holding": False,  # 在爬取问诊信息时等待
         "auto_skip_inquiry": True,  # 自动跳过问诊信息
+        "wait_time_0":30,  # 等待时间_0,若超过此时间则会尝试重复上一步
+        "wait_time_1":60,  # 等待时间_1,若超过此时间会直接推出
+        "image_scaling": 1.0  # 缩放比例
     }
     with open("config.json", "w") as f:
         json.dump(config, f, indent=4)
