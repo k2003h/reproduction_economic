@@ -314,6 +314,10 @@ def go_to_page(config, emulator, is_fist=False):
         time.sleep(1)
         emulator.screenshot()
 
+    if compare_image(images_path + "get_location.png", screenshot_path):
+        emulator.click(200, 700, random.randint(0, 10))
+        time.sleep(1)
+        emulator.screenshot()
     # <-------------------- 点击"按照科室找" -------------------->
     position, _ = get_position(images_path + "experts_list_button.png", screenshot_path)
     emulator.click(position[0], position[1], random.randint(0, 10))

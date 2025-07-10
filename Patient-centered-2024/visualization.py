@@ -151,6 +151,8 @@ def plot_ocr_scaling_performance():
 
     plt.tight_layout()
     plt.show()
+
+
 if __name__ == '__main__':
     plot_ocr_scaling_performance()
 

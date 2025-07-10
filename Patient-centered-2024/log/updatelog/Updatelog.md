@@ -150,3 +150,8 @@ while config["auto_skip_inquiry"]:
 2. config新增wait_time，用于有些操作失败（如返回上一级）尝试重新操作，时间过长则程序中断
 3. config新增ocr_model_path，加载本地ocr模型
 4. config新增image_scaling，将图像缩放写入config使不同设备能使用不同缩放比例
+
+# ver 1.0.14
+## 一、修复
+1. 修复需要定位卡死的bug
+![[screenshot.png]]
