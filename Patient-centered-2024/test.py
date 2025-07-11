@@ -8,7 +8,7 @@ from tools.MySQLDatabase import MySQLDatabase
 from tools.OCR import OCR
 from private_tools import *
 from tools.AndroidEmulator import AndroidEmulator
-from tools.functions import get_position
+from tools.functions import get_position, compare_image
 
 
 def get_screenshot():
@@ -83,7 +83,7 @@ def test_dialogue():
     is_first=True
     paddleocr = OCR()
     img=cv2.imread("./tempt/interaction_full.png")
-    for p in extract_paragraphs_for_dialogue(img, 20, 1, 190, scaling=image_scaling):
+    for p in extract_paragraphs_for_dialogue(img, 20, 1, 190, scaling=1):
         # -> 暂停避免CPU过热
         if config["load"] != 10:
             time.sleep(10 - config["load"])
@@ -146,7 +146,10 @@ if __name__ == "__main__":
     # r=db.fetch_data("SELECT * FROM operating")
     # for i in r:
     #     print(i)
-    emulator=AndroidEmulator("Patient-centered-2024\\tempt")
+    # emulator=AndroidEmulator("Patient-centered-2024\\tempt")
     # emulator.kill()
-    emulator.screenshot()
+    # emulator.screenshot()
     # print(cv2.imread("tempt/screenshot.png"))
+    img1=cv2.imread("D:/Study/Code/Python/reproduction_economic/Patient-centered-2024/images/get_location.png")
+    img2=cv2.imread("D:/Study/Code/Python/reproduction_economic/Patient-centered-2024/tempt/screenshot.png")
+    print(compare_image(img1,img2))

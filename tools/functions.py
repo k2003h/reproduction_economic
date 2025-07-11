@@ -121,7 +121,7 @@ def get_position(img1: cv2.UMat | PathLike[str], img2: cv2.UMat | PathLike[str],
     return (x, y), max_val
 
 
-def compare_image(img1: str | PathLike[str], img2: str | PathLike[str], scale: float = 1.0,
+def compare_image(img1: str | PathLike[str] | np.ndarray, img2: str | PathLike[str] | np.ndarray, scale: float = 1.0,
                   threshold: float = 0.7) -> bool:
     """
     在img2中查找img1是否存在

@@ -58,7 +58,7 @@ class MySQLDatabase:
             print(notice_str)
         finally:
             cursor.close()
-            return notice_str
+        return notice_str
 
     def fetch_data(self, query, params=None):
         cursor = self._connection.cursor()
