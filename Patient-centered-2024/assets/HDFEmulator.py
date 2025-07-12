@@ -1,6 +1,8 @@
 import subprocess
-from tools.AndroidEmulator import AndroidEmulator
+import time
 
+from tools.AndroidEmulator import AndroidEmulator
+from tools.functions import compare_image
 
 
 class HDFEmulator(AndroidEmulator):
@@ -17,3 +19,15 @@ class HDFEmulator(AndroidEmulator):
         screenshot_path = self._project_path + path
         subprocess.run(self.adb_path + f' -s {self._id} pull /sdcard/screenshot.png ' + screenshot_path, shell=False,
                        stdout=subprocess.PIPE, text=True)
+
+        # 如果出现未响应，则点击等待后重新截图
+        if compare_image(self._project_path + path, self._project_path + screenshot_path):
+            self.click(220,670)
+            time.sleep(1)
+            subprocess.run(self.adb_path + f' -s {self._id} shell screencap -p /sdcard/screenshot.png', shell=False,
+                           stdout=subprocess.PIPE, text=True, encoding="utf-8")
+            screenshot_path = self._project_path + path
+            subprocess.run(self.adb_path + f' -s {self._id} pull /sdcard/screenshot.png ' + screenshot_path,
+                           shell=False,
+                           stdout=subprocess.PIPE, text=True)
+            return -1

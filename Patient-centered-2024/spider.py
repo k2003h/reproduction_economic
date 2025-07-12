@@ -313,11 +313,13 @@ def go_to_page(config, emulator, is_fist=False):
     # ----> 如果提示更新，则点击取消
     if compare_image(images_path + "updating.png", screenshot_path):
         emulator.click(200, 700, random.randint(0, 10))
+        print("-->点击跳过更新", end="")
         time.sleep(1)
     time.sleep(1)
     emulator.screenshot()
     if compare_image(images_path + "get_location.png", screenshot_path):
         emulator.click(200, 820, random.randint(0, 10))
+        print("-->拒绝定位", end="")
         time.sleep(1)
     # <-------------------- 点击"按照科室找" -------------------->
     position, _ = get_position(images_path + "experts_list_button.png", screenshot_path)
@@ -784,6 +786,7 @@ def get_inquiry_information(emulator, paddleocr: OCR, config):
         time.sleep(1)
         emulator.key_event(4)
         time.sleep(1)
+
 
         # ---> 判断是否返回
         wait_time_0_start = time.time()

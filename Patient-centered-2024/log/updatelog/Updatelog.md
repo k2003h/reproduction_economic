@@ -155,3 +155,9 @@ while config["auto_skip_inquiry"]:
 ## 一、修复
 1. 修复需要定位卡死的bug
 ![[screenshot.png]]
+
+
+# ver 1.0.15
+## 一、修复
+
+1. 修复了可能出现应用卡死的bug
